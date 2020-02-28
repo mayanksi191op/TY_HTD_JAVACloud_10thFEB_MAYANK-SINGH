@@ -1,0 +1,11 @@
+
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š¾ß»øÿÿÿÿHÓRMINORZ
+CODE_SMELL
+‡squid:S4276"URefactor this code to use the more specialised Functional Interface 'DoublePredicate'(Ü¾ƒÍûÿÿÿÿHÔRMINORZ
+CODE_SMELL
+asquid:S1611"/Remove the parentheses around the "a" parameter(Ü¾ƒÍûÿÿÿÿHÕRMINORZ
+CODE_SMELL
+„squid:S4276"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(®‹¹óúÿÿÿÿHÖRMINORZ
+CODE_SMELL
+asquid:S1611"/Remove the parentheses around the "a" parameter(®‹¹óúÿÿÿÿH×RMINORZ
+CODE_SMELL

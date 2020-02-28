@@ -1,0 +1,11 @@
+
+public class StudDisp {
+	public void disp(Student s[])
+	{
+		for(Student x: s)
+		System.out.println("Id is "+s.getId());
+		System.out.println("Name is "+s.getName());
+		System.out.println("Height is"+s.getHeight());
+	}
+
+}
