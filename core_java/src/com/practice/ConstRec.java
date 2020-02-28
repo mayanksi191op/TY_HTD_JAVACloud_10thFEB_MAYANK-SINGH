@@ -11,7 +11,7 @@ public class ConstRec {
 			System.exit(0);
 		}
 		j++;
-		System.out.println(j);
+		System.out.println("j"+j);
 		new ConstRec();
 	}
 	public static void main(String[] args) {
