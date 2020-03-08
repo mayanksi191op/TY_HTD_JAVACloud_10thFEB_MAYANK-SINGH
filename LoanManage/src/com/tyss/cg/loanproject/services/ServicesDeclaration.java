@@ -1,11 +1,9 @@
 package com.tyss.cg.loanproject.services;
 
-import com.tyss.cg.loanproject.beans.LoginBean;
-
 public interface ServicesDeclaration {
 	
 	//Login Operations
-	public void loginOperations(LoginBean loginBean);
+	public void loginOperations();
 	
 	//Customer operations
 	public void addCustomer();
