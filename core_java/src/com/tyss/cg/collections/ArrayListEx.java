@@ -27,7 +27,7 @@ public class ArrayListEx { // size of arraylist is dynamic in nature.
 		for (Integer integer : arraylist) {
 			System.out.println(integer);
 		}
-
+		
 		System.out.println("+++++using SOP arraylist+++++");
 		System.out.println(arraylist);
 
