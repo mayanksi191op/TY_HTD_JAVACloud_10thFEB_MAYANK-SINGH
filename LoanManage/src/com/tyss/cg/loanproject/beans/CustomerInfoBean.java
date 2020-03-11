@@ -18,6 +18,7 @@ public class CustomerInfoBean implements Serializable{
 	private String bankbranch;
 	private String accountnum;
 	private String opendate;
+	
 	@Override
 	public String toString() {
 		return "CustomerId: " + customerid + "| Username: " + username + "| Email: " + email

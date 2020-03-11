@@ -83,7 +83,7 @@ public class ServicesImpl implements ServicesDeclaration {
 					break;
 				}
 			}
-				
+
 //				for (int i = 0; i < adminlist.size(); i++) {
 //					adminlist.get(i);
 //					if(adminInfoBean.getAdminid()==adminid) {
@@ -91,8 +91,8 @@ public class ServicesImpl implements ServicesDeclaration {
 //						adminlist.remove(adminInfoBean);
 //						break;
 //					} 
-					
-			
+//					
+
 			if (count > 0)
 				System.out.println("Admin removed");
 			else
@@ -104,8 +104,70 @@ public class ServicesImpl implements ServicesDeclaration {
 
 	@Override
 	public void updateAdmin() {
-		// TODO Auto-generated method stub
+		System.out.println("enter the adminid of admin you want to updat: ");
+		int id = scanner.nextInt();
+		if (adminlist.isEmpty() != true) {
+			for (AdminInfoBean adminInfoBean : adminlist) {
+				if (adminInfoBean.getAdminid() == id) {
+					System.out.println("what do you want to update for this admin?");
+					System.out.println("1> AdminId");
+					System.out.println("2> Email");
+					System.out.println("3> Password");
+					System.out.println("4> Username");
+					System.out.println("5> PhoneNumber");
+					System.out.println("6> First Name");
+					System.out.println("7> Last Name");
+					int choice = scanner.nextInt();
+					switch (choice) {
+					case 1:
+						System.out.println("enter the new id");
+						int adminid = scanner.nextInt();
+						adminInfoBean.setAdminid(adminid);
+						break;
 
+					case 2:
+						System.out.println("Enter the Email: ");
+						String email = scanner.nextLine();
+						adminInfoBean.setEmail(email);
+						break;
+
+					case 3:
+						System.out.println("Enter the Password: ");
+						String password = scanner.nextLine();
+						adminInfoBean.setPassword(password);
+						break;
+
+					case 4:
+						System.out.println("Enter the Username: ");
+						String username = scanner.nextLine();
+						adminInfoBean.setUsername(username);
+						break;
+
+					case 5:
+						System.out.println("Enter 10 digit Phone number: ");
+						int phonenumber = Integer.parseInt(scanner.nextLine());
+						adminInfoBean.setPhonenumber(phonenumber);
+						break;
+
+					case 6:
+						System.out.println("Enter the First Name: ");
+						String firstname = scanner.nextLine();
+						adminInfoBean.setFirstname(firstname);
+						break;
+
+					case 7:
+						System.out.println("Enter the Last Name: ");
+						String lastname = scanner.nextLine();
+						adminInfoBean.setLastname(lastname);
+						break;
+
+					default:
+						System.out.println("wrong choice");
+						break;
+					}
+				}
+			}
+		}
 	}
 
 	@Override
@@ -176,19 +238,21 @@ public class ServicesImpl implements ServicesDeclaration {
 		scanner.nextLine();
 		int count = 0;
 		if (customerlist.isEmpty() != true) {
-			for (int i = 0; i < customerlist.size(); i++) {
-				customerlist.get(i);
-				System.out.println(customerInfoBean.getCustomerid());
+
+			for (CustomerInfoBean customerInfoBean : customerlist) {
 				if (customerInfoBean.getCustomerid() == id) {
+					System.out.println(customerInfoBean.getCustomerid());
 					customerlist.remove(customerInfoBean);
 					count++;
+					break;
 				}
 			}
 			if (count > 0) {
 				System.out.println("Customer removed");
 			} else
 				System.out.println("Customer not found");
-		} else System.out.println("empty db");
+		} else
+			System.out.println("empty db");
 	}
 
 	@Override

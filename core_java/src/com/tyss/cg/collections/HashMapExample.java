@@ -12,6 +12,9 @@ public class HashMapExample {
 		hashMap.put("1st-Key", 1);
 		hashMap.put("2nd-Key", 2);
 		hashMap.put("3rd-Key", 3);
+		hashMap.put("3rd-Key", 4);
+		hashMap.put(null, 5);
+		hashMap.put(null, 1);
 		
 		System.out.println("Size of HashMap after put(): " + hashMap.size());
 		System.out.println("+++++++++++++++++++++++++++");
