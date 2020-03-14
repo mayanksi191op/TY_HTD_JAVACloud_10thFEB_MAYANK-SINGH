@@ -1,0 +1,79 @@
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 1> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 2> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 1> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 2> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Insert in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Delete in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 3> Update in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 4> View the loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - enter the choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Insert in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Delete in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 3> Update in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 4> View the loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - enter the choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Enter the Loan Type: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - enter the Time period: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - enter the Interest rates: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 1> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 2> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 1> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 2> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 3> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the pass
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the pass
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the pass
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Insert in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Delete in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 3> Update in Loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 4> View the loan programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - enter the choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the pass
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 1> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 2> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - 3> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CostomerController  - enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - enter the id
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - Admin Operations
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 1> Loan Programs: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 2> Loan Reports: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - {AccountNo.=BNI22345, ApplicantName.=Shashank Singh , CoApplicantName.=Shiv Kumar Rajput, LoanType.=Vehicle Loan, BranchCode.=BNI33343456, BranchName.=Cannaught Bank, OpenDate.=12-11-2011, RequestDate.=02-4-2020, LoanStatus=Rejected}
