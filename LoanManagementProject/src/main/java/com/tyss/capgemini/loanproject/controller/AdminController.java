@@ -18,12 +18,13 @@ public class AdminController {
 		System.out.println("Admin Operations");
 		logger.info("Admin Operations");
 		logger.info("1> Loan Programs: ");
-		logger.info("2> Loan Reports: ");
+		logger.info("2> Client Manager ");
+		logger.info("3> Loan Reports: ");
 		int ch = scanner.nextInt();
 		scanner.nextLine();
 		switch (ch) {
 		case 1:
-			//logger.info("Admin Operations");
+			// logger.info("Admin Operations");
 			logger.info("1> Insert in Loan programs: ");
 			logger.info("2> Delete in Loan programs: ");
 			logger.info("3> Update in Loan programs: ");
@@ -42,13 +43,13 @@ public class AdminController {
 				String rates = scanner.nextLine();
 				daoDeclaration.insertLoan(type, time, rates);
 				break;
-				
+
 			case 2:
 				logger.info("enter the loan type you want to delete: ");
 				String loantype = scanner.nextLine();
 				daoDeclaration.deleteLoan(loantype);
 				break;
-				
+
 			case 3:
 				logger.info("enter the loan type: ");
 				String typechoice = scanner.nextLine();
@@ -64,7 +65,7 @@ public class AdminController {
 				String choice3 = scanner.nextLine();
 				daoDeclaration.loanUpdate(typechoice, choice2, choice3);
 				break;
-			
+
 			case 4:
 				daoDeclaration.viewLoanPrograms();
 				break;
@@ -74,8 +75,31 @@ public class AdminController {
 				break;
 			}
 			break;
-		
+			
 		case 2:
+			System.out.println("1> Add Clients: ");
+			System.out.println("2> View Clients");
+			System.out.println("Choose one:-");
+			int ch3=scanner.nextInt();
+			scanner.nextLine();
+			switch (ch3) {
+			case 1:
+				System.out.println("Enter the applicationId of client you want to add: ");
+				String appidString = scanner.nextLine();
+				daoDeclaration.addClients(appidString);
+				
+				break;
+			case 2:
+				System.out.println("Clients:-");
+				daoDeclaration.viewClients();
+				break;
+
+			default:
+				break;
+			}
+			break;
+			
+		case 3:
 			System.out.println("Which report do you want to check: ");
 			System.out.println("1> Approved reports");
 			System.out.println("2> Rejected reports");
@@ -84,43 +108,28 @@ public class AdminController {
 			scanner.nextLine();
 			switch (ch2) {
 			case 1:
-				for (int i = 0; i < Repository.loanFormList.size(); i++) {
-					if(Repository.loanFormList.get(i).get("LoanStatus").equals("Approved")) {
-						logger.info(Repository.loanFormList.get(i));
-					}
-				}
+				logger.info("Approved application report:-");
+				daoDeclaration.approvedForms();
 				break;
-			
+
 			case 2:
-				for (int i = 0; i < Repository.loanFormList.size(); i++) {
-					if(Repository.loanFormList.get(i).get("LoanStatus").equals("Rejected")) {
-						logger.info(Repository.loanFormList.get(i));
-					}
-				}
+				logger.info("Rejected application report:-");
+				daoDeclaration.rejectedForms();
 				break;
 
 			case 3:
-				for (int i = 0; i < Repository.loanFormList.size(); i++) {
-					if(Repository.loanFormList.get(i).get("LoanStatus").equals("Requested")) {
-						logger.info(Repository.loanFormList.get(i));
-					}
-				}
+				logger.info("Requested application report:-");
+				daoDeclaration.requestedForms();
 			default:
 				logger.info("noooo");
 				break;
 			}
 			break;
-			
+	
 		default:
 			logger.info("nooooooo2");
 			break;
 		}
-		
-		
 		scanner.close();
 	}
-	public static void main(String[] args) {
-		adminCont();
-	}
-	
 }

@@ -14,6 +14,7 @@ import com.tyss.capgemini.loanproject.beans.LoanTypeBean;;
 public class Repository {
 
 	static Scanner scanner = new Scanner(System.in);
+	public static final List<HashMap<String, Object>> clientList = new LinkedList<HashMap<String,Object>>();
 	public static final List<HashMap<String, Object>> adminList = new LinkedList<HashMap<String, Object>>();
 	public static final List<HashMap<String, Object>> customerList = new LinkedList<HashMap<String, Object>>();
 	public static final List<HashMap<String, Object>> approvalDeptList = new LinkedList<HashMap<String, Object>>();
@@ -305,6 +306,7 @@ public class Repository {
 		form1.put("RequestDate", loanApplicationForm1.getRequestDate());
 		form1.put("LoanStatus", loanApplicationForm1.getFormStatus());
 		loanFormList.add(form1);
+		clientList.add(form1);
 
 		LoanApplicationBean loanApplicationForm2 = new LoanApplicationBean("AP02", "BNI22345", "Shashank", "Singh", "", "Shiv", "Kumar", "Rajput",
 				"Vehicle Loan", "BNI33343456", "Cannaught Bank", "12-11-2011", "02-4-2020", "Rejected");

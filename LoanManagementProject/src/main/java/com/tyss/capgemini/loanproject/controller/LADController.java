@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 
 import com.tyss.capgemini.loanproject.dao.DAODeclaration;
 import com.tyss.capgemini.loanproject.dao.DAOImplementation;
-import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class LADController {
 	public void ladController() {
@@ -28,20 +27,21 @@ public class LADController {
 		case 2:
 			logger.info("Enter the loan plan of applications:- ");
 			String planString = scanner.nextLine();
-			for (int i = 0; i < Repository.loanFormList.size(); i++) {
-				if(planString.equals(Repository.loanFormList.get(i).get("LoanType"))) {
-					logger.info(Repository.loanFormList.get(i));
-				}
-			}
+			daoDeclaration.ladViewForms(planString);
 			break;
 		
 		case 3:
 			logger.info("Requested forms:-");
-			
-			
+			daoDeclaration.requestedForms();
+			logger.info("enter the ApplicationId for review: ");
+			String apid = scanner.nextLine();
+			logger.info("enter the status: ");
+			String status =scanner.nextLine();
+			daoDeclaration.ladReviewForms(apid, status);
 			
 		default:
 			break;
 		}
+		scanner.close();
 	}
 }

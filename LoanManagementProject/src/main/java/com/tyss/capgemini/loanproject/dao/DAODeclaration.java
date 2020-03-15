@@ -16,5 +16,9 @@ public interface DAODeclaration {
 	public void approvedForms();
 	public void rejectedForms();
 	public void requestedForms();
-	public void ladReviewForms();
+	
+	public void ladReviewForms(String apid, String status);
+	public void ladViewForms(String planString);
+	public void addClients(String appidString);
+	public void viewClients();
 }

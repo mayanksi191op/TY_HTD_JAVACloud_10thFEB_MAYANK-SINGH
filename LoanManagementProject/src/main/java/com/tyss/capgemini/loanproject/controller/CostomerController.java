@@ -62,14 +62,13 @@ public class CostomerController {
 			break;
 		
 		case 3:
-			logger.debug("enter the new password: ");
+			logger.info("enter the new password: ");
 			String newPass = scanner.nextLine();
 			implementation.changePassword(userid, newPass);
 			break;
 			
 		case 4:
 			implementation.checkBalance(userid);
-			
 			break;
 			
 		default:
