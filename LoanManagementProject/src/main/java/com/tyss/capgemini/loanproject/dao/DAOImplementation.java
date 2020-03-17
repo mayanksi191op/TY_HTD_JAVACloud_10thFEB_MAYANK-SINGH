@@ -2,36 +2,55 @@ package com.tyss.capgemini.loanproject.dao;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Scanner;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import com.tyss.capgemini.loanproject.controller.AdminController;
-import com.tyss.capgemini.loanproject.controller.CostomerController;
+import com.tyss.capgemini.loanproject.controller.CustomerController;
 import com.tyss.capgemini.loanproject.controller.LADController;
 import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class DAOImplementation implements DAODeclaration {
 	Logger logger = LogManager.getLogger(DAOImplementation.class);
-	Scanner scanner = new Scanner(System.in);
 	Repository repo = new Repository();
 
 	@Override
-	public void login(String userid, String password) {
+	public void custLogin(String custId, String custPass) {
 
 		int count = 0;
-		if (Repository.mainList.isEmpty() != true) {
-			for (int i = 0; i < Repository.mainList.size(); i++) {
-				if (Repository.mainList.get(i).get("userid").equals(userid)
-						&& Repository.mainList.get(i).get("password").equals(password)) {
-					// System.out.println("found");
+		if (Repository.customerList.isEmpty() != true) {
+			for (int i = 0; i < Repository.customerList.size(); i++) {
+				if (Repository.customerList.get(i).get("userid").equals(custId)
+						&& Repository.customerList.get(i).get("password").equals(custPass)) {
 					count++;
-					if (Repository.mainList.get(i).get("role").equals("customer")) {
-						CostomerController.custController(userid);
-					} else if (Repository.mainList.get(i).get("role").equals("admin")) {
+					if (Repository.customerList.get(i).get("role").equals("customer")) {
+						logger.info("Welcome " + custId);
+						CustomerController.custController(custId);
+					}
+					break;
+				}
+			}
+			if (count == 0) {
+				System.out.println("data is not present");
+			}
+		} else
+			System.out.println("list is empty");
+	}
+
+	public void empLogin(String empid, String empPass) {
+		int count = 0;
+		if (Repository.employeeList.isEmpty() != true) {
+			for (int i = 0; i < Repository.employeeList.size(); i++) {
+				if (Repository.employeeList.get(i).get("userid").equals(empid)
+						&& Repository.employeeList.get(i).get("password").equals(empPass)) {
+					count++;
+					if (Repository.employeeList.get(i).get("role").equals("admin")) {
+						logger.info("Welcome " + empid);
 						AdminController.adminCont();
-					}  
+					} else
+						logger.info("Welcome " + empid);
+					LADController.ladController();
 					break;
 				}
 			}
@@ -117,7 +136,7 @@ public class DAOImplementation implements DAODeclaration {
 	public void loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
-			String branchName, String openDate, String requestDate) {
+			String branchName, String openDate, String requestDate, String sub) {
 
 		HashMap<String, Object> loanHashMap = new LinkedHashMap<String, Object>();
 		loanHashMap.put("ApplicationId", applicationId);
@@ -131,33 +150,56 @@ public class DAOImplementation implements DAODeclaration {
 		loanHashMap.put("OpenDate", openDate);
 		loanHashMap.put("RequestDate", requestDate);
 		loanHashMap.put("LoanStatus", "requested");
-		Repository.loanFormList.add(loanHashMap);
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			logger.info(Repository.loanFormList.get(i));
+		switch (sub.toLowerCase()) {
+		case "submit":
+			Repository.loanFormList.add(loanHashMap);
+			logger.info("Your loan application form has been submitted successfully.");
+			break;
+
+		case "cancel":
+			logger.info("Cancelled");
+			break;
+		default:
+			logger.info("Invalid option");
+			break;
+		}
+	}
+
+	@Override
+	public void submitButton(String sub) {
+		boolean ct = false;
+		while (ct != true) {
+			switch (sub.toLowerCase()) {
+			case "submit":
+				ct = true;
+				break;
+			case "cancel":
+				ct = true;
+				break;
+			default:
+				logger.info("Enter again please.");
+				break;
+			}
 		}
 	}
 
 	@Override
 	public void changePassword(String userid, String newPass) {
 		for (int j = 0; j < Repository.customerList.size(); j++) {
-			if (userid.equals(Repository.customerList.get(j).get("userid"))) {
+			if (userid.toLowerCase().equals(((String) Repository.customerList.get(j).get("userid")).toLowerCase())) {
 				Repository.customerList.get(j).put("password", newPass);
 				break;
 			}
 		}
-		for (int i = 0; i < Repository.customerList.size(); i++) {
-			System.out.println(Repository.customerList.get(i));
-		}
-		
-		// System.out.println("enter the new password");
-		// String passString= scanner.nextLine();
+		logger.info("Password has been changed successfully.");
 	}
 
 	@Override
 	public void checkBalance(String userid) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
-			if (userid.equals(Repository.customerList.get(i).get("userid"))) {
-				logger.info(Repository.customerList.get(i).get("AccountBal"));
+			if (userid.toLowerCase().equals(((String) Repository.customerList.get(i).get("userid")).toLowerCase())) {
+				logger.info("Balance available: " + Repository.customerList.get(i).get("AccountBal"));
+				break;
 			}
 		}
 	}
@@ -165,7 +207,7 @@ public class DAOImplementation implements DAODeclaration {
 	@Override
 	public void approvedForms() {
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (Repository.loanFormList.get(i).get("LoanStatus").equals("Approved")) {
+			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("approved")) {
 				logger.info(Repository.loanFormList.get(i));
 			}
 		}
@@ -174,7 +216,7 @@ public class DAOImplementation implements DAODeclaration {
 	@Override
 	public void rejectedForms() {
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (Repository.loanFormList.get(i).get("LoanStatus").equals("Rejected")) {
+			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("rejected")) {
 				logger.info(Repository.loanFormList.get(i));
 			}
 		}
@@ -183,7 +225,7 @@ public class DAOImplementation implements DAODeclaration {
 	@Override
 	public void requestedForms() {
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (Repository.loanFormList.get(i).get("LoanStatus").equals("Approved")) {
+			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("requested")) {
 				logger.info(Repository.loanFormList.get(i));
 			}
 		}
@@ -191,58 +233,51 @@ public class DAOImplementation implements DAODeclaration {
 
 	@Override
 	public void ladReviewForms(String apid, String status) {
-		logger.info("Requested forms:-");
-//		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-//			if (Repository.loanFormList.get(i).get("LoanType").equals("Requested")) {
-//				logger.info(Repository.loanFormList.get(i));
-////				logger.info("enter the application id: ");
-////				String apid = scanner.nextLine();
-				for (int j = 0; j < Repository.loanFormList.size(); j++) {
-					if (apid.equals(Repository.loanFormList.get(j).get("ApplicationId"))) {
-						logger.info(Repository.loanFormList.get(j));
-//						System.out.println("enter the status: ");
-//						String status =scanner.nextLine();
-						//status = status.toLowerCase();
-						if (status.equalsIgnoreCase("approved")) {
-							Repository.loanFormList.get(j).put("LoanStatus", "Approved");
-						} else
-							Repository.loanFormList.get(j).put("LoanStatus", "Rejected");
-					}
-				}
-			
+		for (int j = 0; j < Repository.loanFormList.size(); j++) {
+			if (apid.equals(Repository.loanFormList.get(j).get("ApplicationId"))) {
+				if (status.equalsIgnoreCase("approved")) {
+					Repository.loanFormList.get(j).put("LoanStatus", "Approved");
+				} else
+					Repository.loanFormList.get(j).put("LoanStatus", "Rejected");
+				logger.info("Status Changed successfully.");
+				break;
+			}
 		}
-	
+		logger.info("All applications present:-");
+		for (int i = 0; i < Repository.loanFormList.size(); i++) {
+			logger.info(Repository.loanFormList.get(i));
+		}
+	}
 
 	@Override
 	public void ladViewForms(String planString) {
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (planString.equals(Repository.loanFormList.get(i).get("LoanType"))) {
+			if (planString.equals(((String) Repository.loanFormList.get(i).get("LoanType")).toLowerCase())) {
 				logger.info(Repository.loanFormList.get(i));
 			}
 		}
 	}
-	
+
 	@Override
 	public void addClients(String appidString) {
-		int count=0;
+		int count = 0;
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
 			if (appidString.toLowerCase().equals(Repository.loanFormList.get(i).get("ApplicationId".toLowerCase()))) {
-			Repository.clientList.add(Repository.loanFormList.get(i));
-			count++;
-			break;
-			} 
+				Repository.clientList.add(Repository.loanFormList.get(i));
+				count++;
+				break;
+			}
 		}
-		if(count>0) {
+		if (count > 0) {
 			System.out.println("Client added");
-		} else System.out.println("Applicant not present");
+		} else
+			System.out.println("Applicant not present");
 	}
-	
-	
+
 	@Override
 	public void viewClients() {
 		for (int i = 0; i < Repository.clientList.size(); i++) {
 			logger.info(Repository.clientList.get(i));
 		}
-	scanner.close();
 	}
 }
