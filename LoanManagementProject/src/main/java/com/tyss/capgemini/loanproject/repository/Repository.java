@@ -25,7 +25,7 @@ public class Repository {
 	public static void UserTable() {
 
 		// Admins
-		EmployeeBean bean1 = new EmployeeBean("Mayank.p", "ad01", "mayank.p@gmail.com", "pass1", "Mayank", "Singh",
+		EmployeeBean bean1 = new EmployeeBean("mayank191", "ad01", "mayank.p@gmail.com", "pass1", "Mayank", "Singh",
 				7618723945L, "admin");
 
 		HashMap<String, Object> user1 = new LinkedHashMap<String, Object>();
@@ -41,7 +41,7 @@ public class Repository {
 		mainList.add(user1);
 		employeeList.add(user1);
 
-		EmployeeBean bean2 = new EmployeeBean("Ritam.p", "ad02", "ritam.p@gmail.com", "pass2", "Ritam", "Roy", 7618721134L,
+		EmployeeBean bean2 = new EmployeeBean("ritam191", "ad02", "ritam.p@gmail.com", "pass2", "Ritam", "Roy", 7618721134L,
 				"admin");
 		HashMap<String, Object> user2 = new LinkedHashMap<String, Object>();
 		user2.put("userid", bean2.getUserid());
@@ -56,7 +56,7 @@ public class Repository {
 		mainList.add(user2);
 		employeeList.add(user2);
 
-		EmployeeBean bean3 = new EmployeeBean("Amlan.p", "ad03", "amlan.p@gmail.com", "pass3", "Amlan", "Dutta", 7612321135L,
+		EmployeeBean bean3 = new EmployeeBean("amlan191", "ad03", "amlan.p@gmail.com", "pass3", "Amlan", "Dutta", 7612321135L,
 				"admin");
 		HashMap<String, Object> user3 = new LinkedHashMap<String, Object>();
 		user3.put("userid", bean3.getUserid());
@@ -71,7 +71,7 @@ public class Repository {
 		mainList.add(user3);
 		employeeList.add(user3);
 
-		EmployeeBean bean4 = new EmployeeBean("Rahul.p", "ad04", "rahul.p@gmail.com", "pass4", "Rahul", "Yadav", 7618711678L,
+		EmployeeBean bean4 = new EmployeeBean("rahul191", "ad04", "rahul.p@gmail.com", "pass4", "Rahul", "Yadav", 7618711678L,
 				"admin");
 		HashMap<String, Object> user4 = new LinkedHashMap<String, Object>();
 		user4.put("userid", bean4.getUserid());
@@ -86,7 +86,7 @@ public class Repository {
 		mainList.add(user4);
 		employeeList.add(user4);
 
-		EmployeeBean bean5 = new EmployeeBean("Anand.p", "ad05", "anand.p@gmail.com", "pass5", "Anand", "Sharma", 7618312345L,
+		EmployeeBean bean5 = new EmployeeBean("anand191", "ad05", "anand.p@gmail.com", "pass5", "Anand", "Sharma", 7618312345L,
 				"admin");
 		HashMap<String, Object> user5 = new LinkedHashMap<String, Object>();
 		user5.put("userid", bean5.getUserid());
@@ -102,8 +102,8 @@ public class Repository {
 		employeeList.add(user5);
 
 		// Customer.
-		CustomerBean bean6 = new CustomerBean("Praveen.p", "cus01", "praveen.p@gmail.com", "pass6", "Praveen", "Sharma",
-				7613412385L, "customer", 50987.12);
+		CustomerBean bean6 = new CustomerBean("praveen191", "cus01", "praveen.p@gmail.com", "pass6", "Praveen", "Sharma",
+				7613412385L, "customer", 90987.12, 60890);
 		HashMap<String, Object> user6 = new LinkedHashMap<String, Object>();
 		user6.put("userid", bean6.getUserid());
 		user6.put("password", bean6.getPassword());
@@ -114,11 +114,12 @@ public class Repository {
 		user6.put("phone", bean6.getPhone());
 		user6.put("AccountBal", bean6.getAccountBal());
 		user6.put("role", bean6.getRole());
+		user6.put("loanAmount", bean6.getLoanAmount());
 		customerList.add(user6);
 		mainList.add(user6);
 
-		CustomerBean bean7 = new CustomerBean("Shreya.p", "cus02", "shreya.p@gmail.com", "pass7", "Shreya", "Singh",
-				7613423385L, "customer", 60987.2);
+		CustomerBean bean7 = new CustomerBean("shreya191", "cus02", "shreya.p@gmail.com", "pass7", "Shreya", "Singh",
+				7613423385L, "customer", 60987.2, 90700);
 		HashMap<String, Object> user7 = new LinkedHashMap<String, Object>();
 		user7.put("userid", bean7.getUserid());
 		user7.put("password", bean7.getPassword());
@@ -129,11 +130,12 @@ public class Repository {
 		user7.put("phone", bean7.getPhone());
 		user7.put("AccountBal", bean7.getAccountBal());
 		user7.put("role", bean7.getRole());
+		user7.put("loanAmount", bean7.getLoanAmount());
 		customerList.add(user7);
 		mainList.add(user7);
 
-		CustomerBean bean8 = new CustomerBean("Senku.p", "cus03", "senku.p@gmail.com", "pass8", "Senku", "Manohar",
-				7613412345L, "customer", 13567.2);
+		CustomerBean bean8 = new CustomerBean("senku191", "cus03", "senku.p@gmail.com", "pass8", "Senku", "Manohar",
+				7613412345L, "customer", 103567.2, 60000);
 		HashMap<String, Object> user8 = new LinkedHashMap<String, Object>();
 		user8.put("userid", bean8.getUserid());
 		user8.put("password", bean8.getPassword());
@@ -144,11 +146,12 @@ public class Repository {
 		user8.put("phone", bean8.getPhone());
 		user8.put("AccountBal", bean8.getAccountBal());
 		user8.put("role", bean8.getRole());
+		user8.put("loanAmount", bean8.getLoanAmount());
 		customerList.add(user8);
 		mainList.add(user8);
 
-		CustomerBean bean9 = new CustomerBean("Tarushi.p", "cus04", "tarushi.p@gmail.com", "pass9", "Tarushi", "Verma",
-				7613423445L, "customer", 37657.0);
+		CustomerBean bean9 = new CustomerBean("tarushi191", "cus04", "tarushi.p@gmail.com", "pass9", "Tarushi", "Verma",
+				7613423445L, "customer", 37657.0, 30000);
 		HashMap<String, Object> user9 = new LinkedHashMap<String, Object>();
 		user9.put("userid", bean9.getUserid());
 		user9.put("password", bean9.getPassword());
@@ -159,11 +162,12 @@ public class Repository {
 		user9.put("phone", bean9.getPhone());
 		user9.put("AccountBal", bean9.getAccountBal());
 		user9.put("role", bean9.getRole());
+		user9.put("loanAmount", bean9.getLoanAmount());
 		customerList.add(user9);
 		mainList.add(user9);
 
-		CustomerBean bean10 = new CustomerBean("Poonam.p", "cus05", "poonam.p@gmail.com", "pass10", "Poonam", "Raghuwanshi",
-				7613423490L, "customer", 78985.8);
+		CustomerBean bean10 = new CustomerBean("poonam191", "cus05", "poonam.p@gmail.com", "pass10", "Poonam", "Raghuwanshi",
+				7613423490L, "customer", 78985.8, 78000);
 		HashMap<String, Object> user10 = new LinkedHashMap<String, Object>();
 		user10.put("userid", bean10.getUserid());
 		user10.put("password", bean10.getPassword());
@@ -174,11 +178,12 @@ public class Repository {
 		user10.put("phone", bean10.getPhone());
 		user10.put("AccountBal", bean10.getAccountBal());
 		user10.put("role", bean10.getRole());
+		user10.put("loanAmount", bean10.getLoanAmount());
 		customerList.add(user10);
 		mainList.add(user10);
 
 		// LoanApprovalDepartment
-		EmployeeBean bean11 = new EmployeeBean("saswat.p", "lad01", "Saswat.p@gmail.com", "pass11", "Saswat", "Biswas",
+		EmployeeBean bean11 = new EmployeeBean("saswat191", "lad01", "Saswat.p@gmail.com", "pass11", "Saswat", "Biswas",
 				7613424567L, "L.A.D");
 		HashMap<String, Object> user11 = new LinkedHashMap<String, Object>();
 		user11.put("userid", bean11.getUserid());
@@ -193,7 +198,7 @@ public class Repository {
 		mainList.add(user11);
 		employeeList.add(user11);
 
-		EmployeeBean bean12 = new EmployeeBean("shrawni.p", "lad02", "shrawni.p@gmail.com", "pass12", "Shrawni", "Rowdy",
+		EmployeeBean bean12 = new EmployeeBean("shrawni191", "lad02", "shrawni.p@gmail.com", "pass12", "Shrawni", "Rowdy",
 				7613423445L, "L.A.D");
 		HashMap<String, Object> user12 = new LinkedHashMap<String, Object>();
 		user12.put("userid", bean12.getUserid());
@@ -208,7 +213,7 @@ public class Repository {
 		mainList.add(user12);
 		employeeList.add(user12);
 
-		EmployeeBean bean13 = new EmployeeBean("Divya.p", "lad03", "divya.p@gmail.com", "pass13", "Divya", "Somaraju",
+		EmployeeBean bean13 = new EmployeeBean("divya191", "lad03", "divya.p@gmail.com", "pass13", "Divya", "Somaraju",
 				7613423490L, "L.A.D");
 		HashMap<String, Object> user13 = new LinkedHashMap<String, Object>();
 		user13.put("userid", bean13.getUserid());

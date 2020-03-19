@@ -16,49 +16,49 @@ public class DAOImplementation implements DAODeclaration {
 	Repository repo = new Repository();
 
 	@Override
-	public void custLogin(String custId, String custPass) {
+	public void custLogin(String custUsername, String custPass) {
 
 		int count = 0;
 		if (Repository.customerList.isEmpty() != true) {
 			for (int i = 0; i < Repository.customerList.size(); i++) {
-				if (Repository.customerList.get(i).get("userid").equals(custId)
+				if (Repository.customerList.get(i).get("username").equals(custUsername)
 						&& Repository.customerList.get(i).get("password").equals(custPass)) {
 					count++;
 					if (Repository.customerList.get(i).get("role").equals("customer")) {
-						logger.info("Welcome " + custId);
-						CustomerController.custController(custId);
+						logger.info("--------WELCOME " + custUsername + "---------");
+						CustomerController.custController(custUsername);
 					}
 					break;
 				}
 			}
 			if (count == 0) {
-				System.out.println("data is not present");
+				System.out.println("XXXX Invalid Credentials XXXX");
 			}
 		} else
-			System.out.println("list is empty");
+			System.out.println("XXXX No Users available XXXX");
 	}
 
-	public void empLogin(String empid, String empPass) {
+	public void empLogin(String empUsername, String empPass) {
 		int count = 0;
 		if (Repository.employeeList.isEmpty() != true) {
 			for (int i = 0; i < Repository.employeeList.size(); i++) {
-				if (Repository.employeeList.get(i).get("userid").equals(empid)
+				if (Repository.employeeList.get(i).get("username").equals(empUsername)
 						&& Repository.employeeList.get(i).get("password").equals(empPass)) {
 					count++;
 					if (Repository.employeeList.get(i).get("role").equals("admin")) {
-						logger.info("Welcome " + empid);
+						logger.info("--------WELCOME " + empUsername + "--------");
 						AdminController.adminCont();
 					} else
-						logger.info("Welcome " + empid);
+						logger.info("--------WELCOME " + empUsername + "--------");
 					LADController.ladController();
 					break;
 				}
 			}
 			if (count == 0) {
-				System.out.println("data is not present");
+				System.out.println("XXXX Invalid Credentials XXXX");
 			}
 		} else
-			System.out.println("list is empty");
+			System.out.println("XXXX No users available XXXX");
 	}
 
 	@Override
@@ -70,14 +70,12 @@ public class DAOImplementation implements DAODeclaration {
 				// HashMap<String, Object> hashMap = new HashMap<String, Object>();
 				switch (choice2) {
 				case 1:
-					// hashMap.put("Type", choice3);
 					Repository.loanTypeList.get(i).put("Type", choice3);
 					for (int j = 0; j < Repository.loanTypeList.size(); j++) {
 						logger.info(Repository.loanTypeList.get(j));
 					}
 					break;
 				case 2:
-					// hashMap.put("Time-Period", choice3);
 					Repository.loanTypeList.get(i).put("Time-Period", choice3);
 
 					for (int j = 0; j < Repository.loanTypeList.size(); j++) {
@@ -85,7 +83,6 @@ public class DAOImplementation implements DAODeclaration {
 					}
 					break;
 				case 3:
-					// hashMap.put("Interest-Rates", choice3);
 					Repository.loanTypeList.get(i).put("Interest-Rates", choice3);
 
 					for (int j = 0; j < Repository.loanTypeList.size(); j++) {
@@ -184,9 +181,9 @@ public class DAOImplementation implements DAODeclaration {
 	}
 
 	@Override
-	public void changePassword(String userid, String newPass) {
+	public void changePassword(String custUsername, String newPass) {
 		for (int j = 0; j < Repository.customerList.size(); j++) {
-			if (userid.toLowerCase().equals(((String) Repository.customerList.get(j).get("userid")).toLowerCase())) {
+			if (custUsername.equals(Repository.customerList.get(j).get("username"))) {
 				Repository.customerList.get(j).put("password", newPass);
 				break;
 			}
@@ -195,10 +192,20 @@ public class DAOImplementation implements DAODeclaration {
 	}
 
 	@Override
-	public void checkBalance(String userid) {
+	public void checkBalance(String custUsername) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
-			if (userid.toLowerCase().equals(((String) Repository.customerList.get(i).get("userid")).toLowerCase())) {
+			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
 				logger.info("Balance available: " + Repository.customerList.get(i).get("AccountBal"));
+				break;
+			}
+		}
+	}
+	
+	@Override
+	public void checkLoan(String custUsername) {
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (custUsername.equals(Repository.customerList.get(i).get("userid"))) {
+				logger.info("Loan to pay: " + Repository.customerList.get(i).get("loanAmount"));
 				break;
 			}
 		}
@@ -278,6 +285,41 @@ public class DAOImplementation implements DAODeclaration {
 	public void viewClients() {
 		for (int i = 0; i < Repository.clientList.size(); i++) {
 			logger.info(Repository.clientList.get(i));
+		}
+	}
+
+	@Override
+	public void register(String occupation, String dob, String gender, String username, String userid, String email, String password, String firstname, String lastname, long phone, double accountBal) {
+		HashMap<String, Object> regHashMap = new LinkedHashMap<String, Object>();
+		regHashMap.put("userid", userid);
+		regHashMap.put("password", password);
+		regHashMap.put("username", username);
+		regHashMap.put("email", email);
+		regHashMap.put("firstname", firstname);
+		regHashMap.put("lastname", lastname);
+		regHashMap.put("phone", phone);
+		regHashMap.put("AccountBal", accountBal);
+		regHashMap.put("role", "customer");
+		Repository.customerList.add(regHashMap);
+		Repository.mainList.add(regHashMap);
+	}
+
+	@Override
+	public void payLoan(String custUsername, double loanPay) {
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if(custUsername.equals(Repository.customerList.get(i).get("username"))) {
+				double loan = Double.parseDouble((String) Repository.customerList.get(i).get("loanAmount"));
+				double bal = Double.parseDouble((String) Repository.customerList.get(i).get("AmountBal"));
+				if(loanPay > bal) {
+					logger.info("Insufficient amount in balance.");
+				} else {
+					logger.info("Amount paid successfully");
+					double newbal = bal - loan;
+					double newloan = loan - loanPay;
+					Repository.customerList.get(i).put("AccountBal", newbal);
+					Repository.customerList.get(i).put("loanAmount", newloan);
+				}
+			}
 		}
 	}
 }

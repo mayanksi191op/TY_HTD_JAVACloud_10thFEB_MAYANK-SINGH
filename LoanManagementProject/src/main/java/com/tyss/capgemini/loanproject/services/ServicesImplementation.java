@@ -5,13 +5,13 @@ import com.tyss.capgemini.loanproject.factory.FactoryClass;
 public class ServicesImplementation implements ServicesDeclaration {
 	
 	@Override
-	public void custLogin(String custId, String custPass) {
-		FactoryClass.getDAO().custLogin(custId, custPass);
+	public void custLogin(String custUsername, String custPass) {
+		FactoryClass.getDAO().custLogin(custUsername, custPass);
 	}
 	
 	@Override
-	public void empLogin(String empid, String empPass) {
-		FactoryClass.getDAO().empLogin(empid, empPass);
+	public void empLogin(String empUsername, String empPass) {
+		FactoryClass.getDAO().empLogin(empUsername, empPass);
 	}
 	@Override
 	public void loanUpdate(String typechoice, int choice2, String choice3) {
@@ -34,13 +34,13 @@ public class ServicesImplementation implements ServicesDeclaration {
 	}
 
 	@Override
-	public void changePassword(String userid, String newPass) {
-		FactoryClass.getDAO().changePassword(userid, newPass);
+	public void changePassword(String custUsername, String newPass) {
+		FactoryClass.getDAO().changePassword(custUsername, newPass);
 	}
 
 	@Override
-	public void checkBalance(String userid) {
-		FactoryClass.getDAO().checkBalance(userid);
+	public void checkBalance(String custUsername) {
+		FactoryClass.getDAO().checkBalance(custUsername);
 	}
 
 	@Override
@@ -90,5 +90,20 @@ public class ServicesImplementation implements ServicesDeclaration {
 	@Override
 	public void ladViewForms(String planString) {
 		FactoryClass.getDAO().ladViewForms(planString);
+	}
+
+	@Override
+	public void register(String occupation, String dob, String gender, String username, String userid, String email, String password, String firstname, String lastname, long phone, double accountBal) {
+		FactoryClass.getDAO().register(occupation, dob, gender, username, userid, email, password, firstname, lastname, phone, accountBal);
+	}
+
+	@Override
+	public void payLoan(String custUsername, double loanPay) {
+		FactoryClass.getDAO().payLoan(custUsername, loanPay);
+	}
+	
+	@Override
+	public void checkLoan(String custUsername) {
+		FactoryClass.getDAO().checkLoan(custUsername);
 	}
 }

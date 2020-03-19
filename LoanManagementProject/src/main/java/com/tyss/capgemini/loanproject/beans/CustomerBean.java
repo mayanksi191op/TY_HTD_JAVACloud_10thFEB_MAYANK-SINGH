@@ -16,9 +16,10 @@ public class CustomerBean implements Serializable{
 	private long phone;
 	private double accountBal;
 	private String role;
+	private double loanAmount;
 	
 	public CustomerBean(String username, String userid, String email, String password, String firstname, String lastname,
-			long phone, String role, double accountBal) {
+			long phone, String role, double accountBal, double loanAmount) {
 		super();
 		this.username = username;
 		this.userid = userid;
@@ -29,5 +30,6 @@ public class CustomerBean implements Serializable{
 		this.phone = phone;
 		this.role = role;
 		this.accountBal = accountBal;
+		this.loanAmount = loanAmount;
 	}
 }

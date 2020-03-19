@@ -2,6 +2,7 @@ package com.tyss.capgemini.loanproject.controller;
 
 
 
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -18,9 +19,10 @@ public class CustomerController {
 			logger.info("Customer Operations:-");
 			logger.info("1> Loan Programs:");
 			logger.info("2> Apply for loan: ");
-			logger.info("3> change password: ");
-			logger.info("4> Check Balance: ");
-			logger.info("5> Logout");
+			logger.info("3> Pay Loan: ");
+			logger.info("4> change password: ");
+			logger.info("5> Check Balance: ");
+			logger.info("6> Logout");
 			logger.info("Enter your choice: ");
 			int choice = Login.scanner.nextInt();
 			Login.scanner.nextLine();
@@ -64,16 +66,30 @@ public class CustomerController {
 				break;
 
 			case 3:
+				logger.info("Your current balance is: ");
+				FactoryClass.getServices().checkBalance(userid);
+				logger.info("Loan to be paid: ");
+				FactoryClass.getServices().checkLoan(userid);
+				logger.info("Enter the amount to pay: ");
+				double loanPay = Login.scanner.nextDouble();
+				Login.scanner.nextLine();
+				FactoryClass.getServices().payLoan(userid, loanPay);
+				logger.info("New Balance is: ");
+				FactoryClass.getServices().checkBalance(userid);
+				
+				break;
+				
+			case 4:
 				logger.info("enter the new password: ");
 				String newPass = Login.scanner.nextLine();
 				FactoryClass.getServices().changePassword(userid, newPass);
 				break;
 
-			case 4:
+			case 5:
 				FactoryClass.getServices().checkBalance(userid);
 				break;
 
-			case 5:
+			case 6:
 				exit = true;
 				break;   
 

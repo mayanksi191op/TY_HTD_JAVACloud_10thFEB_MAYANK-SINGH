@@ -16,5 +16,6 @@ public class CustomExceptionTester2 {
 		} catch (Exception e) {
 			throw new InvalidNumCustomException("Any Message");
 		}
+		System.out.println("change 0please");
 	}
 }

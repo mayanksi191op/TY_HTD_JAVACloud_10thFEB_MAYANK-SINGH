@@ -10,13 +10,14 @@ import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class Login {
 	static Scanner scanner = new Scanner(System.in);
+
 	public static void main(String[] args) {
 		Repository.UserTable();
 		boolean exit = false;
 		Logger logger = LogManager.getLogger(Login.class);
 		while (exit != true) {
 			//Scanner scanner = new Scanner(System.in);
-			logger.info("**************** WELCOME ****************");
+			logger.info("********************* WELCOME ********************");
 			logger.info("1> Login as Customer?");
 			logger.info("2> Login as Employee?");
 			logger.info("3> New user? Register");
@@ -25,30 +26,55 @@ public class Login {
 			scanner.nextLine();
 			switch (choice) {
 			case 1:
-				logger.info("-----CUSTOMER LOGIN-----");
-				logger.info("Enter the Id:-");
-				String custId = scanner.nextLine();
+				logger.info("---------CUSTOMER LOGIN---------");
+				logger.info("Enter the Username:-");
+				String custUsername = scanner.nextLine();
 				logger.info("Enter the Password:-");
 				String custPass = scanner.nextLine();
-				FactoryClass.getServices().custLogin(custId, custPass);
+				FactoryClass.getServices().custLogin(custUsername, custPass);
 				break;
 
 			case 2:
-				logger.info("-----EMPLOYEE LOGIN-----");
-				logger.info("Enter the Id:-");
-				String empid = scanner.nextLine();
+				logger.info("---------EMPLOYEE LOGIN---------");
+				logger.info("Enter the Username:-");
+				String empUsername = scanner.nextLine();
 				logger.info("Enter the Password:-");
 				String empPass = scanner.nextLine();
-				FactoryClass.getServices().empLogin(empid, empPass);
+				FactoryClass.getServices().empLogin(empUsername, empPass);
 				break;
 
 			case 3:
-
+				logger.info("-----------REGISTER----------");
+				logger.info("Enter the First Name: ");
+				String firstname = scanner.nextLine();
+				logger.info("Enter the Last name: ");
+				String lastname = scanner.nextLine();
+				logger.info("Enter the Email: ");
+				String email = scanner.nextLine();
+				logger.info("enter the Password: ");
+				String password = scanner.nextLine(); 
+				logger.info("Enter the Username: ");
+				String username = scanner.nextLine();
+				logger.info("Enter the Gender: ");
+				String gender = scanner.nextLine();
+				logger.info("Enter the Date of birth: ");
+				String dob = scanner.nextLine();
+				logger.info("Enter the Phone number: ");
+				long phone = scanner.nextLong();
+				scanner.nextLine();
+				logger.info("Enter the Occupation: ");
+				String occupation = scanner.nextLine();
+				logger.info("Enter the account balance: ");
+				double accountBal = scanner.nextDouble();
+				scanner.nextLine();
+				logger.info("Enter the userid: ");
+				String userid = scanner.nextLine();
+				FactoryClass.getServices().register(occupation, dob, gender, username, userid, email, password, firstname, lastname, phone, accountBal);
 				break;
 
 			case 4:
 				exit = true;
-				logger.info("ending...");
+				logger.info("Visit again...");
 				scanner.close();
 				break;
 			default:
