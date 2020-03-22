@@ -5,14 +5,13 @@ import java.util.regex.Pattern;
 
 public class ValidationClass {
 	public boolean passValid(String pass) {
-		Pattern pattern = Pattern.compile("((?=.*[a-z])(?=.*\\d)(?=.*[A-Z])(?=.*[@#$%!]).{6,20})");
+		Pattern pattern = Pattern.compile("((?=.*[a-z])(?=.*\\d)(?=.*[A-Z])(?=.*[@#$%!]).{8,40})");
 		Matcher matcher = pattern.matcher(pass);
-		Boolean boolean1 = matcher.matches();
-		return boolean1;
+		return matcher.matches();
 	}
 	
 	public boolean dateValid(String date) {
-		return Pattern.matches("\"^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$", date);
+		return Pattern.matches("^[0-3]?[0-9]/[0-3]?[0-9]/(?:[0-9]{2})?[0-9]{2}$", date);
 	}
 	
 	public boolean mailValid(String email) {
@@ -20,5 +19,12 @@ public class ValidationClass {
 		Matcher matcher = pattern.matcher(email);
 		Boolean boolean2 = matcher.matches();
 		return boolean2;
+	}
+	
+	public static boolean usernameValid(String username) {
+		Pattern pattern = Pattern.compile("[a-zA-Z0-9]{5,}");
+		Matcher matcher = pattern.matcher(username);
+		Boolean boolean1 = matcher.matches();
+		return boolean1;
 	}
 }

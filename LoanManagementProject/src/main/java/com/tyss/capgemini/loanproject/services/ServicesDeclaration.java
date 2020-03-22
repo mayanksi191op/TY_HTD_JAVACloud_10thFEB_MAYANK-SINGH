@@ -8,7 +8,7 @@ public interface ServicesDeclaration {
 	public void insertLoan(String type, String time, String rates);
 	public void deleteLoan(String loantype);
 	public void viewLoanPrograms();
-	public void changePassword(String custUsername, String newPass);
+	public boolean changePassword(String custUsername, String newPass);
 	public void checkBalance(String custUsername);
 	public void loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String coapplicantFirstName,
@@ -23,6 +23,6 @@ public interface ServicesDeclaration {
 	public void ladViewForms(String planString);
 	public void submitButton(String sub);
 	public void register(String occupation, String dob, String gender, String username, String userid, String email, String password, String firstname, String lastname, long phone, double accountBal);
-	public void payLoan(String custUsername, double loanPay);
+	public void payLoan(String custUsername, Double loanPay);
 	public void checkLoan(String custUsername);
 }

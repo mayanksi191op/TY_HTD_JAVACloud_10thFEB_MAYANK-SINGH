@@ -16,6 +16,7 @@ public class LoanApplicationBean implements Serializable {
 	private String applicantFirstName;
 	private String applicantMiddleName;
 	private String applicantLastName;
+	private String dateOfBirthString;
 	private String coapplicantFirstName;
 	private String coapplicantMiddleName;
 	private String coapplicantLastName;

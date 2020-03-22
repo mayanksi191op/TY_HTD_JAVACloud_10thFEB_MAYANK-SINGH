@@ -24,7 +24,7 @@ public interface DAODeclaration {
 	public void viewClients();
 	public void submitButton(String sub);
 	public void register(String occupation, String dob, String gender, String username, String userid, String email, String password, String firstname, String lastname, long phone, double accountBal); 
-	public void payLoan(String custUsername, double loanPay);
+	public void payLoan(String custUsername, Double loanPay);
 	public void checkLoan(String custUsername);
 	
 }

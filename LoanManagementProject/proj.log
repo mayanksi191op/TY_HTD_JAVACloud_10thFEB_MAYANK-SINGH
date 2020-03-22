@@ -1307,3 +1307,849 @@
 [main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 3> Check other operations: 
 [main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - {ApplicationId=AP01, AccountNo=BNI12345, ApplicantName=Mayank Singh , CoApplicantName=Meghna Singh , LoanType=Personal Loan, BranchCode=BNI22343456, BranchName=Cannaught Circle, OpenDate=09-12-2001, RequestDate=23-3-2020, LoanStatus=approved}
 [main] INFO  com.tyss.capgemini.loanproject.controller.AdminController  - 3> Check other operations: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 30097.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 10890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - New Balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 30097.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 30097.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 55890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - New Balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 40987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 40987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 10890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 40987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 10890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - New Balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 20987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 20987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: -9110.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 90987.12
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 60890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Amount paid successfully
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - New Balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 40987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Your current balance is: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Balance available: 40987.119999999995
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Loan to be paid: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Loan to pay: 10890.0
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter the amount to pay: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the new password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the new password: 
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Password has been changed successfully.
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the applicationId: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the loan account number: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Co-Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Loan Type
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Code
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the open date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Request Date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - SUBMIT    (or)    CANCEL
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ********************* WELCOME ********************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 1> Login as Customer?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 2> Login as Employee?
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 3> New user? Register
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - 4> Exit
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - **************************************************
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - ---------CUSTOMER LOGIN---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Username:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.Login  - Enter the Password:-
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - --------WELCOME praveen191---------
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the applicationId: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the loan account number: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Co-Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Loan Type
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Code
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the open date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Request Date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - SUBMIT    (or)    CANCEL
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the applicationId: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the loan account number: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Co-Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Loan Type
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Code
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the open date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Request Date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - SUBMIT    (or)    CANCEL
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Invalid option
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the applicationId: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the loan account number: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Co-Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Loan Type
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Code
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the open date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Request Date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - SUBMIT    (or)    CANCEL
+[main] INFO  com.tyss.capgemini.loanproject.dao.DAOImplementation  - Your loan application form has been submitted successfully.
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the applicationId: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the loan account number: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Co-Applicant First Name: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Middle Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Last Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Loan Type
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Code
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Branch Name
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the open date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - enter the Request Date
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - SUBMIT    (or)    CANCEL
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Customer Operations:-
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 1> Loan Programs:
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 2> Apply for loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 3> Pay Loan: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 4> change password: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 5> Check Balance: 
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - 6> Logout
+[main] INFO  com.tyss.capgemini.loanproject.controller.CustomerController  - Enter your choice: 

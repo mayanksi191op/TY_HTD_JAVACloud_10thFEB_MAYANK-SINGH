@@ -9,6 +9,9 @@ import org.apache.log4j.Logger;
 import com.tyss.capgemini.loanproject.controller.AdminController;
 import com.tyss.capgemini.loanproject.controller.CustomerController;
 import com.tyss.capgemini.loanproject.controller.LADController;
+import com.tyss.capgemini.loanproject.exceptions.InsufficientBalanceException;
+import com.tyss.capgemini.loanproject.exceptions.InvalidCredentialException;
+import com.tyss.capgemini.loanproject.exceptions.LoanExcessException;
 import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class DAOImplementation implements DAODeclaration {
@@ -32,7 +35,7 @@ public class DAOImplementation implements DAODeclaration {
 				}
 			}
 			if (count == 0) {
-				System.out.println("XXXX Invalid Credentials XXXX");
+				throw new InvalidCredentialException("Invalid Credentials entered. Please enter username/password correctly.");
 			}
 		} else
 			System.out.println("XXXX No Users available XXXX");
@@ -55,7 +58,7 @@ public class DAOImplementation implements DAODeclaration {
 				}
 			}
 			if (count == 0) {
-				System.out.println("XXXX Invalid Credentials XXXX");
+				throw new InvalidCredentialException("Invalid Credentials entered. Please enter username/password correctly.");
 			}
 		} else
 			System.out.println("XXXX No users available XXXX");
@@ -63,7 +66,6 @@ public class DAOImplementation implements DAODeclaration {
 
 	@Override
 	public void loanUpdate(String typechoice, int choice2, String choice3) {
-
 		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
 			if (typechoice.equals(Repository.loanTypeList.get(i).get("Type"))) {
 				logger.info("found");
@@ -90,7 +92,7 @@ public class DAOImplementation implements DAODeclaration {
 					}
 					break;
 				default:
-
+					logger.info("Wrong choice, enter again: ");
 					break;
 				}
 			}
@@ -118,6 +120,8 @@ public class DAOImplementation implements DAODeclaration {
 					logger.info(Repository.loanTypeList.get(k));
 				}
 				break;
+			} else {
+				logger.info("Type doesnt exist, enter correct loan type.");
 			}
 		}
 	}
@@ -152,7 +156,6 @@ public class DAOImplementation implements DAODeclaration {
 			Repository.loanFormList.add(loanHashMap);
 			logger.info("Your loan application form has been submitted successfully.");
 			break;
-
 		case "cancel":
 			logger.info("Cancelled");
 			break;
@@ -185,10 +188,10 @@ public class DAOImplementation implements DAODeclaration {
 		for (int j = 0; j < Repository.customerList.size(); j++) {
 			if (custUsername.equals(Repository.customerList.get(j).get("username"))) {
 				Repository.customerList.get(j).put("password", newPass);
+				logger.info("Password has been changed successfully.");
 				break;
 			}
 		}
-		logger.info("Password has been changed successfully.");
 	}
 
 	@Override
@@ -204,7 +207,7 @@ public class DAOImplementation implements DAODeclaration {
 	@Override
 	public void checkLoan(String custUsername) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
-			if (custUsername.equals(Repository.customerList.get(i).get("userid"))) {
+			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
 				logger.info("Loan to pay: " + Repository.customerList.get(i).get("loanAmount"));
 				break;
 			}
@@ -305,17 +308,20 @@ public class DAOImplementation implements DAODeclaration {
 	}
 
 	@Override
-	public void payLoan(String custUsername, double loanPay) {
+	public void payLoan(String custUsername, Double loanPay) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
 			if(custUsername.equals(Repository.customerList.get(i).get("username"))) {
-				double loan = Double.parseDouble((String) Repository.customerList.get(i).get("loanAmount"));
-				double bal = Double.parseDouble((String) Repository.customerList.get(i).get("AmountBal"));
-				if(loanPay > bal) {
-					logger.info("Insufficient amount in balance.");
+				Double loan = (Double) Repository.customerList.get(i).get("loanAmount");
+				if (loanPay > loan) {
+					throw new LoanExcessException("Enter amount less than your loan amount.");
+				}
+				Double bal =  (Double) Repository.customerList.get(i).get("AccountBal");
+				if(loanPay > (Double) Repository.customerList.get(i).get("AccountBal")) {
+					throw new InsufficientBalanceException("Insufficient balance in account.");
 				} else {
 					logger.info("Amount paid successfully");
-					double newbal = bal - loan;
-					double newloan = loan - loanPay;
+					Double newbal = bal - loanPay;
+					Double newloan = loan - loanPay;
 					Repository.customerList.get(i).put("AccountBal", newbal);
 					Repository.customerList.get(i).put("loanAmount", newloan);
 				}

@@ -12,7 +12,7 @@ public class LADController {
 		boolean exit = false;
 		while (exit != true) {
 			logger.info("Loan Approval Department:");
-			logger.info("1> View all loan programs: ");
+			logger.info("1> View all Home loan programs: ");
 			logger.info("2> View loan applications:");
 			logger.info("3> Application review: ");
 			logger.info("4> Logout");

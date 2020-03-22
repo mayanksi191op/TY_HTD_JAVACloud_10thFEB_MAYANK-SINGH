@@ -287,13 +287,14 @@ public class Repository {
 		// System.out.println(loanTypeList.get(i));
 		// }
 
-		LoanApplicationBean loanApplicationForm1 = new LoanApplicationBean("AP01", "BNI12345", "Mayank", "Singh", "", "Meghna", "Singh", "",
-				"Personal Loan", "BNI22343456", "Cannaught Circle", "09-12-2001", "23-3-2020", "approved");
+		LoanApplicationBean loanApplicationForm1 = new LoanApplicationBean("AP01", "BNI12345", "Mayank", "Singh", "", "14/3/1973", "Meghna", "Singh", "",
+				"Personal Loan", "BNI22343456", "Cannaught Circle", "09/12/1992", "23/5/2020", "approved");
 		HashMap<String, Object> form1 = new LinkedHashMap<String, Object>();
 		form1.put("ApplicationId", loanApplicationForm1.getApplicationId());
 		form1.put("AccountNo", loanApplicationForm1.getAccountNo());
 		form1.put("ApplicantName", loanApplicationForm1.getApplicantFirstName() + " "
 				+ loanApplicationForm1.getApplicantMiddleName() + " " + loanApplicationForm1.getApplicantLastName());
+		form1.compute("DateOfBirth", )
 		form1.put("CoApplicantName",
 				loanApplicationForm1.getCoapplicantFirstName() + " " + loanApplicationForm1.getCoapplicantMiddleName()
 				+ " " + loanApplicationForm1.getCoapplicantLastName());
@@ -324,8 +325,8 @@ public class Repository {
 		form2.put("LoanStatus", loanApplicationForm2.getFormStatus());
 		loanFormList.add(form2);
 
-		LoanApplicationBean loanApplicationForm3 = new LoanApplicationBean("AP03", "BNI21145", "Rahul", "Yadav", "", "Anjali", "Kumari", "",
-				"Property Loan", "BNI13311456", "Purani Delhi", "03-08-2011", "01-4-2020", "requested");
+		LoanApplicationBean loanApplicationForm3 = new LoanApplicationBean("AP03", "BNI21145", "Rahul", "Yadav", "", "" "Anjali", "Kumari", "",
+				"Property Loan", "BNI13311456", "Purani Delhi", "03-08-1920", "01-4-2020", "requested");
 		HashMap<String, Object> form3 = new LinkedHashMap<String, Object>();
 		form3.put("ApplicationId", loanApplicationForm3.getApplicationId());
 		form3.put("AccountNo", loanApplicationForm3.getAccountNo());

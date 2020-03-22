@@ -22,6 +22,7 @@ public class Login {
 			logger.info("2> Login as Employee?");
 			logger.info("3> New user? Register");
 			logger.info("4> Exit");
+			logger.info("**************************************************");
 			int choice = scanner.nextInt();
 			scanner.nextLine();
 			switch (choice) {
@@ -31,7 +32,11 @@ public class Login {
 				String custUsername = scanner.nextLine();
 				logger.info("Enter the Password:-");
 				String custPass = scanner.nextLine();
-				FactoryClass.getServices().custLogin(custUsername, custPass);
+				try {
+					FactoryClass.getServices().custLogin(custUsername, custPass);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
 				break;
 
 			case 2:
@@ -40,7 +45,11 @@ public class Login {
 				String empUsername = scanner.nextLine();
 				logger.info("Enter the Password:-");
 				String empPass = scanner.nextLine();
-				FactoryClass.getServices().empLogin(empUsername, empPass);
+				try {
+					FactoryClass.getServices().empLogin(empUsername, empPass);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
 				break;
 
 			case 3:
