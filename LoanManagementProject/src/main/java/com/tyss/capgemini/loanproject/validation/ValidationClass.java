@@ -21,9 +21,16 @@ public class ValidationClass {
 		return boolean2;
 	}
 	
-	public static boolean usernameValid(String username) {
+	public boolean usernameValid(String username) {
 		Pattern pattern = Pattern.compile("[a-zA-Z0-9]{5,}");
 		Matcher matcher = pattern.matcher(username);
+		Boolean boolean1 = matcher.matches();
+		return boolean1;
+	}
+	
+	public boolean phoneValid(String phone) {
+		Pattern pattern = Pattern.compile("^[6-9]\\d{9}$");
+		Matcher matcher = pattern.matcher(phone);
 		Boolean boolean1 = matcher.matches();
 		return boolean1;
 	}

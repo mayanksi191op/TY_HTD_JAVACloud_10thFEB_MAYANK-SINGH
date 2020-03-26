@@ -20,6 +20,7 @@ public class LoanApplicationBean implements Serializable {
 	private String coapplicantFirstName;
 	private String coapplicantMiddleName;
 	private String coapplicantLastName;
+	private String dateOfBirth;
 	private String loanChoice;
 	private String branchCode;
 	private String branchName;
@@ -27,7 +28,7 @@ public class LoanApplicationBean implements Serializable {
 	private String requestDate;
 	private String formStatus;
 	
-	public LoanApplicationBean(String applicationId, String accountNo, String applicantFirstName, String applicantMiddleName, String applicantLastName,
+	public LoanApplicationBean(String applicationId, String accountNo, String applicantFirstName, String applicantMiddleName, String applicantLastName, String dateOfBirth,
 			String coapplicantFirstName, String coapplicantMiddleName, String coapplicantLastName,
 			String loanChoice, String branchCode, String branchName, String openDate, String requestDate, String formStatus) {
 		super();
@@ -36,6 +37,7 @@ public class LoanApplicationBean implements Serializable {
 		this.applicantFirstName = applicantFirstName;
 		this.applicantMiddleName = applicantMiddleName;
 		this.applicantLastName = applicantLastName;
+		this.dateOfBirth = dateOfBirth;
 		this.coapplicantFirstName = coapplicantFirstName;
 		this.coapplicantMiddleName = coapplicantMiddleName;
 		this.coapplicantLastName = coapplicantLastName;

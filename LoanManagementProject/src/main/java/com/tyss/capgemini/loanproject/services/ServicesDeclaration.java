@@ -11,7 +11,7 @@ public interface ServicesDeclaration {
 	public boolean changePassword(String custUsername, String newPass);
 	public void checkBalance(String custUsername);
 	public void loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
-			String applicantMiddleName, String applicantLastName, String coapplicantFirstName,
+			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
 			String branchName, String openDate, String requestDate, String sub);
 	public void approvedForms();

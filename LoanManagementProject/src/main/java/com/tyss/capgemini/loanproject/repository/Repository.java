@@ -228,23 +228,6 @@ public class Repository {
 		mainList.add(user13);
 		employeeList.add(user3);
 
-		// for (int i = 0; i < adminList.size(); i++) {
-		// System.out.println(adminList.get(i));
-		// }
-		//
-		// System.out.println(" ");
-		// System.out.println(" ");
-		//
-		// for (Object object : customerList) {
-		// System.out.println(object);
-		// }
-		//
-		// System.out.println(" ");
-		// System.out.println(" ");
-		// for (Object object : approvalDeptList) {
-		// System.out.println(object);
-		// }
-
 		// LoanTable
 		LoanTypeBean loanBean1 = new LoanTypeBean("House Loan", "20 years(Max)", "9.75-10.25%");
 		HashMap<String, Object> loan1 = new LinkedHashMap<String, Object>();
@@ -294,7 +277,7 @@ public class Repository {
 		form1.put("AccountNo", loanApplicationForm1.getAccountNo());
 		form1.put("ApplicantName", loanApplicationForm1.getApplicantFirstName() + " "
 				+ loanApplicationForm1.getApplicantMiddleName() + " " + loanApplicationForm1.getApplicantLastName());
-		form1.compute("DateOfBirth", )
+		form1.put("DateOfBirth", loanApplicationForm1.getDateOfBirth());
 		form1.put("CoApplicantName",
 				loanApplicationForm1.getCoapplicantFirstName() + " " + loanApplicationForm1.getCoapplicantMiddleName()
 				+ " " + loanApplicationForm1.getCoapplicantLastName());
@@ -307,13 +290,14 @@ public class Repository {
 		loanFormList.add(form1);
 		clientList.add(form1);
 
-		LoanApplicationBean loanApplicationForm2 = new LoanApplicationBean("AP02", "BNI22345", "Shashank", "Singh", "", "Shiv", "Kumar", "Rajput",
+		LoanApplicationBean loanApplicationForm2 = new LoanApplicationBean("AP02", "BNI22345", "Shashank", "Singh", "", "14/3/1973", "Shiv", "Kumar", "Rajput",
 				"Vehicle Loan", "BNI33343456", "Cannaught Bank", "12-11-2011", "02-4-2020", "rejected");
 		HashMap<String, Object> form2 = new LinkedHashMap<String, Object>();
 		form2.put("ApplicationId", loanApplicationForm2.getApplicationId());
 		form2.put("AccountNo", loanApplicationForm2.getAccountNo());
 		form2.put("ApplicantName", loanApplicationForm2.getApplicantFirstName() + " "
 				+ loanApplicationForm2.getApplicantMiddleName() + " " + loanApplicationForm2.getApplicantLastName());
+		form2.put("DateOfBirth",loanApplicationForm2.getDateOfBirth());
 		form2.put("CoApplicantName",
 				loanApplicationForm2.getCoapplicantFirstName() + " " + loanApplicationForm2.getCoapplicantMiddleName()
 				+ " " + loanApplicationForm2.getCoapplicantLastName());
@@ -325,13 +309,14 @@ public class Repository {
 		form2.put("LoanStatus", loanApplicationForm2.getFormStatus());
 		loanFormList.add(form2);
 
-		LoanApplicationBean loanApplicationForm3 = new LoanApplicationBean("AP03", "BNI21145", "Rahul", "Yadav", "", "" "Anjali", "Kumari", "",
+		LoanApplicationBean loanApplicationForm3 = new LoanApplicationBean("AP03", "BNI21145", "Rahul", "Yadav", "", "14/3/1973", "Anjali", "Kumari", "",
 				"Property Loan", "BNI13311456", "Purani Delhi", "03-08-1920", "01-4-2020", "requested");
 		HashMap<String, Object> form3 = new LinkedHashMap<String, Object>();
 		form3.put("ApplicationId", loanApplicationForm3.getApplicationId());
 		form3.put("AccountNo", loanApplicationForm3.getAccountNo());
 		form3.put("ApplicantName", loanApplicationForm3.getApplicantFirstName() + " "
 				+ loanApplicationForm3.getApplicantMiddleName() + " " + loanApplicationForm3.getApplicantLastName());
+		form3.put("DateOfBirth", loanApplicationForm3.getDateOfBirth());
 		form3.put("CoApplicantName",
 				loanApplicationForm3.getCoapplicantFirstName() + " " + loanApplicationForm3.getCoapplicantMiddleName()
 				+ " " + loanApplicationForm3.getCoapplicantLastName());

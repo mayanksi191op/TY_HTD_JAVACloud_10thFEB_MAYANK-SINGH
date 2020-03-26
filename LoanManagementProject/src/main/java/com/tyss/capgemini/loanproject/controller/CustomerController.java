@@ -1,8 +1,5 @@
 package com.tyss.capgemini.loanproject.controller;
 
-
-
-
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -49,6 +46,8 @@ public class CustomerController {
 					String coapplicantMiddleName = Login.scanner.nextLine();
 					logger.info("enter the Last Name");
 					String coapplicantLastName = Login.scanner.nextLine();
+					logger.info("enter the Date of Birth: ");
+					String dateOfBirth = Login.scanner.nextLine();
 					logger.info("enter the Loan Type");
 					String loanChoice = Login.scanner.nextLine();
 					logger.info("enter the Branch Code");
@@ -62,7 +61,7 @@ public class CustomerController {
 					logger.info("SUBMIT    (or)    CANCEL");
 					String sub = Login.scanner.nextLine();
 					FactoryClass.getServices().loanApplicationForm(applicationId, accountNo, applicantFirstName,
-							applicantMiddleName, applicantLastName, coapplicantFirstName, coapplicantMiddleName,
+							applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName, coapplicantMiddleName,
 							coapplicantLastName, loanChoice, branchCode, branchName, openDate, requestDate, sub);
 				} catch (Exception e) {
 					System.err.println(e);
