@@ -33,7 +33,7 @@ public class Login {
 				logger.info("Enter the Password:-");
 				String custPass = scanner.nextLine();
 				try {
-					FactoryClass.getServices().custLogin(custUsername, custPass);
+					FactoryClass.getLoginServices().custLogin(custUsername, custPass);
 				} catch (Exception e) {
 					System.err.println(e);
 				}
@@ -46,7 +46,7 @@ public class Login {
 				logger.info("Enter the Password:-");
 				String empPass = scanner.nextLine();
 				try {
-					FactoryClass.getServices().empLogin(empUsername, empPass);
+					FactoryClass.getLoginServices().empLogin(empUsername, empPass);
 				} catch (Exception e) {
 					System.err.println(e);
 				}
@@ -78,7 +78,7 @@ public class Login {
 				scanner.nextLine();
 				logger.info("Enter the userid: ");
 				String userid = scanner.nextLine();
-				FactoryClass.getServices().register(occupation, dob, gender, username, userid, email, password, firstname, lastname, phone, accountBal);
+				FactoryClass.getLoginServices().register(occupation, dob, gender, username, userid, email, password, firstname, lastname, phone, accountBal);
 				break;
 
 			case 4:

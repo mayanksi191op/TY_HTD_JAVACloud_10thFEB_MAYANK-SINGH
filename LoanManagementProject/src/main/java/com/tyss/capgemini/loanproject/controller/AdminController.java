@@ -44,13 +44,13 @@ public class AdminController {
 						String time = Login.scanner.nextLine();
 						logger.info("enter the Interest rates: ");
 						String rates = Login.scanner.nextLine();
-						FactoryClass.getServices().insertLoan(type, time, rates);
+						FactoryClass.getAdminServices().insertLoan(type, time, rates);
 						break;
 
 					case 2:
 						logger.info("enter the loan type you want to delete: ");
 						String loantype = Login.scanner.nextLine();
-						FactoryClass.getServices().deleteLoan(loantype);
+						FactoryClass.getAdminServices().deleteLoan(loantype);
 						break;
 
 					case 3:
@@ -66,11 +66,11 @@ public class AdminController {
 						Login.scanner.nextLine();
 						logger.info("enter the new value: ");
 						String choice3 = Login.scanner.nextLine();
-						FactoryClass.getServices().loanUpdate(typechoice, choice2, choice3);
+						FactoryClass.getAdminServices().loanUpdate(typechoice, choice2, choice3);
 						break;
 
 					case 4:
-						FactoryClass.getServices().viewLoanPrograms();
+						FactoryClass.getAdminServices().viewLoanPrograms();
 						break;
 
 					case 5:
@@ -95,11 +95,11 @@ public class AdminController {
 					case 1:
 						System.out.println("Enter the applicationId of client you want to add: ");
 						String appidString = Login.scanner.nextLine();
-						FactoryClass.getServices().addClients(appidString);
+						FactoryClass.getAdminServices().addClients(appidString);
 						break;
 					case 2:
 						System.out.println("Clients:-");
-						FactoryClass.getServices().viewClients();
+						FactoryClass.getAdminServices().viewClients();
 						break;
 					case 3:
 						exit3 = true;
@@ -121,17 +121,17 @@ public class AdminController {
 					switch (ch2) {
 					case 1:
 						logger.info("Approved application report:-");
-						FactoryClass.getServices().approvedForms();
+						FactoryClass.getAdminServices().approvedForms();
 						break;
 
 					case 2:
 						logger.info("Rejected application report:-");
-						FactoryClass.getServices().rejectedForms();
+						FactoryClass.getAdminServices().rejectedForms();
 						break;
 
 					case 3:
 						logger.info("Requested application report:-");
-						FactoryClass.getServices().requestedForms();
+						FactoryClass.getAdminServices().requestedForms();
 						break;
 					case 4:
 						exit4 = true;

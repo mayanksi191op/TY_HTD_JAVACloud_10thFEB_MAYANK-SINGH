@@ -25,7 +25,7 @@ public class CustomerController {
 			Login.scanner.nextLine();
 			switch (choice) {
 			case 1:
-				FactoryClass.getServices().viewLoanPrograms();
+				FactoryClass.getCustomerServices().viewLoanPrograms();
 				break;
 
 			case 2:
@@ -60,7 +60,7 @@ public class CustomerController {
 					String requestDate = Login.scanner.nextLine();
 					logger.info("SUBMIT    (or)    CANCEL");
 					String sub = Login.scanner.nextLine();
-					FactoryClass.getServices().loanApplicationForm(applicationId, accountNo, applicantFirstName,
+					FactoryClass.getCustomerServices().loanApplicationForm(applicationId, accountNo, applicantFirstName,
 							applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName, coapplicantMiddleName,
 							coapplicantLastName, loanChoice, branchCode, branchName, openDate, requestDate, sub);
 				} catch (Exception e) {
@@ -71,15 +71,15 @@ public class CustomerController {
 			case 3:
 				try {
 					logger.info("Your current balance is: ");
-					FactoryClass.getServices().checkBalance(custUsername);
+					FactoryClass.getCustomerServices().checkBalance(custUsername);
 					logger.info("Loan to be paid: ");
-					FactoryClass.getServices().checkLoan(custUsername);
+					FactoryClass.getCustomerServices().checkLoan(custUsername);
 					logger.info("Enter the amount to pay: ");
 					Double loanPay = Login.scanner.nextDouble();
 					Login.scanner.nextLine();
-					FactoryClass.getServices().payLoan(custUsername, loanPay);
+					FactoryClass.getCustomerServices().payLoan(custUsername, loanPay);
 					logger.info("New Balance is: ");
-					FactoryClass.getServices().checkBalance(custUsername);
+					FactoryClass.getCustomerServices().checkBalance(custUsername);
 				} catch (Exception e) {
 					System.err.println(e);
 				}
@@ -89,14 +89,14 @@ public class CustomerController {
 				try {
 					logger.info("enter the new password: ");
 					String newPass = Login.scanner.nextLine();
-					FactoryClass.getServices().changePassword(custUsername, newPass);
+					FactoryClass.getCustomerServices().changePassword(custUsername, newPass);
 				} catch (Exception e) {
 					System.err.println(e);
 				}
 				break;
 
 			case 5:
-				FactoryClass.getServices().checkBalance(custUsername);
+				FactoryClass.getCustomerServices().checkBalance(custUsername);
 				break;
 
 			case 6:

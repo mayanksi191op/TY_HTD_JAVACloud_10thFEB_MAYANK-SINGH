@@ -21,23 +21,23 @@ public class LADController {
 			Login.scanner.nextLine();
 			switch (ch) {
 			case 1:
-				FactoryClass.getServices().viewLoanPrograms();
+				FactoryClass.getLadServices().viewLoanPrograms();
 				break;
 
 			case 2:
 				logger.info("Enter the loan plan of applications:- ");
 				String planString = Login.scanner.nextLine();
-				FactoryClass.getServices().ladViewForms(planString);
+				FactoryClass.getLadServices().ladViewForms(planString);
 				break;
 
 			case 3:
 				logger.info("Requested forms:-");
-				FactoryClass.getServices().requestedForms();
+				FactoryClass.getLadServices().requestedForms();
 				logger.info("enter the ApplicationId for review: ");
 				String apid = Login.scanner.nextLine();
 				logger.info("enter the status: ");
 				String status = Login.scanner.nextLine();
-				FactoryClass.getServices().ladReviewForms(apid, status);
+				FactoryClass.getLadServices().ladReviewForms(apid, status);
 				break;
 			case 4:
 				exit = true;

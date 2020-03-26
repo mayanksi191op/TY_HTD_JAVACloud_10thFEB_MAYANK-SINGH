@@ -27,11 +27,4 @@ public class ValidationClass {
 		Boolean boolean1 = matcher.matches();
 		return boolean1;
 	}
-	
-	public boolean phoneValid(String phone) {
-		Pattern pattern = Pattern.compile("^[6-9]\\d{9}$");
-		Matcher matcher = pattern.matcher(phone);
-		Boolean boolean1 = matcher.matches();
-		return boolean1;
-	}
 }
