@@ -78,7 +78,6 @@ public class CustomerController {
 					Double loanPay = Login.scanner.nextDouble();
 					Login.scanner.nextLine();
 					FactoryClass.getCustomerServices().payLoan(custUsername, loanPay);
-					logger.info("New Balance is: ");
 					FactoryClass.getCustomerServices().checkBalance(custUsername);
 				} catch (Exception e) {
 					System.err.println(e);

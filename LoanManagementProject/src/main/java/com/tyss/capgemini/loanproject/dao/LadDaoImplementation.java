@@ -21,9 +21,9 @@ public class LadDaoImplementation implements LadDaoDeclaration{
 		for (int j = 0; j < Repository.loanFormList.size(); j++) {
 			if (apid.equals(Repository.loanFormList.get(j).get("ApplicationId"))) {
 				if (status.equalsIgnoreCase("approved")) {
-					Repository.loanFormList.get(j).put("LoanStatus", "Approved");
+					Repository.loanFormList.get(j).put("LoanStatus", "approved");
 				} else
-					Repository.loanFormList.get(j).put("LoanStatus", "Rejected");
+					Repository.loanFormList.get(j).put("LoanStatus", "rejected");
 				logger.info("Status Changed successfully.");
 				break;
 			}
@@ -36,10 +36,16 @@ public class LadDaoImplementation implements LadDaoDeclaration{
 
 	@Override
 	public void ladViewForms(String planString) {
+		int count = 0;
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (planString.equals(((String) Repository.loanFormList.get(i).get("LoanType")).toLowerCase())) {
+			if (planString.equalsIgnoreCase((String) Repository.loanFormList.get(i).get("LoanType"))) {
+				count++;
 				logger.info(Repository.loanFormList.get(i));
+				break;
 			}
+		}
+		if (count == 0) {
+			logger.info("No applications for this plan");
 		}
 	}
 	

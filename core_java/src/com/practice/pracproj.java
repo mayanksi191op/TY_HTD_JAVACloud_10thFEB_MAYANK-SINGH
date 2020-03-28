@@ -50,17 +50,18 @@ public class pracproj {
 	}
 	public static void main(String[] args) {
 		map();
-//		System.out.println(usernameVal("ABCH99dfshgctsj"));
-//		System.out.println(usernameVal("aA9_asdasdas"));
+//		System.out.println(usernameVal("Mayanksi191"));
+	//	System.out.println(usernameVal("aA9_asdasdas"));
 //		System.out.println(usernameVal("+*,aABCDasdasd9"));
 //		System.out.println("------------------------");
-//		System.out.println(passValid("Qwerty@123"));
-//		System.out.println(passValid("qwerty@123"));
+		System.out.println(passValid("mayanksi191@gmail.com"));
+		System.out.println(passValid("qwerty@123"));
 //		System.out.println(dateValid("12/05/1996"));
 //		System.out.println(dateValid("30/03/2060"));
 //		System.out.println(dateValid("31/02/2020"));
 //		System.out.println(dateValid("13/04/2020"));
 		
-		Date();
+		
+		
 	}
 }

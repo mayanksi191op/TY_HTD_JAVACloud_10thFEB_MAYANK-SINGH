@@ -11,8 +11,9 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	ValidationClass validationClass = new ValidationClass();
 
 	@Override
-	public void viewLoanPrograms() {
+	public boolean viewLoanPrograms() {
 		FactoryClass.getCustomerDao().viewLoanPrograms();
+		return true;
 	}
 
 	@Override
@@ -68,11 +69,11 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	
 	@Override
 	public void payLoan(String custUsername, Double loanPay) {
-		FactoryClass.getDAO().payLoan(custUsername, loanPay);
+		FactoryClass.getCustomerDao().payLoan(custUsername, loanPay);
 	}
 
 	@Override
 	public void checkLoan(String custUsername) {
-		FactoryClass.getDAO().checkLoan(custUsername);
+		FactoryClass.getCustomerDao().checkLoan(custUsername);
 	}
 }

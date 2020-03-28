@@ -35,7 +35,7 @@ public class Login {
 				try {
 					FactoryClass.getLoginServices().custLogin(custUsername, custPass);
 				} catch (Exception e) {
-					System.err.println(e);
+					logger.info(e);;
 				}
 				break;
 
@@ -48,7 +48,7 @@ public class Login {
 				try {
 					FactoryClass.getLoginServices().empLogin(empUsername, empPass);
 				} catch (Exception e) {
-					System.err.println(e);
+					logger.info(e);;
 				}
 				break;
 

@@ -8,22 +8,22 @@ public class LadServicesImplementation implements LadServicesDeclaration{
 	
 	@Override
 	public void viewLoanPrograms() {
-		FactoryClass.getDAO().viewLoanPrograms();
+		FactoryClass.getLadDao().viewLoanPrograms();
 	}
 	
 	@Override
 	public void ladReviewForms(String apid, String status) {
-		FactoryClass.getDAO().ladReviewForms(apid, status);
+		FactoryClass.getLadDao().ladReviewForms(apid, status);
 	}
 
 	@Override
 	public void ladViewForms(String planString) {
-		FactoryClass.getDAO().ladViewForms(planString);
+		FactoryClass.getLadDao().ladViewForms(planString);
 	}
 	
 	@Override
 	public void requestedForms() {
-		FactoryClass.getDAO().requestedForms();
+		FactoryClass.getLadDao().requestedForms();
 	}
 
 }

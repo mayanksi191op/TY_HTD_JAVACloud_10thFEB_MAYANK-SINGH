@@ -2,7 +2,7 @@ package com.tyss.capgemini.loanproject.services;
 
 public interface CustomerServicesDeclaration {
 
-	public void viewLoanPrograms();
+	public boolean viewLoanPrograms();
 	public boolean changePassword(String custUsername, String newPass);
 	public void checkBalance(String custUsername);
 	public void loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,

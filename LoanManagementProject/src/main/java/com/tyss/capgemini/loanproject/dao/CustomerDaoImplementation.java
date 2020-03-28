@@ -6,6 +6,8 @@ import java.util.LinkedHashMap;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
+import com.tyss.capgemini.loanproject.exceptions.InsufficientBalanceException;
+import com.tyss.capgemini.loanproject.exceptions.LoanExcessException;
 import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class CustomerDaoImplementation implements CustomerDaoDeclaration {
@@ -13,10 +15,11 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 	Repository repo = new Repository();
 	
 	@Override
-	public void viewLoanPrograms() {
+	public boolean viewLoanPrograms() {
 		for (int k = 0; k < Repository.loanTypeList.size(); k++) {
 			logger.info(Repository.loanTypeList.get(k));
 		}
+		return true;
 	}
 	
 	@Override
@@ -68,6 +71,38 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
 			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
 				logger.info("Balance available: " + Repository.customerList.get(i).get("AccountBal"));
+				break;
+			}
+		}
+	}
+	
+	@Override
+	public void payLoan(String custUsername, Double loanPay) {
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
+				Double loan = (Double) Repository.customerList.get(i).get("loanAmount");
+				if (loanPay > loan) {
+					throw new LoanExcessException("Enter amount less than your loan amount.");
+				}
+				Double bal = (Double) Repository.customerList.get(i).get("AccountBal");
+				if (loanPay > (Double) Repository.customerList.get(i).get("AccountBal")) {
+					throw new InsufficientBalanceException("Insufficient balance in account.");
+				} else {
+					logger.info("Amount paid successfully");
+					Double newbal = bal - loanPay;
+					Double newloan = loan - loanPay;
+					Repository.customerList.get(i).put("AccountBal", newbal);
+					Repository.customerList.get(i).put("loanAmount", newloan);
+				}
+			}
+		}
+	}
+	
+	@Override
+	public void checkLoan(String custUsername) {
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
+				logger.info("Loan to pay: " + Repository.customerList.get(i).get("loanAmount"));
 				break;
 			}
 		}
