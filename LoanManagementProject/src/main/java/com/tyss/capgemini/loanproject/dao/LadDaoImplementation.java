@@ -5,19 +5,23 @@ import org.apache.log4j.Logger;
 
 import com.tyss.capgemini.loanproject.repository.Repository;
 
-public class LadDaoImplementation implements LadDaoDeclaration{
+public class LadDaoImplementation implements LadDaoDeclaration {
 	Logger logger = LogManager.getLogger(DAOImplementation.class);
 	Repository repo = new Repository();
-	
+
 	@Override
-	public void viewLoanPrograms() {
-		for (int k = 0; k < Repository.loanTypeList.size(); k++) {
-			logger.info(Repository.loanTypeList.get(k));
-		}
+	public boolean viewLoanPrograms() {
+		if (Repository.loanTypeList.size() != 0) {
+			for (int k = 0; k < Repository.loanTypeList.size(); k++) {
+				logger.info(Repository.loanTypeList.get(k));
+			}
+			return true;
+		} else
+			return false;
 	}
-	
+
 	@Override
-	public void ladReviewForms(String apid, String status) {
+	public boolean ladReviewForms(String apid, String status) {
 		for (int j = 0; j < Repository.loanFormList.size(); j++) {
 			if (apid.equals(Repository.loanFormList.get(j).get("ApplicationId"))) {
 				if (status.equalsIgnoreCase("approved")) {
@@ -25,36 +29,40 @@ public class LadDaoImplementation implements LadDaoDeclaration{
 				} else
 					Repository.loanFormList.get(j).put("LoanStatus", "rejected");
 				logger.info("Status Changed successfully.");
-				break;
+				return true;
 			}
 		}
 		logger.info("All applications present:-");
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
 			logger.info(Repository.loanFormList.get(i));
 		}
+		return false;
 	}
 
 	@Override
-	public void ladViewForms(String planString) {
+	public boolean ladViewForms(String planString) {
 		int count = 0;
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
 			if (planString.equalsIgnoreCase((String) Repository.loanFormList.get(i).get("LoanType"))) {
 				count++;
 				logger.info(Repository.loanFormList.get(i));
-				break;
+				return true;
 			}
 		}
 		if (count == 0) {
 			logger.info("No applications for this plan");
 		}
+		return false;
 	}
-	
+
 	@Override
-	public void requestedForms() {
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("requested")) {
-				logger.info(Repository.loanFormList.get(i));
-			}
-		}
+	public boolean requestedForms() {
+		if (Repository.loanFormList.size() != 0) {
+			for (int i = 0; i < Repository.loanFormList.size(); i++) {
+				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("requested")) {
+					logger.info(Repository.loanFormList.get(i));
+				}
+			} return true;
+		}	else return false;
 	}
 }

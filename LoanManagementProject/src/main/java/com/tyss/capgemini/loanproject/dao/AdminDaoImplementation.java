@@ -13,7 +13,7 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 	Repository repo = new Repository();
 
 	@Override
-	public void loanUpdate(String typechoice, int choice2, String choice3) {
+	public boolean loanUpdate(String typechoice, int choice2, String choice3) {
 		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
 			if (typechoice.equalsIgnoreCase((String) Repository.loanTypeList.get(i).get("Type"))) {
 				// logger.info("found");
@@ -21,26 +21,27 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 				case 1:
 					Repository.loanTypeList.get(i).put("Type", choice3);
 					logger.info("Updated");
-					break;
+					return true;
 				case 2:
 					Repository.loanTypeList.get(i).put("Time-Period", choice3);
 					logger.info("Updated");
-					break;
+					return true;
 				case 3:
 					Repository.loanTypeList.get(i).put("Interest-Rates", choice3);
 					logger.info("Updated");
-					break;
+					return true;
 				default:
 					logger.info("Wrong choice, enter again: ");
-					break;
+					return true;
 				}
-				break;
 			}
 		}
+		return false;
+
 	}
 
 	@Override
-	public void insertLoan(String type, String time, String rates) {
+	public boolean insertLoan(String type, String time, String rates) {
 		HashMap<String, Object> hashMap = new LinkedHashMap<String, Object>();
 		hashMap.put("Type", type);
 		hashMap.put("Time-Period", time);
@@ -49,59 +50,67 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		for (int j = 0; j < Repository.loanTypeList.size(); j++) {
 			logger.info(Repository.loanTypeList.get(j));
 		}
+		return true;
 	}
 
 	@Override
-	public void deleteLoan(String loantype) {
+	public boolean deleteLoan(String loantype) {
 		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
 			if (loantype.equals(Repository.loanTypeList.get(i).get("Type"))) {
 				Repository.loanTypeList.remove(i);
 				logger.info("Loan Deleted");
-//				for (int k = 0; k < Repository.loanTypeList.size(); k++) {
-//					logger.info(Repository.loanTypeList.get(k));
-//				}
-				break;
+				return true;
 			}
 		}
+		return false;
 	}
 
 	@Override
-	public void viewLoanPrograms() {
-		for (int k = 0; k < Repository.loanTypeList.size(); k++) {
-			logger.info(Repository.loanTypeList.get(k));
-		}
-	}
-
-	@Override
-	public void approvedForms() {
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("approved")) {
-				logger.info(Repository.loanFormList.get(i));
+	public boolean viewLoanPrograms() {
+		if (Repository.loanTypeList.size() != 0) {
+			for (int k = 0; k < Repository.loanTypeList.size(); k++) {
+				logger.info(Repository.loanTypeList.get(k));
 			}
-		}
+			return true;
+		} else
+			return false;
 	}
 
 	@Override
-	public void rejectedForms() {
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("rejected")) {
-				logger.info(Repository.loanFormList.get(i));
-			}
-		}
+	public boolean approvedForms() {
+		if (Repository.loanFormList.size() != 0) {
+			for (int i = 0; i < Repository.loanFormList.size(); i++) {
+				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("approved")) {
+					logger.info(Repository.loanFormList.get(i));
+				}
+			} return true;
+		} else return false;
 	}
 
 	@Override
-	public void requestedForms() {
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("requested")) {
-				logger.info(Repository.loanFormList.get(i));
-			}
-		}
+	public boolean rejectedForms() {
+		if (Repository.loanFormList.size() != 0) {
+			for (int i = 0; i < Repository.loanFormList.size(); i++) {
+				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("rejected")) {
+					logger.info(Repository.loanFormList.get(i));
+				}
+			} return true;
+		} else return false;
 	}
 
 	@Override
-	public void addClients(String appidString) {
-		int count1 = 0;
+	public boolean requestedForms() {
+		if (Repository.loanFormList.size() != 0) {
+			for (int i = 0; i < Repository.loanFormList.size(); i++) {
+				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("requested")) {
+					logger.info(Repository.loanFormList.get(i));
+				}
+			} return true;
+		} else return false;
+	}
+
+	@Override
+	public boolean addClients(String appidString) {
 		int count2 = 0;
 		for (int i = 0; i < Repository.loanFormList.size(); i++) {
 			if (appidString.equals((String) Repository.loanFormList.get(i).get("ApplicationId"))) {
@@ -110,29 +119,32 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 							.equalsIgnoreCase((String) Repository.clientList.get(j).get("ApplicationId"))) {
 						logger.info("Client already exist.");
 						count2++;
-						break;
+						return true;
 					}
 				}
 				if (count2 > 0) {
-					break;
+					return true;
 				}
 				if ("approved".equalsIgnoreCase((String) Repository.loanFormList.get(i).get("LoanStatus"))) {
-						Repository.clientList.add(Repository.loanFormList.get(i));
-						logger.info("Client added");
-						count1++;
-						break;
+					Repository.clientList.add(Repository.loanFormList.get(i));
+					logger.info("Client added");
+					return true;
 				} else {
 					logger.info("Status is not approved");
-					break;
+					return true;
 				}
 			}
-		}
+		} return false;
 	}
 
 	@Override
-	public void viewClients() {
-		for (int i = 0; i < Repository.clientList.size(); i++) {
-			logger.info(Repository.clientList.get(i));
-		}
+	public boolean viewClients() {
+		if (Repository.clientList.size() != 0) {
+			for (int i = 0; i < Repository.clientList.size(); i++) {
+				logger.info(Repository.clientList.get(i));
+			}
+			return true;
+		} else
+			return false;
 	}
 }

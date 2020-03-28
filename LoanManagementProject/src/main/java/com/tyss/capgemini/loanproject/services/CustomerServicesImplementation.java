@@ -12,8 +12,9 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 
 	@Override
 	public boolean viewLoanPrograms() {
-		FactoryClass.getCustomerDao().viewLoanPrograms();
-		return true;
+		if (FactoryClass.getCustomerDao().viewLoanPrograms()) {
+			return true;
+		} else return false;
 	}
 
 	@Override
@@ -27,12 +28,14 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	}
 
 	@Override
-	public void checkBalance(String custUsername) {
-		FactoryClass.getCustomerDao().checkBalance(custUsername);
+	public boolean checkBalance(String custUsername) {
+		if (FactoryClass.getCustomerDao().checkBalance(custUsername)) {
+			return true;
+		} else return false;
 	}
 
 	@Override
-	public void loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
+	public boolean loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
 			String branchName, String openDate, String requestDate, String sub) {
@@ -59,6 +62,7 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 								applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName,
 								coapplicantMiddleName, coapplicantLastName, loanChoice, branchCode, branchName,
 								openDate, requestDate, sub);
+								return true;
 				} else
 					throw new InvalidDateFormatException("Enter correct date format (DD/MM/YYYY).");
 			} else
@@ -68,12 +72,16 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	}
 	
 	@Override
-	public void payLoan(String custUsername, Double loanPay) {
-		FactoryClass.getCustomerDao().payLoan(custUsername, loanPay);
+	public boolean payLoan(String custUsername, Double loanPay) {
+		if (FactoryClass.getCustomerDao().payLoan(custUsername, loanPay)) {
+			return true;
+		} else return false;
 	}
 
 	@Override
-	public void checkLoan(String custUsername) {
-		FactoryClass.getCustomerDao().checkLoan(custUsername);
+	public boolean checkLoan(String custUsername) {
+		if (FactoryClass.getCustomerDao().checkLoan(custUsername)) {
+			return true;
+		} else return false;
 	}
 }

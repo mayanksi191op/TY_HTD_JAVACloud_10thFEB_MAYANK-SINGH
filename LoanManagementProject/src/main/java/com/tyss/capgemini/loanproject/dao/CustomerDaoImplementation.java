@@ -16,14 +16,16 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 	
 	@Override
 	public boolean viewLoanPrograms() {
-		for (int k = 0; k < Repository.loanTypeList.size(); k++) {
-			logger.info(Repository.loanTypeList.get(k));
-		}
-		return true;
+		if (Repository.loanTypeList.size() != 0) {
+			for (int k = 0; k < Repository.loanTypeList.size(); k++) {
+				logger.info(Repository.loanTypeList.get(k));
+			}
+			return true;
+		} else return false;
 	}
 	
 	@Override
-	public void loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
+	public boolean loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
 			String branchName, String openDate, String requestDate, String sub) {
@@ -45,13 +47,13 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 		case "submit":
 			Repository.loanFormList.add(loanHashMap);
 			logger.info("Your loan application form has been submitted successfully.");
-			break;
+			return true;
 		case "cancel":
 			logger.info("Cancelled");
-			break;
+			return true;
 		default:
 			logger.info("Invalid option");
-			break;
+			return false;
 		}
 	}
 	
@@ -67,17 +69,17 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 	}
 
 	@Override
-	public void checkBalance(String custUsername) {
+	public boolean checkBalance(String custUsername) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
 			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
 				logger.info("Balance available: " + Repository.customerList.get(i).get("AccountBal"));
-				break;
+				return true;
 			}
-		}
+		} return false;
 	}
 	
 	@Override
-	public void payLoan(String custUsername, Double loanPay) {
+	public boolean payLoan(String custUsername, Double loanPay) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
 			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
 				Double loan = (Double) Repository.customerList.get(i).get("loanAmount");
@@ -93,18 +95,20 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 					Double newloan = loan - loanPay;
 					Repository.customerList.get(i).put("AccountBal", newbal);
 					Repository.customerList.get(i).put("loanAmount", newloan);
+					return true;
 				}
 			}
 		}
+		return false;
 	}
 	
 	@Override
-	public void checkLoan(String custUsername) {
+	public boolean checkLoan(String custUsername) {
 		for (int i = 0; i < Repository.customerList.size(); i++) {
 			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
 				logger.info("Loan to pay: " + Repository.customerList.get(i).get("loanAmount"));
-				break;
+				return true;
 			}
-		}
+		} return false;
 	}
 }

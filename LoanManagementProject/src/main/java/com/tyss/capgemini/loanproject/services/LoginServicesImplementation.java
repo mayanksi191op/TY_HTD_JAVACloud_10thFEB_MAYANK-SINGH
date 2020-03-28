@@ -15,39 +15,41 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 	ValidationClass validationClass = new ValidationClass();
 
 	@Override
-	public void custLogin(String custUsername, String custPass) {
+	public boolean custLogin(String custUsername, String custPass) {
 		int count = 0;
 		for (int i = 0; i < Repository.customerList.size(); i++) {
 			if ((custUsername.equals(Repository.customerList.get(i).get("username"))
 					&& (custPass.equals(Repository.customerList.get(i).get("password"))))) {
 				count++;
 				FactoryClass.getLoginDao().custLogin(custUsername, custPass);
-				break;
+				return true;
 			}
 		}
 		if (count == 0) {
 			throw new InvalidCredentialException("Enter correct username and password");
 		}
+		return false;
 	}
 
 	@Override
-	public void empLogin(String empUsername, String empPass) {
+	public boolean empLogin(String empUsername, String empPass) {
 		int count = 0;
 		for (int i = 0; i < Repository.employeeList.size(); i++) {
 			if ((empUsername.equals(Repository.employeeList.get(i).get("username"))
 					&& (empPass.equals(Repository.employeeList.get(i).get("password"))))) {
 				count++;
 				FactoryClass.getLoginDao().empLogin(empUsername, empPass);
-				break;
+				return true;
 			}
 		}
 		if (count == 0) {
 			throw new InvalidCredentialException("Enter correct username and password");
 		}
+		return false;
 	}
 
 	@Override
-	public void register(String occupation, String dob, String gender, String username, String userid, String email,
+	public boolean register(String occupation, String dob, String gender, String username, String userid, String email,
 			String password, String firstname, String lastname, long phone, double accountBal) {
 		if (validationClass.usernameValid(username)) {
 			if (validationClass.passValid(password)) {
@@ -62,6 +64,7 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 						if ((phone > 9999999999L) || (phone < 1000000000L)) {
 							FactoryClass.getLoginDao().register(occupation, dob, gender, username, userid, email,
 									password, firstname, lastname, phone, accountBal);
+							return true;
 						} else
 							throw new InvalidPhoneException("Enter 10 digit phone number");
 					} else

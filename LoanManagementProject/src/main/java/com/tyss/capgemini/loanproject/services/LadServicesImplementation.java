@@ -7,23 +7,31 @@ public class LadServicesImplementation implements LadServicesDeclaration{
 	ValidationClass validationClass = new ValidationClass();
 	
 	@Override
-	public void viewLoanPrograms() {
-		FactoryClass.getLadDao().viewLoanPrograms();
+	public boolean viewLoanPrograms() {
+		if (FactoryClass.getLadDao().viewLoanPrograms()) {
+			return true;
+		} else return false;
 	}
 	
 	@Override
-	public void ladReviewForms(String apid, String status) {
-		FactoryClass.getLadDao().ladReviewForms(apid, status);
+	public boolean ladReviewForms(String apid, String status) {
+		if (FactoryClass.getLadDao().ladReviewForms(apid, status)) {
+			return true;
+		} else return false;
 	}
 
 	@Override
-	public void ladViewForms(String planString) {
-		FactoryClass.getLadDao().ladViewForms(planString);
+	public boolean ladViewForms(String planString) {
+		if (FactoryClass.getLadDao().ladViewForms(planString)) {
+			return true;
+		} else return false;
 	}
 	
 	@Override
-	public void requestedForms() {
-		FactoryClass.getLadDao().requestedForms();
+	public boolean requestedForms() {
+		if (FactoryClass.getLadDao().requestedForms()) {
+			return true;
+		} else return false;
 	}
 
 }
