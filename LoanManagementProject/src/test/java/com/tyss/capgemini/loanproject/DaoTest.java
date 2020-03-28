@@ -1,4 +1,4 @@
-package com.tyss.capgemini.loanproject.LoanManagementProject;
+package com.tyss.capgemini.loanproject;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

@@ -1,4 +1,4 @@
-package com.tyss.capgemini.loanproject.LoanManagementProject;
+package com.tyss.capgemini.loanproject;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
