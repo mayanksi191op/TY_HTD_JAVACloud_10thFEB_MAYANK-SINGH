@@ -15,7 +15,7 @@ public class ValidationClass {
 	}
 	
 	public boolean mailValid(String email) {
-		Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\\\+]+(\\\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\\\.[A-Za-z0-9]+)*(\\\\.[A-Za-z]{2,})$");
+		Pattern pattern = Pattern.compile("[a-zA-Z0-9]+(?:\\."+ "[a-zA-Z0-9_+&*-]+)*@" + "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$");
 		Matcher matcher = pattern.matcher(email);
 		Boolean boolean2 = matcher.matches();
 		return boolean2;
