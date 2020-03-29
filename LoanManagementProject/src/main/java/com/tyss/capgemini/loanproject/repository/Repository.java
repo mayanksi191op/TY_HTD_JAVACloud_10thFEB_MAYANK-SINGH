@@ -102,7 +102,7 @@ public class Repository {
 		employeeList.add(user5);
 
 		// Customer.
-		CustomerBean bean6 = new CustomerBean("praveen191", "cus01", "praveen.p@gmail.com", "pass6", "Praveen", "Sharma",
+		CustomerBean bean6 = new CustomerBean("manoj191", "cus01", "manoj.p@gmail.com", "pass6", "Manoj", "Sharma",
 				7613412385L, "customer", 90987.12, 60890);
 		HashMap<String, Object> user6 = new LinkedHashMap<String, Object>();
 		user6.put("userid", bean6.getUserid());

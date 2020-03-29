@@ -16,7 +16,6 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 	public boolean loanUpdate(String typechoice, int choice2, String choice3) {
 		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
 			if (typechoice.equalsIgnoreCase((String) Repository.loanTypeList.get(i).get("Type"))) {
-				// logger.info("found");
 				switch (choice2) {
 				case 1:
 					Repository.loanTypeList.get(i).put("Type", choice3);
@@ -37,7 +36,6 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 			}
 		}
 		return false;
-
 	}
 
 	@Override
