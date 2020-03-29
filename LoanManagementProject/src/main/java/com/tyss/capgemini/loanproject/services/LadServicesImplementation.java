@@ -1,5 +1,6 @@
 package com.tyss.capgemini.loanproject.services;
 
+import com.tyss.capgemini.loanproject.exceptions.FormReviewChoiceException;
 import com.tyss.capgemini.loanproject.factory.FactoryClass;
 import com.tyss.capgemini.loanproject.validation.ValidationClass;
 
@@ -15,9 +16,10 @@ public class LadServicesImplementation implements LadServicesDeclaration{
 	
 	@Override
 	public boolean ladReviewForms(String apid, String status) {
-		if (FactoryClass.getLadDao().ladReviewForms(apid, status)) {
+		if ((status.equalsIgnoreCase("approved")) || (status.equalsIgnoreCase("rejected"))) {
+			FactoryClass.getLadDao().ladReviewForms(apid, status);
 			return true;
-		} else return false;
+		} else throw new FormReviewChoiceException("please write only approved or rejected.");
 	}
 
 	@Override

@@ -11,7 +11,7 @@ import com.tyss.capgemini.loanproject.repository.Repository;
 public class Login {
 	static Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void loginController() {
 		Repository.UserTable();
 		boolean exit = false;
 		Logger logger = LogManager.getLogger(Login.class);
