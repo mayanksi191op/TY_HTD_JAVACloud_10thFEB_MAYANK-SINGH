@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class CustomerDaoImplementation implements CustomerDaoDeclaration {
-	Logger logger = LogManager.getLogger(DAOImplementation.class);
+	Logger logger = LogManager.getLogger(CustomerDaoImplementation.class);
 	Repository repo = new Repository();
 	
 	@Override

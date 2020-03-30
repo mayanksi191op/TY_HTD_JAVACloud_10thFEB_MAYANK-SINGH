@@ -1,7 +1,5 @@
 package com.tyss.capgemini.loanproject.services;
 
-import java.util.logging.Logger;
-
 import com.tyss.capgemini.loanproject.exceptions.ClientNotExistException;
 import com.tyss.capgemini.loanproject.exceptions.InvalidLoanTypeException;
 import com.tyss.capgemini.loanproject.factory.FactoryClass;

@@ -16,7 +16,6 @@ public class Login {
 		boolean exit = false;
 		Logger logger = LogManager.getLogger(Login.class);
 		while (exit != true) {
-			//Scanner scanner = new Scanner(System.in);
 			logger.info("********************* WELCOME ********************");
 			logger.info("1> Login as Customer?");
 			logger.info("2> Login as Employee?");

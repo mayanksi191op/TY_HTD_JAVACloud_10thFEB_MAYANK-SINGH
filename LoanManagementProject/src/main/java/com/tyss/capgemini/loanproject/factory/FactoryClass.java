@@ -4,8 +4,6 @@ import com.tyss.capgemini.loanproject.dao.AdminDaoDeclaration;
 import com.tyss.capgemini.loanproject.dao.AdminDaoImplementation;
 import com.tyss.capgemini.loanproject.dao.CustomerDaoDeclaration;
 import com.tyss.capgemini.loanproject.dao.CustomerDaoImplementation;
-import com.tyss.capgemini.loanproject.dao.DAODeclaration;
-import com.tyss.capgemini.loanproject.dao.DAOImplementation;
 import com.tyss.capgemini.loanproject.dao.LadDaoDeclaration;
 import com.tyss.capgemini.loanproject.dao.LadDaoImplementation;
 import com.tyss.capgemini.loanproject.dao.LoginDaoDeclaration;
@@ -18,17 +16,8 @@ import com.tyss.capgemini.loanproject.services.LadServicesDeclaration;
 import com.tyss.capgemini.loanproject.services.LadServicesImplementation;
 import com.tyss.capgemini.loanproject.services.LoginServicesDeclaration;
 import com.tyss.capgemini.loanproject.services.LoginServicesImplementation;
-import com.tyss.capgemini.loanproject.services.ServicesDeclaration;
-import com.tyss.capgemini.loanproject.services.ServicesImplementation;
 
 public class FactoryClass {
-	public static ServicesDeclaration getServices() {
-		return new ServicesImplementation();
-	}
-	
-	public static DAODeclaration getDAO() {
-		return new DAOImplementation();
-	}
 	
 	public static CustomerServicesDeclaration getCustomerServices() {
 		return new CustomerServicesImplementation();

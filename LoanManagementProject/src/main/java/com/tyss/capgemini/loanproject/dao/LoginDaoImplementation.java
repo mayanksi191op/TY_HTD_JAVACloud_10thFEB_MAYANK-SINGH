@@ -12,7 +12,7 @@ import com.tyss.capgemini.loanproject.controller.LADController;
 import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class LoginDaoImplementation implements LoginDaoDeclaration {
-	Logger logger = LogManager.getLogger(DAOImplementation.class);
+	Logger logger = LogManager.getLogger(LadDaoImplementation.class);
 	Repository repo = new Repository();
 
 	@Override

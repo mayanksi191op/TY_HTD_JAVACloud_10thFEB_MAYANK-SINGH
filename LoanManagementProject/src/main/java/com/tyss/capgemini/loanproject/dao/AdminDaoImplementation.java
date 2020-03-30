@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class AdminDaoImplementation implements AdminDaoDeclaration {
-	Logger logger = LogManager.getLogger(DAOImplementation.class);
+	Logger logger = LogManager.getLogger(AdminDaoImplementation.class);
 	Repository repo = new Repository();
 
 	@Override
