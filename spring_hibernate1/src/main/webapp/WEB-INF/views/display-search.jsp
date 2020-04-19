@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="a"%>
 <!DOCTYPE html>
 <html>
@@ -11,8 +11,9 @@
 	href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css"
 	rel="stylesheet" />
 <body>
-			<div align = "center">
-		<h1>EMPLOYEE MANAGEMENT PORTAL</h1>
+
+	<div align = "center">
+		<h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
 	</div>
 
 	<nav
@@ -25,20 +26,20 @@
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
 					<div align = "left"><a class="nav-item nav-link"
-					href="add_emp1">Add Employee</a>
-					</div>
+					href="${pageContext.request.contextPath}/views/employeeadd.jsp">Add
+					Employee </a> </div>
 					<div align="center"><a class="nav-item nav-link"
 					href="${pageContext.request.contextPath}/EmployeeController">View
 					Employees</a> </div>
 					<div align = "right"><a class="nav-item nav-link"
-					href="search-employee1">Search
+					href="employee-search">Search
 					Employee</a></div>
 			</div>
 		</div>
 	</nav>
-
+	
 	<div class="container">
-	<div align = "center"><h4>EMPLOYEE DETAILS :</h4></div>
+		<div align = "center"><h4>EMPLOYEE DETAILS :</h4></div>
 		<table border="1" class="table table-striped table-bordered">
 			<tr>
 				<th>Employee Id</th>
@@ -51,13 +52,9 @@
 				<th>Manager Id</th>
 				<th>Official Email</th>
 				<th>Mobile</th>
-				<th>Edit</th>
-				<th>Delete</th>	
 			</tr>
 			
 			
-			<a:forEach items="${list}" var="employee">
-				<!-- name we copy not the value (list) -->
 				<tr>
 					<td>${employee.employee_id}</td>
 					<td>${employee.name}</td>
@@ -69,18 +66,12 @@
 					<td>${employee.manager_id}</td>
 					<td>${employee.email}</td>
 					<td>${employee.mobile}</td>
-					<td><a
-						href="edit_employee/${employee.employee_id}">Edit</a>
-					</td>
-					<td><a
-						href="delete_emp/${employee.employee_id}">Delete</a>
-					</td>
 				</tr>
 
-			</a:forEach>
 		</table>
-		<div align="right">
+	<div align="right">
 		<a href="${pageContext.request.contextPath}/logout.jsp"><button>Logout</button></a></div>
-	</div>
+	</div>		
+	
 </body>
 </html>

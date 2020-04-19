@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,38 +27,42 @@
 				out.print("error");
 			}
 		}
-	%> --%>
+	%> 
 
 
 
-	<!-- <div align = "center">
+	 <div align = "center">
 	<h1>EMPLOYEE MANAGEMENT PORTAL: </h1>
 	<div class="container">
-		<form action="loginprocess" method="post">
+		<form:form action="login" modelAttribute="employeetable">
 			<div class="card">
 				<h4>LOGIN :</h4>
 				<table>
 					<tr>
 						<td>Enter Employee Id:</td>
-						<td><input type="text" name="employee_id" /></td>
+						<td><form:input type="number" path="employee_id" modelAttribute="employeetable"/></td>
 					</tr>
 					<tr>
 						<td>Enter password:</td>
-						<td><input type="text" name="password" /></td>
+						<td><form:input path="password" modelAttribute="employeetable"/></td>
 					</tr>
 					
 				</table>
 			</div>
 			<input type ="submit" value = "login" class = "btn btn-primary" />
-		</form>
+		</form:form>
 	</div>
-	</div> -->
+	</div> 
+	 --%>
 	
 	
 	
-	
-	<h1>WELCOME</h1>
+	<!-- <h1>WELCOME</h1>
 	<a href="employee">homepage</a>
+	 -->
+	 
+	<h1>WELCOME</h1>
+	<a href="login">login</a>
 	
 </body>
 </html>
