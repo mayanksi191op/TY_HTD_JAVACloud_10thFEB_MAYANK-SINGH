@@ -28,7 +28,7 @@
 					href="add_emp1">Add Employee</a>
 					</div>
 					<div align="center"><a class="nav-item nav-link"
-					href="${pageContext.request.contextPath}/EmployeeController">View
+					href="employee">View
 					Employees</a> </div>
 					<div align = "right"><a class="nav-item nav-link"
 					href="search-employee1">Search

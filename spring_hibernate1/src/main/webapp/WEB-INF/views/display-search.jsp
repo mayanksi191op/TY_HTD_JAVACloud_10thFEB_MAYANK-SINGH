@@ -29,7 +29,7 @@
 					href="${pageContext.request.contextPath}/views/employeeadd.jsp">Add
 					Employee </a> </div>
 					<div align="center"><a class="nav-item nav-link"
-					href="${pageContext.request.contextPath}/EmployeeController">View
+					href="employee">View
 					Employees</a> </div>
 					<div align = "right"><a class="nav-item nav-link"
 					href="employee-search">Search

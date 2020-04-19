@@ -48,12 +48,12 @@ public class EmployeeController {
 	}
 
 	@RequestMapping("delete_emp/{employee_id}")
-	public String deleteUser(@ModelAttribute("employee_id") int employee_id, Model model) {
+	public String deleteUser(@PathVariable int employee_id, Model model) {
 		System.out.println(employee_id);
 		if (employeeDao.delete(employee_id)) {
 			model.addAttribute("message", "deleted");
 		}
-		return listEmployee(model);
+		return "employee-list";
 	}
 
 	@RequestMapping("add_emp1")
