@@ -22,10 +22,9 @@ public class Login {
 			logger.info("3> New user? Register");
 			logger.info("4> Exit");
 			logger.info("**************************************************");
-			int choice = scanner.nextInt();
-			scanner.nextLine();
+			String choice = scanner.nextLine();
 			switch (choice) {
-			case 1:
+			case "1":
 				logger.info("---------CUSTOMER LOGIN---------");
 				logger.info("Enter the Username:-");
 				String custUsername = scanner.nextLine();
@@ -38,7 +37,7 @@ public class Login {
 				}
 				break;
 
-			case 2:
+			case "2":
 				logger.info("---------EMPLOYEE LOGIN---------");
 				logger.info("Enter the Username:-");
 				String empUsername = scanner.nextLine();
@@ -51,7 +50,7 @@ public class Login {
 				}
 				break;
 
-			case 3:
+			case "3":
 				logger.info("-----------REGISTER----------");
 				logger.info("Enter the First Name: ");
 				String firstname = scanner.nextLine();
@@ -77,10 +76,14 @@ public class Login {
 				scanner.nextLine();
 				logger.info("Enter the userid: ");
 				String userid = scanner.nextLine();
-				FactoryClass.getLoginServices().register(occupation, dob, gender, username, userid, email, password, firstname, lastname, phone, accountBal);
+				try {
+					FactoryClass.getLoginServices().register(occupation, dob, gender, username, userid, email, password, firstname, lastname, phone, accountBal);
+				} catch (Exception e) {
+					logger.info(e);
+				}
 				break;
 
-			case 4:
+			case "4":
 				exit = true;
 				logger.info("Visit again...");
 				scanner.close();

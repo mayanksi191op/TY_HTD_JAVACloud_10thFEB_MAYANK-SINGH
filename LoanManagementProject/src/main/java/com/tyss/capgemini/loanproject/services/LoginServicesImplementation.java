@@ -61,7 +61,7 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 						if ((dobmonth > 3) && (dobyear >= 2020)) {
 							throw new DateLimitException("Not inside date limit.");
 						}
-						if ((phone > 9999999999L) || (phone < 1000000000L)) {
+						if ((phone > 6000000000L) || (phone < 1000000000L)) {
 							FactoryClass.getLoginDao().register(occupation, dob, gender, username, userid, email,
 									password, firstname, lastname, phone, accountBal);
 							return true;

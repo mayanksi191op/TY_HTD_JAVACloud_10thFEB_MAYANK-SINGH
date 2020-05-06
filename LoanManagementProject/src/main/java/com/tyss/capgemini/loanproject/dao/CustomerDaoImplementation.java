@@ -23,10 +23,10 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 	}
 	
 	@Override
-	public boolean loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
+	public boolean loanApplicationForm(String applicationId, String accountNo, String email, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
-			String branchName, String openDate, String requestDate, String sub) {
+			String branchName, String openDate, String requestDate) {
 
 		HashMap<String, Object> loanHashMap = new LinkedHashMap<String, Object>();
 		loanHashMap.put("ApplicationId", applicationId);
@@ -41,18 +41,9 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 		loanHashMap.put("OpenDate", openDate);
 		loanHashMap.put("RequestDate", requestDate);
 		loanHashMap.put("LoanStatus", "requested");
-		switch (sub.toLowerCase()) {
-		case "submit":
-			Repository.loanFormList.add(loanHashMap);
-			logger.info("Your loan application form has been submitted successfully.");
-			return true;
-		case "cancel":
-			logger.info("Cancelled");
-			return true;
-		default:
-			logger.info("Invalid option");
-			return false;
-		}
+		Repository.loanFormList.add(loanHashMap);
+		logger.info("Your loan application form has been submitted successfully.");
+		return true;
 	}
 	
 	@Override
@@ -107,5 +98,43 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 				return true;
 			}
 		} return false;
+	}
+	
+	
+	@Override
+	public boolean loanTypes() {
+		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
+			logger.info((i+1) + "> " + Repository.loanTypeList.get(i).get("Type"));
+		}
+		return true;
+	}
+	
+	@Override
+	public String loanTypes(int k) {
+		for (int i = 1; i <= Repository.loanTypeList.size(); i++) {
+			if (i==k) {
+				return (String) Repository.loanTypeList.get(i).get("Type");
+			}
+			logger.info(i + "> " + Repository.loanTypeList.get(i).get("Type"));
+		}
+		return "invalid choice";
+	}
+							
+	public boolean viewApplications(String custUsername) {
+		String email = null;
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
+				email = (String) Repository.customerList.get(i).get("email"); 
+			}
+		}
+		
+		for (int i = 0; i < Repository.loanFormList.size(); i++) {
+			if(email.equals(Repository.loanFormList.get(i).get("Email"))){
+				logger.info(Repository.loanFormList.get(i));
+				return true;
+			}
+		}
+		logger.info("No loan applications found.");
+		return false;
 	}
 }

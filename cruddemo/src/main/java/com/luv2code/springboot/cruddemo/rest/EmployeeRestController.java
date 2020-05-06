@@ -3,6 +3,7 @@ package com.luv2code.springboot.cruddemo.rest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -65,4 +66,21 @@ public class EmployeeRestController {
 		employeeService.save(theEmployee);
 		return theEmployee;
 	}
+	
+	
+	//add mapping forr DELETE /employee/{employeeId} - delete employee
+	
+	@DeleteMapping("/employees/{employeeId}")
+	public String deleteEmployee(@PathVariable int employeeId) {
+		Employee tempEmployee = employeeService.findById(employeeId);
+		
+		if (tempEmployee == null) {
+			//throw exception if null
+			throw new RuntimeException("employee id not found- " + employeeId);
+		}
+	employeeService.deleteById(employeeId);
+	return("employee has been deleted");
+	
+	}
+	
 }

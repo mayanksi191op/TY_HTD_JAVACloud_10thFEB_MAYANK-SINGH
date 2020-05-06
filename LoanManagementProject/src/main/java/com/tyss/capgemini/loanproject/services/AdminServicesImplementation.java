@@ -96,4 +96,14 @@ public class AdminServicesImplementation implements AdminServicesDeclaration {
 		} else return false;
 	}
 
+	@Override
+	public boolean loanTypes() {
+		return FactoryClass.getAdminDao().loanTypes();
+	}
+
+	@Override
+	public String loanTypes(String k) {
+		return FactoryClass.getAdminDao().loanTypes(k);
+	}
+
 }

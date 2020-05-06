@@ -40,10 +40,10 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	}
 
 	@Override
-	public boolean loanApplicationForm(String applicationId, String accountNo, String applicantFirstName,
+	public boolean loanApplicationForm(String applicationId, String accountNo, String email, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
-			String branchName, String openDate, String requestDate, String sub) {
+			String branchName, String openDate, String requestDate) {
 		if (validationClass.dateValid(dateOfBirth)) {
 			String[] dateOfBirthArr = dateOfBirth.split("/");
 			int dobmonth = Integer.parseInt(dateOfBirthArr[1]);
@@ -54,19 +54,19 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 				String[] openDateArr = openDate.split("/");
 				int odmonth = Integer.parseInt(openDateArr[1]);
 				int odyear = Integer.parseInt(openDateArr[2]);
-				if ((odmonth > 3) && (odyear >= 2020)) {
+				if ((odmonth > 5) && (odyear >= 2020)) {
 					throw new DateLimitException("Not inside date limit.");
 				} else if (validationClass.dateValid(requestDate)) {
 					String[] reqDateArr = requestDate.split("/");
 					int rdmonth = Integer.parseInt(reqDateArr[1]);
 					int rdyear = Integer.parseInt(reqDateArr[2]);
-					if (((rdmonth < 3) && (rdyear < 2020)) && (rdyear > 2021)) {
+					if (((rdmonth < 5) && (rdyear < 2020)) && (rdyear > 2021)) {
 						throw new DateLimitException("Not inside date limit.");
 					} else
-						FactoryClass.getCustomerDao().loanApplicationForm(applicationId, accountNo, applicantFirstName,
+						FactoryClass.getCustomerDao().loanApplicationForm(applicationId, accountNo, email, applicantFirstName,
 								applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName,
 								coapplicantMiddleName, coapplicantLastName, loanChoice, branchCode, branchName,
-								openDate, requestDate, sub);
+								openDate, requestDate);
 					return true;
 				} else
 					throw new InvalidDateFormatException("Enter correct date format (DD/MM/YYYY).");
@@ -102,4 +102,25 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 		} else
 			return false;
 	}
+
+	@Override
+	public boolean loanTypes() {
+		if (FactoryClass.getCustomerDao().loanTypes()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	@Override
+	public String loanTypes(int k) {
+		return FactoryClass.getCustomerDao().loanTypes(k);
+	}
+
+	@Override
+	public boolean viewApplications(String custUsername) {
+		FactoryClass.getCustomerDao().viewApplications(custUsername);
+		return true;
+	}
+	
 }

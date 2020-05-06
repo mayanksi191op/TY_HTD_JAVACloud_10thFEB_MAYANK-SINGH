@@ -6,11 +6,14 @@ import java.util.LinkedHashMap;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
+import com.tyss.capgemini.loanproject.exceptions.InvalidDataException;
 import com.tyss.capgemini.loanproject.repository.Repository;
+import com.tyss.capgemini.loanproject.validation.ValidationClass;
 
 public class AdminDaoImplementation implements AdminDaoDeclaration {
 	Logger logger = LogManager.getLogger(AdminDaoImplementation.class);
 	Repository repo = new Repository();
+	ValidationClass validationClass = new ValidationClass();
 
 	@Override
 	public boolean loanUpdate(String typechoice, int choice2, String choice3) {
@@ -42,8 +45,8 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 	public boolean insertLoan(String type, String time, String rates) {
 		HashMap<String, Object> hashMap = new LinkedHashMap<String, Object>();
 		hashMap.put("Type", type);
-		hashMap.put("Time-Period", time);
-		hashMap.put("Interest-Rates", rates);
+		hashMap.put("Time-Period", time + " years(Max)");
+		hashMap.put("Interest-Rates", rates + " %");
 		Repository.loanTypeList.add(hashMap);
 		for (int j = 0; j < Repository.loanTypeList.size(); j++) {
 			logger.info(Repository.loanTypeList.get(j));
@@ -145,4 +148,26 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		} else
 			return false;
 	}
+	
+	@Override
+	public boolean loanTypes() {
+		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
+			logger.info((i+1) + "> " + Repository.loanTypeList.get(i).get("Type"));
+		}
+		return true;
+	}
+	
+	@Override
+	public String loanTypes(String k) {
+		
+		int j = Integer.parseInt(k);
+		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
+			if ((i+1)==j) {
+				return (String) Repository.loanTypeList.get(i).get("Type");
+			}
+		}
+		logger.info("Invalid choice, enter again please!!!");
+		return "invalid choice";
+	}
+	
 }

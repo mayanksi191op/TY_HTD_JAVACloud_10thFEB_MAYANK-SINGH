@@ -69,6 +69,7 @@ public class LoginDaoImplementation implements LoginDaoDeclaration {
 		regHashMap.put("loanAmount", 0);
 		Repository.customerList.add(regHashMap);
 		Repository.mainList.add(regHashMap);
+		logger.info("customer added");
 		return true;
 	}
 }

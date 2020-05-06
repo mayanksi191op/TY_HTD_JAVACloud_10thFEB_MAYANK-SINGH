@@ -8,7 +8,7 @@ public class MainController {
 		Logger logger = LogManager.getLogger(MainController.class);
 		logger.info("******** W E L C O M E ********");
 		logger.info("********      TO       ********");
-		logger.info("********   BBI LOANS   ********");
+		logger.info("********   LPS BANK    ********");
 		Login.loginController();
 	}
 }

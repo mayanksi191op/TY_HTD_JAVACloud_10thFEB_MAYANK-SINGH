@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class ValidationClass {
 	public boolean passValid(String pass) {
-		Pattern pattern = Pattern.compile("((?=.*[a-z])(?=.*\\d)(?=.*[A-Z])(?=.*[@#$%!]).{8,40})");
+		Pattern pattern = Pattern.compile("((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$%_@]).{6,20})");
 		Matcher matcher = pattern.matcher(pass);
 		return matcher.matches();
 	}
@@ -26,5 +26,33 @@ public class ValidationClass {
 		Matcher matcher = pattern.matcher(username);
 		Boolean boolean1 = matcher.matches();
 		return boolean1;
+	}
+	
+	public boolean alphaNumValid(String id) {
+		return Pattern.matches("[0-9a-zA-Z]*", id);
+	}
+	
+	public boolean nameValid(String name) {
+		return Pattern.matches("[a-zA-Z]{3,10}", name);
+	}
+	
+	public boolean fullNameValid(String name) {
+		return Pattern.matches("[a-z A-Z]{3,20}", name);
+	}
+	
+	public boolean numMismatch(String num) {
+		return Pattern.matches("[0-9]*", num);
+	}
+	
+	public boolean numMismatch1(String num) {
+		return Pattern.matches("^[0-9]{0,7}$", num);
+	}
+	
+	public boolean timePeriodValid(String timeperiod) {
+		return Pattern.matches("^0*([1-9]|[1-3][0-9]|40)$", timeperiod);
+	}
+		
+	public boolean doubleValid(String interest) {
+		return Pattern.matches("[0-9]*[.]?[0-9]*", interest);
 	}
 }

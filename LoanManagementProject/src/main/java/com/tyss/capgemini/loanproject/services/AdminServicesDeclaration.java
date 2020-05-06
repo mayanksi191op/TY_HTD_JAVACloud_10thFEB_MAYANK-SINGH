@@ -10,4 +10,6 @@ public interface AdminServicesDeclaration {
 	public boolean approvedForms();
 	public boolean rejectedForms();
 	public boolean requestedForms();
+	public boolean loanTypes();
+	public String loanTypes(String k);
 }

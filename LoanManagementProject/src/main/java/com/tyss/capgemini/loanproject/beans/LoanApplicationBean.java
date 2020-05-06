@@ -9,6 +9,7 @@ import lombok.Data;
 public class LoanApplicationBean implements Serializable {
 	
 	private String applicationId;
+	private String email;
 	private String loanType;
 	private String timePeriod;
 	private String interestRates;
@@ -28,10 +29,11 @@ public class LoanApplicationBean implements Serializable {
 	private String requestDate;
 	private String formStatus;
 	
-	public LoanApplicationBean(String applicationId, String accountNo, String applicantFirstName, String applicantMiddleName, String applicantLastName, String dateOfBirth,
+	public LoanApplicationBean(String applicationId, String accountNo, String email, String applicantFirstName, String applicantMiddleName, String applicantLastName, String dateOfBirth,
 			String coapplicantFirstName, String coapplicantMiddleName, String coapplicantLastName,
 			String loanChoice, String branchCode, String branchName, String openDate, String requestDate, String formStatus) {
 		super();
+		this.email = email;
 		this.applicationId = applicationId;
 		this.accountNo = accountNo;
 		this.applicantFirstName = applicantFirstName;
