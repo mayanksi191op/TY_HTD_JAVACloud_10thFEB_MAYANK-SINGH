@@ -138,4 +138,52 @@ public class CustomerDaoTest {
 		assertEquals("House Construction Loan", string);
 	}
 	
+	@Test
+	void viewApplicationsTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.viewApplications("manoj191");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void emailExistsTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.emailExists("manoj.p@gmail.com");
+		assertEquals(boolean1, false);
+	}
+	
+	@Test
+	void emailExistsTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.emailExists("manoj.p@gmail.com");
+		assertEquals(boolean1, false);
+	}
+	
+	@Test
+	void usernameExistsTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.usernameExists("manoj191");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void usernameExistsTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.usernameExists("asdasd");
+		assertEquals(boolean1, false);
+	}
+	
+	@Test
+	void fetchMailTest1() {
+		Repository.UserTable();
+		String string = implementation.fetchMail("manoj191");
+		assertEquals(string, "manoj.p@gmail.com");
+	}
+	
+	@Test
+	void fetchMailTest2() {
+		Repository.UserTable();
+		String string = implementation.fetchMail("asdasd");
+		assertEquals(string, "asdasd");
+	}
 }

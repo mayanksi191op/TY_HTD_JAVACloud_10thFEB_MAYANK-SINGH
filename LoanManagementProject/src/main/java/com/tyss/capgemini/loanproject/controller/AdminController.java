@@ -60,7 +60,7 @@ public class AdminController {
 								}
 							}
 							count = false;
-							
+
 							while(count == false) {
 								logger.info("enter the Time period (year value): ");
 								time = Login.scanner.nextLine();
@@ -75,7 +75,7 @@ public class AdminController {
 								}
 							}
 							count = false;
-							
+
 							while(count == false) {
 								logger.info("enter the Interest Rates : ");
 								rates = Login.scanner.nextLine();
@@ -87,18 +87,18 @@ public class AdminController {
 										if ((ratesDouble > 15.0) || (ratesDouble < 6.0)) {
 											throw new InvalidDataException("Please enter rates between 6.0 -15.0 % !!!");
 										} else
-										count = true;
+											count = true;
 									}
 								} catch (Exception e) {
 									logger.info(e.getMessage());
 								}
 							}
-							
+
 							FactoryClass.getAdminServices().insertLoan(type, time, rates);
 							count = false;
-							
+
 							break;
-							
+
 						case "2":
 							count = false;
 							String jString = null;
@@ -130,9 +130,25 @@ public class AdminController {
 							break;
 
 						case "3":
-							logger.info("enter the loan type: ");
-							String typechoice = Login.scanner.nextLine();
-							logger.info(typechoice);
+							String typeString = null;
+							while(count == false) {
+								logger.info("enter the loan type: ");
+								FactoryClass.getAdminServices().loanTypes();
+								logger.info("choose:-");
+								try {
+									typeString = Login.scanner.nextLine();
+									if (validationClass.numMismatch1(typeString) == false) {
+										throw new InvalidDataException("invalid option!!!choose again please!!!");
+									} else {
+										typeString = FactoryClass.getAdminServices().loanTypes(typeString);
+										count = true;
+									}
+								} catch (Exception e) {
+									logger.info(e.getMessage());
+								}
+							}
+							count = false;
+							logger.info(typeString);
 							boolean close1 = false;
 							while (close1 != true) {
 								logger.info("what detail you want to update?");
@@ -141,18 +157,79 @@ public class AdminController {
 								logger.info("3> Interest-Rates");
 								logger.info("4> Exit");
 								logger.info("enter choice:-");
-								int choice2 = Login.scanner.nextInt();
-								if (choice2 == 4) {
+								String choice2 = Login.scanner.nextLine();
+								switch (choice2) {
+								case "1":
+									while(count == false) {
+										logger.info("enter the Type:-");
+										String newType = Login.scanner.nextLine();
+										try {
+											if (validationClass.fullNameValid(newType) == false) {
+												throw new InvalidDataException("enter letters only");
+											}else {
+												typeString = FactoryClass.getAdminServices().updateType(typeString, newType);
+
+												logger.info("updated successfuly new value:" + typeString);
+												count = true;
+											}
+										} catch (Exception e) {
+											logger.info(e.getMessage());
+										}
+									}
+									count = false;
+									break;
+								case "2":
+									while(count == false) {
+										logger.info("for type:" + typeString);
+										logger.info("enter the Time-Period:-");
+										String newTime = Login.scanner.nextLine();
+										try {
+											if (validationClass.timePeriodValid(newTime) == false) {
+												throw new InvalidDataException("enter value from 1-40 only");
+											}else {
+												FactoryClass.getAdminServices().updateTimePeriod(typeString, newTime);
+												logger.info("updated successfuly");
+												count = true;
+											}
+										} catch (Exception e) {
+											logger.info(e.getMessage());
+										}
+									}
+									count = false;
+									break;
+								case "3":
+									while(count == false) {
+										logger.info("enter the Interest Rate:-");
+										String newRate = Login.scanner.nextLine();
+										Double newRateDouble = null;
+										try {
+											if (validationClass.doubleValid(newRate) == false) {
+												throw new InvalidDataException("enter value from 6-15 only");
+											}else {
+												newRateDouble = Double.parseDouble(newRate);
+											}
+											if ((newRateDouble > 15) || (newRateDouble < 6) ) {
+												throw new InvalidDataException("enter value from 6-15 only");
+											} else {
+												FactoryClass.getAdminServices().updateTimePeriod(typeString, newRate);
+												logger.info("updated successfuly");
+												count = true;
+											}
+										} catch (Exception e) {
+											logger.info(e.getMessage());
+										}
+									}
+									count = false;
+									break;
+								case "4":
 									close1 = true;
 									break;
-								}
-								logger.info("enter the new value: ");
-								String choice3 = Login.scanner.nextLine();
-								FactoryClass.getAdminServices().loanUpdate(typechoice, choice2, choice3);
-								if (choice2 == 1) {
-									typechoice = choice3;
+								default:
+									logger.info("invalid option!!!");
+									break;
 								}
 							}
+							close1 = false;
 							break;
 
 						case "4":
@@ -295,7 +372,7 @@ public class AdminController {
 						else {
 							logger.info("something went wrong!!!");
 						}
-							
+
 						break;
 					case "2":
 						System.out.println("Clients:-");
@@ -311,12 +388,6 @@ public class AdminController {
 				}
 				exit3 = false;
 				break;
-				
-				
-				
-				
-				
-				
 			case "3":
 				while (exit4 != true) {
 					logger.info("Which report do you want to check: ");
@@ -350,11 +421,6 @@ public class AdminController {
 				}
 				exit4 = false;
 				break;
-				
-				
-				
-				
-				
 			case "4":
 				exit = true;
 				break;

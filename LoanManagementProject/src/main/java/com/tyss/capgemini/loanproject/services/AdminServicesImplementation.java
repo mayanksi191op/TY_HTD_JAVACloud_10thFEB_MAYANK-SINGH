@@ -112,4 +112,19 @@ public class AdminServicesImplementation implements AdminServicesDeclaration {
 		return FactoryClass.getLoginDao().usernameExists(username);
 	}
 
+	@Override
+	public String updateType(String loanType, String newType) {
+		return FactoryClass.getAdminDao().updateType(loanType, newType);
+	}
+
+	@Override
+	public boolean updateTimePeriod(String loanType, String newTime) {
+		return FactoryClass.getAdminDao().updateTimePeriod(loanType, newTime);
+	}
+
+	@Override
+	public boolean updateRates(String loanType, String newRate) {
+		return FactoryClass.getAdminDao().updateRates(loanType, newRate);
+	}
+
 }

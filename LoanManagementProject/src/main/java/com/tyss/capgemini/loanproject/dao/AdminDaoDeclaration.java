@@ -15,4 +15,7 @@ public interface AdminDaoDeclaration {
 	public String loanTypes(String k);
 	public boolean emailExists(String email);
 	public boolean usernameExists(String username);
+	public String updateType(String loanType, String newType);
+	public boolean updateTimePeriod(String loanType, String newTime);
+	public boolean updateRates(String loanType, String newRate);
 }

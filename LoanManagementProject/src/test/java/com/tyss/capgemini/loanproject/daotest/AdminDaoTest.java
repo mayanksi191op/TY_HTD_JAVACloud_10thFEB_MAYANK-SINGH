@@ -99,4 +99,74 @@ public class AdminDaoTest {
 		Boolean isBoolean = implementation.addClients("AP02", "naruto@gmail.com", "qwerty@123", "Naruto", "Uzumaki", "7234232434");
 		assertEquals(isBoolean, true);
 	}
+	
+	@Test
+	void updateType1() {
+		Repository.UserTable();
+		String iString = implementation.updateType("Personal Loan", "asdasd");
+		assertEquals(iString, "asdasd");
+	}
+	
+	@Test
+	void updateType2() {
+		Repository.UserTable();
+		String iString = implementation.updateType("wqeqwe", "asdasd");
+		assertEquals(iString, null);
+	}
+	
+	@Test
+	void updateTimePeriodTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.updateTimePeriod("Personal Loan", "23");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void updateTimePeriodTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.updateTimePeriod("asdasdasd", "23");
+		assertEquals(boolean1, false);
+	}
+	
+	@Test
+	void updateInterestRateTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.updateRates("Personal Loan", "12");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void updateInterestRateTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.updateRates("asdasdasd", "12");
+		assertEquals(boolean1, false);
+	}
+	
+	@Test
+	void usernameExistsTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.usernameExists("manoj191");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void usernameExistsTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.usernameExists("asdasd");
+		assertEquals(boolean1, false);
+	}
+	
+	@Test
+	void emailExistsTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.emailExists("manoj.p@gamil.com");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void emailExistsTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.emailExists("asdasd");
+		assertEquals(boolean1, true);
+	}
 }

@@ -58,4 +58,40 @@ public class LadDaoTest {
 		Boolean isBoolean = implementation.requestedForms();
 		assertEquals(isBoolean, true);
 	}
+	
+	@Test
+	void loanTypesTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.loanTypes();
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void loanTypes2Test1() {
+		Repository.UserTable();
+		String string = implementation.loanTypes("1");
+		assertEquals(string, "House Loan");
+	}
+	
+	@Test
+	void loanTypes2Test2() {
+		Repository.UserTable();
+		String string = implementation.loanTypes("2");
+		assertEquals(string, "House Construction Loan");
+	}
+	
+	@Test
+	void applicationExistsTest1() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.applicationExist("AP01");
+		assertEquals(boolean1, true);
+	}
+	
+	@Test
+	void applicationExistsTest2() {
+		Repository.UserTable();
+		Boolean boolean1 = implementation.applicationExist("asdasd");
+		assertEquals(boolean1, false);
+	}
+	
 }

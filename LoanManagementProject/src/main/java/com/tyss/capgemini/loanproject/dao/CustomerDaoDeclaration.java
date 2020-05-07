@@ -17,4 +17,5 @@ public interface CustomerDaoDeclaration {
 	public boolean usernameExists(String username);
 	public boolean applicationExist(String id);
 	public String fetchMail(String username);
+	
 }

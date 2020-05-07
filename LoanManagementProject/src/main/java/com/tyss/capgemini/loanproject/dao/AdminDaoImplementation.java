@@ -226,14 +226,47 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		} else {
 			return true;
 		}
-
 	}
-
 
 	@Override
 	public boolean usernameExists(String username) {
 		for (int i = 0; i < Repository.mainList.size(); i++) {
 			if (username.equalsIgnoreCase((String) Repository.mainList.get(i).get("username"))) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	@Override
+	public String updateType(String loanType, String newType) {
+		logger.info(newType);
+		logger.info(loanType);
+		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
+			if (loanType.equalsIgnoreCase((String) Repository.loanTypeList.get(i).get("Type"))) {
+				Repository.loanTypeList.get(i).put("Type", newType);
+				return (String) Repository.loanTypeList.get(i).get("Type");
+			}
+		}
+		return null;
+	}
+	
+	@Override
+	public boolean updateTimePeriod(String loanType, String newTime) {
+		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
+			if (loanType.equalsIgnoreCase((String) Repository.loanTypeList.get(i).get("Type"))) {
+				Repository.loanTypeList.get(i).put("Time-Period", newTime + " years(Max)");
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	@Override
+	public boolean updateRates(String loanType, String newRate) {
+		for (int i = 0; i < Repository.loanTypeList.size(); i++) {
+			if (loanType.equalsIgnoreCase((String) Repository.loanTypeList.get(i).get("Type"))) {
+				Repository.loanTypeList.get(i).put("Interest-Rates", newRate + " %");
 				return true;
 			}
 		}
