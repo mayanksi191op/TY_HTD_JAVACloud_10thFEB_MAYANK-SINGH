@@ -1,30 +1,27 @@
 package com.tyss.capgemini.loanproject.controller;
 
-import java.util.FormatFlagsConversionMismatchException;
-import java.util.Scanner;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.apache.taglibs.standard.tag.common.core.ChooseTag;
-import org.hibernate.query.criteria.internal.expression.function.AggregationFunction.COUNT;
 
+import com.tyss.capgemini.loanproject.exceptions.DataAlreayExistException;
 import com.tyss.capgemini.loanproject.exceptions.DateLimitException;
 import com.tyss.capgemini.loanproject.exceptions.InvalidDataException;
 import com.tyss.capgemini.loanproject.factory.FactoryClass;
 import com.tyss.capgemini.loanproject.validation.ValidationClass;
-//import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class CustomerController {
 
 	public static void custController(String custUsername) {
-		// Repository.UserTable();
 		ValidationClass validationClass = new ValidationClass();
 		Logger logger = LogManager.getLogger(CustomerController.class);
 		boolean exit = false;
 		boolean count = false;
 
 		while (exit != true) {
-			logger.info("Customer Operations:-");
+			logger.info("===========================");
+			logger.info("   Customer Operations:-");
+			logger.info("===========================");
 			logger.info("1> Loan Programs:");
 			logger.info("2> Apply for loan: ");
 			logger.info("3> Pay Loan: ");
@@ -64,27 +61,18 @@ public class CustomerController {
 						try {
 							if (validationClass.alphaNumValid(applicationId) == false) {
 								throw new InvalidDataException("enter numbers only");
-							} else {
+							} else if (FactoryClass.getCustomerServices().applicationExist(applicationId)) {
+								throw new DataAlreayExistException("id alreay exist!!!");
+							} else{
 								count = true;
 							}
 						} catch (Exception e) {
 							logger.info(e.getMessage());
 						}}
 					count = false;
+
+					email = FactoryClass.getCustomerServices().fetchMail(custUsername);
 					
-					while(count == false ) {
-						logger.info("enter the email: ");
-						email = Login.scanner.nextLine();
-						try {
-							if (validationClass.mailValid(email) == false) {
-								throw new InvalidDataException("enter valid email. (Ex - mayank@gmail.com)" );
-							} else {
-								count = true;
-							}
-						} catch (Exception e) {
-							logger.info(e.getMessage());
-						}}
-					count = false;
 					while(count == false ) {
 						logger.info("enter the Bank account number: ");
 						accountNo = Login.scanner.nextLine();
@@ -137,75 +125,75 @@ public class CustomerController {
 							logger.info(e.getMessage());
 						}}
 					count = false;
-					
+
 					boolean count1 = false;
 					while(count1 == false) {
-					logger.info("Enter co-applicant?");
-					logger.info("1>Yes        2>No");
-					m = Login.scanner.nextInt();
-					logger.info(m);
-					Login.scanner.nextLine();
-					if (m == 1) {
-						boolean count3 = false;
-						while(count3 == false ) {
-							logger.info("enter the Co-Applicant First Name: ");
-							coapplicantFirstName = Login.scanner.nextLine();
-							try {
-								if (validationClass.nameValid(coapplicantFirstName) == false) {
-									throw new InvalidDataException("enter letters only!!!");
-								} else {
-									count3 = true;
-								}
-							} catch (Exception e) {
-								logger.info(e.getMessage());
-							}}
-						count3 = false;
-						while(count3 == false ) {
-							logger.info("enter the Co-Applicant's Middle Name: ");
-							coapplicantMiddleName = Login.scanner.nextLine();
-							try {
-								if (validationClass.nameValid(coapplicantMiddleName) == false) {
-									throw new InvalidDataException("enter letters only!!!");
-								} else {
-									count3 = true;
-								}
-							} catch (Exception e) {
-								logger.info(e.getMessage());
-							}}
-						count3 = false;
-						while(count3 == false ) {
-							logger.info("enter the Co-Applicant's Last Name");
-							coapplicantLastName = Login.scanner.nextLine();
-							try {
-								if (validationClass.nameValid(coapplicantLastName) == false) {
-									throw new InvalidDataException("Enter letters only!!!");
-								} else {
-									count3 = true;
-								}
-							} catch (Exception e) {
-								logger.info(e.getMessage());
-							}}
-						count3 = false;
-					}
-					try {
-						if (m > 2) {
-							throw new InvalidDataException("invalid option");
-						} else {
-							count1 = true;
+						logger.info("Enter co-applicant?");
+						logger.info("1>Yes        2>No");
+						m = Login.scanner.nextInt();
+						logger.info(m);
+						Login.scanner.nextLine();
+						if (m == 1) {
+							boolean count3 = false;
+							while(count3 == false ) {
+								logger.info("enter the Co-Applicant First Name: ");
+								coapplicantFirstName = Login.scanner.nextLine();
+								try {
+									if (validationClass.nameValid(coapplicantFirstName) == false) {
+										throw new InvalidDataException("enter letters only!!!");
+									} else {
+										count3 = true;
+									}
+								} catch (Exception e) {
+									logger.info(e.getMessage());
+								}}
+							count3 = false;
+							while(count3 == false ) {
+								logger.info("enter the Co-Applicant's Middle Name: ");
+								coapplicantMiddleName = Login.scanner.nextLine();
+								try {
+									if (validationClass.nameValid(coapplicantMiddleName) == false) {
+										throw new InvalidDataException("enter letters only!!!");
+									} else {
+										count3 = true;
+									}
+								} catch (Exception e) {
+									logger.info(e.getMessage());
+								}}
+							count3 = false;
+							while(count3 == false ) {
+								logger.info("enter the Co-Applicant's Last Name");
+								coapplicantLastName = Login.scanner.nextLine();
+								try {
+									if (validationClass.nameValid(coapplicantLastName) == false) {
+										throw new InvalidDataException("Enter letters only!!!");
+									} else {
+										count3 = true;
+									}
+								} catch (Exception e) {
+									logger.info(e.getMessage());
+								}}
+							count3 = false;
 						}
-					} catch (Exception e) {
-						logger.info(e.getMessage());
+						try {
+							if (m > 2) {
+								throw new InvalidDataException("invalid option");
+							} else {
+								count1 = true;
+							}
+						} catch (Exception e) {
+							logger.info(e.getMessage());
+						}
+
 					}
-					
-				}
-					
+
 					count = false;
 					while(count == false ) {
 						logger.info("enter the Date of Birth: ");
 						dateOfBirth = Login.scanner.nextLine();
 						try {
 							if (validationClass.dateValid(dateOfBirth) == false) {
-								throw new DateLimitException("enter numbers only");
+								throw new DateLimitException("enter correct format only (DD/MM/YYYY)");
 							} else {
 								count = true;
 							}
@@ -254,7 +242,7 @@ public class CustomerController {
 						openDate = Login.scanner.nextLine();
 						try {
 							if (validationClass.dateValid(openDate) == false) {
-								throw new DateLimitException("enter numbers only");
+								throw new DateLimitException("enter correct format only (DD/MM/YYYY)");
 							} else {
 								count = true;
 							}
@@ -267,71 +255,97 @@ public class CustomerController {
 						requestDate = Login.scanner.nextLine();
 						try {
 							if (validationClass.dateValid(requestDate) == false) {
-								throw new DateLimitException("enter numbers only");
+								throw new DateLimitException("enter correct format only (DD/MM/YYYY)");
 							} else {
 								count = true;
 							}
 						} catch (Exception e) {
 							logger.info(e.getMessage());
 						}}
-					
+
 					count = false;
 					while(count == false) {
-					logger.info("1>SUBMIT"  );
-					logger.info("2>CANCEL");
-					logger.info("Choose one...");
-					String ch19 = Login.scanner.nextLine();
-					switch (ch19) {
-					case "1":
-						FactoryClass.getCustomerServices().loanApplicationForm(applicationId, accountNo, email, applicantFirstName,
-								applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName, coapplicantMiddleName,
-								coapplicantLastName, loanChoice1, branchCode, branchName, openDate, requestDate);
-						count = true;
-						break;
-					case "2":
-						logger.info("Cancelled");
-						count = true;
-					default:
-						logger.info("invalid option");
-						break;
+						logger.info("1>SUBMIT"  );
+						logger.info("2>CANCEL");
+						logger.info("Choose one...");
+						String ch19 = Login.scanner.nextLine();
+						switch (ch19) {
+						case "1":
+							FactoryClass.getCustomerServices().loanApplicationForm(applicationId, accountNo, email, applicantFirstName,
+									applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName, coapplicantMiddleName,
+									coapplicantLastName, loanChoice1, branchCode, branchName, openDate, requestDate);
+							count = true;
+							break;
+						case "2":
+							logger.info("Cancelled");
+							count = true;
+						default:
+							logger.info("invalid option");
+							break;
+						}
 					}
-					}
-					
+
 				} catch (Exception e) {
-					e.printStackTrace();
+					logger.info(e.getMessage());
 				}
 				break;
 
 			case "3":
-				try {
-					logger.info("Your current balance is: ");
-					FactoryClass.getCustomerServices().checkBalance(custUsername);
-					logger.info("Loan to be paid: ");
-					FactoryClass.getCustomerServices().checkLoan(custUsername);
-					logger.info("Enter the amount to pay: ");
-					Double loanPay = Login.scanner.nextDouble();
-					Login.scanner.nextLine();
-					FactoryClass.getCustomerServices().payLoan(custUsername, loanPay);
-					FactoryClass.getCustomerServices().checkBalance(custUsername);
-				} catch (Exception e) {
-					System.err.println(e);
+				boolean count1 = false;
+				while(count1 == false) {
+					try {
+						Double loanPay = null;
+						String payString = null;
+						logger.info("Your current balance is: ");
+						FactoryClass.getCustomerServices().checkBalance(custUsername);
+						logger.info("Loan to be paid: ");
+						FactoryClass.getCustomerServices().checkLoan(custUsername);
+						while(count == false) {
+							logger.info("Enter the amount to pay: ");
+							payString = Login.scanner.nextLine();
+							try {
+								if (validationClass.doubleValid(payString) == false) {
+									throw new InvalidDataException("please enter correct data!!!");
+								} else {
+									count = true;
+								}
+							} catch (Exception e) {
+								logger.info(e.getMessage());
+							}
+						}
+						count = false;
+						loanPay = Double.parseDouble(payString);
+						if (FactoryClass.getCustomerServices().payLoan(custUsername, loanPay) == false) {
+							logger.info("enter again please");
+						} else {
+							count1 = true;
+						}
+						FactoryClass.getCustomerServices().checkBalance(custUsername);
+					} catch (Exception e) {
+						logger.info(e.getMessage());
+					}
 				}
 				break;
 
 			case "4":
+				while(count == false) {
 				try {
 					logger.info("enter the new password: ");
 					String newPass = Login.scanner.nextLine();
-					FactoryClass.getCustomerServices().changePassword(custUsername, newPass);
+					if (FactoryClass.getCustomerServices().changePassword(custUsername, newPass)) {
+						count = true;
+					}
 				} catch (Exception e) {
-					System.err.println(e);
+					logger.info(e.getMessage());
 				}
+				}
+				count = false;
 				break;
 
 			case "5":
 				FactoryClass.getCustomerServices().checkBalance(custUsername);
 				break;
-				
+
 			case "6":
 				FactoryClass.getCustomerServices().viewApplications(custUsername);
 				break;

@@ -36,4 +36,19 @@ public class LadServicesImplementation implements LadServicesDeclaration{
 		} else return false;
 	}
 
+	@Override
+	public boolean loanTypes() {
+		return FactoryClass.getLadDao().loanTypes();
+	}
+
+	@Override
+	public String loanTypes(String k) {
+		return  FactoryClass.getLadDao().loanTypes(k);
+	}
+	
+	@Override
+	public boolean applicationExist(String id) {
+		return FactoryClass.getLadDao().applicationExist(id);
+	}
+
 }

@@ -134,7 +134,7 @@ public class LoginServicesTest {
 						"mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7681093264L, 50000.0);
 			});
 		} catch (InvalidDateFormatException e) {
-			assertThrows(InvalidPhoneException.class, ()->{
+			assertThrows(InvalidDateFormatException.class, ()->{
 				implementation.register("businessman", "5-10-1996", "male", "Mayank123", "cus123", "mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7681093264L, 50000.0);
 			});
 		} catch (InvalidPasswordException e) {
@@ -212,36 +212,6 @@ public class LoginServicesTest {
 		}
 	}
 	
-	@Test
-	void registerTest5() {
-		Repository.UserTable();
-		try {
-			Boolean isBoolean = implementation.register("businessman", "5/10/1996", "male", "Mayank@123", "cus123",
-					"mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7611093264L, 50000.0);
-			assertEquals(isBoolean, true);
-		} catch (DateLimitException e) {
-			assertThrows(DateLimitException.class, () -> {
-				implementation.register("businessman", "5/10/1996", "male", "Mayank@123", "cus123",
-						"mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7611093264L, 50000.0);
-			});
-		} catch (InvalidPhoneException e) {
-			assertThrows(InvalidPhoneException.class, () -> {
-				implementation.register("businessman", "5/10/1996", "male", "Mayank@123", "cus123",
-						"mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7611093264L, 50000.0);
-			});
-		} catch (InvalidDateFormatException e) {
-			assertThrows(InvalidPhoneException.class, ()->{
-				implementation.register("businessman", "5/10/1996", "male", "Mayank@123", "cus123", "mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7611093264L, 50000.0);
-			});
-		} catch (InvalidPasswordException e) {
-			assertThrows(InvalidPasswordException.class, ()->{
-				implementation.register("businessman", "5/10/1996", "male", "Mayank@123", "cus123", "mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7611093264L, 50000.0);
-			});
-		} catch (InvalidEmailException e) {
-			assertThrows(InvalidEmailException.class, ()->{
-				implementation.register("businessman", "5/10/1996", "male", "Mayank@123", "cus123", "mayank123@gmail.com", "Qwerty@123", "Mayank", "Singh", 7611093264L, 50000.0);
-			});
-		}
-	}
+	
 
 }

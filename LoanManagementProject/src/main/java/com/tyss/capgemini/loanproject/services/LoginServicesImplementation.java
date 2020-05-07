@@ -76,4 +76,14 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 		} else
 			throw new InvalidUsernameException("Enter correct format");
 	}
+	
+	@Override
+	public boolean emailExists(String email) {
+		return FactoryClass.getLoginDao().emailExists(email);
+	}
+
+	@Override
+	public boolean usernameExists(String username) {
+		return FactoryClass.getLoginDao().usernameExists(username);
+	}
 }

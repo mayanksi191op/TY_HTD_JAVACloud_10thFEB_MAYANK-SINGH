@@ -13,7 +13,7 @@ public class AdminDaoTest {
 	@Test
 	void deleteLoanTest1() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.deleteLoan("Payday Loan");
+		Boolean isBoolean = implementation.deleteLoan("Personal Loan");
 		assertEquals(isBoolean, true);
 	}
 	@Test
@@ -89,14 +89,14 @@ public class AdminDaoTest {
 	@Test
 	void addClientsTest1() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.addClients("AP01");
+		Boolean isBoolean = implementation.addClients("AP01", "manuqw@gmail.com", "qwerty@123A", "mayank", "singh", "8787878787");
 		assertEquals(isBoolean, true);
 	}
 	
 	@Test
 	void addClientsTest2() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.addClients("asdasd");
-		assertEquals(isBoolean, false);
+		Boolean isBoolean = implementation.addClients("AP02", "naruto@gmail.com", "qwerty@123", "Naruto", "Uzumaki", "7234232434");
+		assertEquals(isBoolean, true);
 	}
 }

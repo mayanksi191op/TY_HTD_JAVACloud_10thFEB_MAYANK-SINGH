@@ -22,7 +22,7 @@ public class ValidationClass {
 	}
 	
 	public boolean usernameValid(String username) {
-		Pattern pattern = Pattern.compile("[a-zA-Z0-9]{5,}");
+		Pattern pattern = Pattern.compile("[a-zA-Z0-9]{5,15}");
 		Matcher matcher = pattern.matcher(username);
 		Boolean boolean1 = matcher.matches();
 		return boolean1;
@@ -54,5 +54,9 @@ public class ValidationClass {
 		
 	public boolean doubleValid(String interest) {
 		return Pattern.matches("[0-9]*[.]?[0-9]*", interest);
+	}
+	
+	public boolean phoneValid(String phone) {
+		return Pattern.matches("[6-9][0-9]{9,9}", phone);
 	}
 }

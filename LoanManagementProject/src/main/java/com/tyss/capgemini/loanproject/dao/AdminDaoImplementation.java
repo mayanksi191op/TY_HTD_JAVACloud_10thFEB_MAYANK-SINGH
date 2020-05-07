@@ -70,7 +70,11 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 	public boolean viewLoanPrograms() {
 		if (Repository.loanTypeList.size() != 0) {
 			for (int k = 0; k < Repository.loanTypeList.size(); k++) {
-				logger.info(Repository.loanTypeList.get(k));
+				logger.info("**********************");
+				logger.info("Type: " + Repository.loanTypeList.get(k).get("Type"));
+				logger.info("Time Period: " + Repository.loanTypeList.get(k).get("Time-Period"));
+				logger.info("Interest Rates: " + Repository.loanTypeList.get(k).get("Interest-Rates"));
+				logger.info("**********************");
 			}
 			return true;
 		} else
@@ -82,7 +86,20 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		if (Repository.loanFormList.size() != 0) {
 			for (int i = 0; i < Repository.loanFormList.size(); i++) {
 				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("approved")) {
-					logger.info(Repository.loanFormList.get(i));
+					logger.info("*******************************");
+					logger.info("ApplicationId: " + Repository.loanFormList.get(i).get("ApplicationId"));
+					logger.info("AccountNo: " + Repository.loanFormList.get(i).get("AccountNo"));
+					logger.info("Email: " + Repository.loanFormList.get(i).get("Email"));
+					logger.info("ApplicantName: " + Repository.loanFormList.get(i).get("ApplicantName"));
+					logger.info("DateOfBirth: " + Repository.loanFormList.get(i).get("DateOfBirth"));
+					logger.info("CoApplicantName: " + Repository.loanFormList.get(i).get("CoApplicantName"));
+					logger.info("LoanType: " + Repository.loanFormList.get(i).get("LoanType"));
+					logger.info("BranchCode: " + Repository.loanFormList.get(i).get("BranchCode"));
+					logger.info("BranchName: " + Repository.loanFormList.get(i).get("BranchName"));
+					logger.info("OpenDate: " + Repository.loanFormList.get(i).get("OpenDate"));
+					logger.info("RequestDate: " + Repository.loanFormList.get(i).get("RequestDate"));
+					logger.info("LoanStatus: " + Repository.loanFormList.get(i).get("LoanStatus"));
+					logger.info("*******************************");
 				}
 			} return true;
 		} else return false;
@@ -93,7 +110,20 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		if (Repository.loanFormList.size() != 0) {
 			for (int i = 0; i < Repository.loanFormList.size(); i++) {
 				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("rejected")) {
-					logger.info(Repository.loanFormList.get(i));
+					logger.info("*******************************");
+					logger.info("ApplicationId: " + Repository.loanFormList.get(i).get("ApplicationId"));
+					logger.info("AccountNo: " + Repository.loanFormList.get(i).get("AccountNo"));
+					logger.info("Email: " + Repository.loanFormList.get(i).get("Email"));
+					logger.info("ApplicantName: " + Repository.loanFormList.get(i).get("ApplicantName"));
+					logger.info("DateOfBirth: " + Repository.loanFormList.get(i).get("DateOfBirth"));
+					logger.info("CoApplicantName: " + Repository.loanFormList.get(i).get("CoApplicantName"));
+					logger.info("LoanType: " + Repository.loanFormList.get(i).get("LoanType"));
+					logger.info("BranchCode: " + Repository.loanFormList.get(i).get("BranchCode"));
+					logger.info("BranchName: " + Repository.loanFormList.get(i).get("BranchName"));
+					logger.info("OpenDate: " + Repository.loanFormList.get(i).get("OpenDate"));
+					logger.info("RequestDate: " + Repository.loanFormList.get(i).get("RequestDate"));
+					logger.info("LoanStatus: " + Repository.loanFormList.get(i).get("LoanStatus"));
+					logger.info("*******************************");
 				}
 			} return true;
 		} else return false;
@@ -104,48 +134,60 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		if (Repository.loanFormList.size() != 0) {
 			for (int i = 0; i < Repository.loanFormList.size(); i++) {
 				if (((String) Repository.loanFormList.get(i).get("LoanStatus")).toLowerCase().equals("requested")) {
-					logger.info(Repository.loanFormList.get(i));
+					logger.info("*******************************");
+					logger.info("ApplicationId: " + Repository.loanFormList.get(i).get("ApplicationId"));
+					logger.info("AccountNo: " + Repository.loanFormList.get(i).get("AccountNo"));
+					logger.info("Email: " + Repository.loanFormList.get(i).get("Email"));
+					logger.info("ApplicantName: " + Repository.loanFormList.get(i).get("ApplicantName"));
+					logger.info("DateOfBirth: " + Repository.loanFormList.get(i).get("DateOfBirth"));
+					logger.info("CoApplicantName: " + Repository.loanFormList.get(i).get("CoApplicantName"));
+					logger.info("LoanType: " + Repository.loanFormList.get(i).get("LoanType"));
+					logger.info("BranchCode: " + Repository.loanFormList.get(i).get("BranchCode"));
+					logger.info("BranchName: " + Repository.loanFormList.get(i).get("BranchName"));
+					logger.info("OpenDate: " + Repository.loanFormList.get(i).get("OpenDate"));
+					logger.info("RequestDate: " + Repository.loanFormList.get(i).get("RequestDate"));
+					logger.info("LoanStatus: " + Repository.loanFormList.get(i).get("LoanStatus"));
+					logger.info("*******************************");
 				}
 			} return true;
 		} else return false;
 	}
 
 	@Override
-	public boolean addClients(String appidString) {
-		int count2 = 0;
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (appidString.equals((String) Repository.loanFormList.get(i).get("ApplicationId"))) {
-				for (int j = 0; j < Repository.clientList.size(); j++) {
-					if (((String) Repository.loanFormList.get(i).get("ApplicationId"))
-							.equalsIgnoreCase((String) Repository.clientList.get(j).get("ApplicationId"))) {
-						logger.info("Client already exist.");
-						count2++;
-						return true;
-					}
-				}
-				if (count2 > 0) {
-					return true;
-				}
-				if ("approved".equalsIgnoreCase((String) Repository.loanFormList.get(i).get("LoanStatus"))) {
-					Repository.clientList.add(Repository.loanFormList.get(i));
-					logger.info("Client added");
-					return true;
-				} else {
-					logger.info("Status is not approved");
-					return true;
-				}
-			}
-		} return false;
+	public boolean addClients(String username,String email,String password,
+			String firstname,String lastname,String phone) {
+		HashMap<String, Object> regHashMap = new LinkedHashMap<String, Object>();
+		regHashMap.put("password", password);
+		regHashMap.put("username", username);
+		regHashMap.put("email", email);
+		regHashMap.put("firstname", firstname);
+		regHashMap.put("lastname", lastname);
+		regHashMap.put("phone", phone);
+		regHashMap.put("role", "L.A.D");
+		Repository.clientList.add(regHashMap);
+		Repository.mainList.add(regHashMap);
+		Repository.employeeList.add(regHashMap);
+		return true;
 	}
+
 
 	@Override
 	public boolean viewClients() {
 		if (Repository.clientList.size() != 0) {
 			for (int i = 0; i < Repository.clientList.size(); i++) {
-				logger.info(Repository.clientList.get(i));
+				logger.info("***********************************");
+				logger.info("Username: " + Repository.clientList.get(i).get("username"));
+				logger.info("Password: " + Repository.clientList.get(i).get("password"));
+				logger.info("Email: " + Repository.clientList.get(i).get("email"));
+				logger.info("FirstName: " + Repository.clientList.get(i).get("firstname"));
+				logger.info("LastName: " + Repository.clientList.get(i).get("lastname"));
+				logger.info("Phone Number:" + Repository.clientList.get(i).get("phone"));
+				logger.info("Role:" + Repository.clientList.get(i).get("role"));
+				logger.info("***********************************");
 			}
 			return true;
 		} else
+			logger.info("No clients exist");
 			return false;
 	}
 	
@@ -168,6 +210,34 @@ public class AdminDaoImplementation implements AdminDaoDeclaration {
 		}
 		logger.info("Invalid choice, enter again please!!!");
 		return "invalid choice";
+	}
+	
+	@Override
+	public boolean emailExists(String email) {
+		int count = 0;
+		for (int i = 0; i < Repository.mainList.size(); i++) {
+			if (email.equalsIgnoreCase((String) Repository.mainList.get(i).get("email"))) {
+				count++;
+			}
+		}
+
+		if (count > 0) {
+			return false;
+		} else {
+			return true;
+		}
+
+	}
+
+
+	@Override
+	public boolean usernameExists(String username) {
+		for (int i = 0; i < Repository.mainList.size(); i++) {
+			if (username.equalsIgnoreCase((String) Repository.mainList.get(i).get("username"))) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 }

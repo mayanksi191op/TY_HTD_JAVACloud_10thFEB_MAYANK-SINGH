@@ -7,19 +7,14 @@ import com.tyss.capgemini.loanproject.repository.Repository;
 
 public class AdminServicesImplementation implements AdminServicesDeclaration {
 	@Override
-	public boolean addClients(String appidString) {
-		int count = 0;
-		for (int i = 0; i < Repository.loanFormList.size(); i++) {
-			if (appidString.equalsIgnoreCase((String) Repository.loanFormList.get(i).get("ApplicationId"))) {
-				count ++;
-				FactoryClass.getAdminDao().addClients(appidString);
-				return true;
-			}
+	public boolean addClients(String username,String email,String password,
+			String firstname,String lastname,String phone) {
+		if( FactoryClass.getAdminDao().addClients(username,email,password,
+				firstname, lastname, phone)) {
+			return true;
 		}
-		if(count == 0) {
-			throw new ClientNotExistException("Applicant doesnt exist");
-		}
-		return false;
+		else
+			return false;
 	}
 
 	@Override
@@ -104,6 +99,17 @@ public class AdminServicesImplementation implements AdminServicesDeclaration {
 	@Override
 	public String loanTypes(String k) {
 		return FactoryClass.getAdminDao().loanTypes(k);
+	}
+	
+
+	@Override
+	public boolean emailExists(String email) {
+		return FactoryClass.getLoginDao().emailExists(email);
+	}
+
+	@Override
+	public boolean usernameExists(String username) {
+		return FactoryClass.getLoginDao().usernameExists(username);
 	}
 
 }

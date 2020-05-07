@@ -123,4 +123,24 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 		return true;
 	}
 	
+	@Override
+	public boolean emailExists(String email) {
+		return FactoryClass.getLoginDao().emailExists(email);
+	}
+
+	@Override
+	public boolean usernameExists(String username) {
+		return FactoryClass.getLoginDao().usernameExists(username);
+	}
+	
+	@Override
+	public boolean applicationExist(String id) {
+		return FactoryClass.getCustomerDao().applicationExist(id);
+	}
+	
+	@Override
+	public String fetchMail(String username) {
+		return FactoryClass.getCustomerDao().fetchMail(username);
+	}
+	
 }

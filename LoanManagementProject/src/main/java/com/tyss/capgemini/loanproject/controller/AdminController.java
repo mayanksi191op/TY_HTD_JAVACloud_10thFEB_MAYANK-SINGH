@@ -2,21 +2,17 @@ package com.tyss.capgemini.loanproject.controller;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.hibernate.query.criteria.internal.expression.function.AggregationFunction.COUNT;
 
-import com.tyss.capgemini.loanproject.dao.AdminDaoImplementation;
+import com.tyss.capgemini.loanproject.exceptions.DataAlreayExistException;
 import com.tyss.capgemini.loanproject.exceptions.InvalidDataException;
+import com.tyss.capgemini.loanproject.exceptions.InvalidEmailException;
+import com.tyss.capgemini.loanproject.exceptions.InvalidPasswordException;
+import com.tyss.capgemini.loanproject.exceptions.InvalidUsernameException;
 import com.tyss.capgemini.loanproject.factory.FactoryClass;
-//import com.tyss.capgemini.loanproject.repository.Repository;
-import com.tyss.capgemini.loanproject.repository.Repository;
 import com.tyss.capgemini.loanproject.validation.ValidationClass;
 
 public class AdminController {
 	public static void adminCont() {
-		// Repository.UserTable();
-		AdminDaoImplementation adminDaoImplementation = new AdminDaoImplementation();
-
-
 		ValidationClass validationClass = new ValidationClass();
 		Logger logger = LogManager.getLogger(AdminController.class);
 		boolean exit = false;
@@ -24,16 +20,17 @@ public class AdminController {
 		boolean exit3 = false;
 		boolean exit4 = false;
 		while (exit != true) {
-			logger.info("Admin Operations");
+			logger.info("===========================");
+			logger.info("	  Admin Operations");
+			logger.info("===========================");
 			logger.info("1> Loan Programs: ");
 			logger.info("2> Client Manager ");
 			logger.info("3> Loan Reports: ");
 			logger.info("4> Logout");
 			logger.info("Enter the choice: ");
-			int ch = Login.scanner.nextInt();
-			Login.scanner.nextLine();
+			String ch = Login.scanner.nextLine();
 			switch (ch) {
-			case 1:
+			case "1":
 				try {
 					while (exit2 != true) {
 						logger.info("1> Insert in Loan programs: ");
@@ -99,6 +96,7 @@ public class AdminController {
 							
 							FactoryClass.getAdminServices().insertLoan(type, time, rates);
 							count = false;
+							
 							break;
 							
 						case "2":
@@ -120,7 +118,7 @@ public class AdminController {
 									}}
 								//int k = Integer.parseInt(jString);
 								//String loantype = FactoryClass.getAdminServices().loanTypes(k);
-								String loantype = adminDaoImplementation.loanTypes(jString);
+								String loantype = FactoryClass.getAdminServices().loanTypes(jString);
 								if (loantype.equals("invalid choice")) {
 									count = false;
 								} else {
@@ -128,6 +126,7 @@ public class AdminController {
 									count = true;
 								}
 							}
+							exit2 = false;
 							break;
 
 						case "3":
@@ -172,62 +171,176 @@ public class AdminController {
 				} catch (Exception e) {
 					logger.info(e.getMessage());
 				}
+				exit2 = false;
 				break;
-			case 2:
-				try {
-					while (exit3 != true) {
-						logger.info("1> Add Clients: ");
-						logger.info("2> View Clients: ");
-						logger.info("3> Check other operations: ");
-						logger.info("Choose one:-");
-						int ch3 = Login.scanner.nextInt();
-						Login.scanner.nextLine();
-						switch (ch3) {
-						case 1:
-							System.out.println("Enter the applicationId of client you want to add: ");
-							String appidString = Login.scanner.nextLine();
-							FactoryClass.getAdminServices().addClients(appidString);
-							break;
-						case 2:
-							System.out.println("Clients:-");
-							FactoryClass.getAdminServices().viewClients();
-							break;
-						case 3:
-							exit3 = true;
-							break;
-						default:
-							break;
+			case "2":
+				boolean flag=false;
+				while (exit3 == false) {
+					String firstname=null;
+					String lastname=null;
+					String email=null;
+					String password=null;
+					String phone=null;
+					String username=null;
+					logger.info("1> Add Clients: ");
+					logger.info("2> View Clients: ");
+					logger.info("3> Check other operations: ");
+					logger.info("Choose one:-");
+					String ch3 = Login.scanner.nextLine();
+					switch (ch3) {
+					case "1":
+						while(!flag) {
+							logger.info("Enter First Name: ");
+							firstname = Login.scanner.nextLine();
+							try {
+								if (validationClass.nameValid(firstname) == false) {
+									throw new InvalidDataException("first name can have letters only!!");
+								} else {
+									flag = true;
+								}
+							} catch (Exception e) {
+								logger.info(e.getMessage());
+							}
 						}
+						flag=false;
+						while(!flag) {
+							logger.info("Enter Last Name: ");
+							lastname = Login.scanner.nextLine();
+							try {
+								if (validationClass.nameValid(lastname) == false) {
+									throw new InvalidDataException("last name can have letters only!!");
+								} else {
+									flag = true;
+								}
+							} catch (Exception e) {
+								logger.info(e.getMessage());
+							}
+						}
+						flag=false;
+						while (!flag) {
+							logger.info("Enter username: ");
+							username = Login.scanner.nextLine();
+							try {
+								if (validationClass.usernameValid(username) == false) {
+									throw new InvalidUsernameException("Follow the pattern...");
+								} else {
+									try {
+										if (FactoryClass.getAdminServices().usernameExists(username) == false) {
+											throw new DataAlreayExistException("this username already exists!!!");
+										} else {
+											flag = true;
+										}
+									} catch (Exception e) {
+										logger.info(e.getMessage());
+									}
+								}
+							} catch (Exception e) {
+								logger.info(e.getMessage());
+							}
+						}
+						flag = false;
+						while (!flag) {
+							logger.info("Enter email: ");
+							email = Login.scanner.nextLine();
+							try {
+								if (validationClass.mailValid(email) == false) {
+									throw new InvalidEmailException("Invalid email");
+								} else {
+									try {
+										if (FactoryClass.getAdminServices().emailExists(email) == false) {
+											throw new DataAlreayExistException("this email already exists!!!");
+										} else {
+											flag = true;
+										}
+									} catch (Exception e) {
+										logger.info(e.getMessage());
+									}
+								}
+							} catch (Exception e) {
+								logger.info(e.getMessage());
+							}
+						}
+						flag = false;
+						while (!flag) {
+							logger.info("Enter Phone no: ");
+							phone = Login.scanner.nextLine();
+							try {
+								if (validationClass.phoneValid(phone) == false) {
+									throw new InvalidDataException("Invalid phone number!!! (10 digits)");
+								} else {
+									flag = true;
+								}
+							}catch (Exception e) {
+								logger.info(e.getMessage());
+							}
+						}
+						flag = false;
+						while (!flag) {
+							logger.info("Enter password: ");
+							password = Login.scanner.nextLine();
+							try {
+								if (validationClass.passValid(password) == false) {
+									throw new InvalidPasswordException("Password pattern should match");
+								} else {
+									flag = true;
+								}
+							} catch (Exception e) {
+								logger.info(e.getMessage());
+							}
+						}
+						flag = false;
+						if(FactoryClass.getAdminServices().addClients(username, email, password, firstname, lastname, phone)) {
+							logger.info("client is added successfully");
+						}
+						else {
+							logger.info("something went wrong!!!");
+						}
+							
+						break;
+					case "2":
+						System.out.println("Clients:-");
+						FactoryClass.getAdminServices().viewClients();
+						break;
+					case "3":
+						exit3 = true;
+						break;
+					default:
+						logger.info("invalid option!!!");
+						break;
 					}
-				} catch (Exception e) {
-					logger.info(e);
 				}
+				exit3 = false;
 				break;
-			case 3:
+				
+				
+				
+				
+				
+				
+			case "3":
 				while (exit4 != true) {
 					logger.info("Which report do you want to check: ");
 					logger.info("1> Approved reports: ");
 					logger.info("2> Rejected reports: ");
 					logger.info("3> Requested reports: ");
 					logger.info("4> Check other operations: ");
-					int ch2 = Login.scanner.nextInt();
-					Login.scanner.nextLine();
+					String ch2 = Login.scanner.nextLine();
 					switch (ch2) {
-					case 1:
+					case "1":
 						logger.info("Approved application report:-");
 						FactoryClass.getAdminServices().approvedForms();
 						break;
 
-					case 2:
+					case "2":
 						logger.info("Rejected application report:-");
 						FactoryClass.getAdminServices().rejectedForms();
 						break;
 
-					case 3:
+					case "3":
 						logger.info("Requested application report:-");
 						FactoryClass.getAdminServices().requestedForms();
 						break;
-					case 4:
+					case "4":
 						exit4 = true;
 						break;
 					default:
@@ -235,8 +348,14 @@ public class AdminController {
 						break;
 					}
 				}
+				exit4 = false;
 				break;
-			case 4:
+				
+				
+				
+				
+				
+			case "4":
 				exit = true;
 				break;
 			default:

@@ -14,4 +14,8 @@ public interface CustomerServicesDeclaration {
 	public boolean loanTypes();
 	public String loanTypes(int k);
 	public boolean viewApplications(String custUsername);
+	public boolean emailExists(String email);
+	public boolean usernameExists(String username);
+	public boolean applicationExist(String id);
+	public String fetchMail(String username);
 }

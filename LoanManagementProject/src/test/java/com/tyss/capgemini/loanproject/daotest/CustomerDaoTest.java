@@ -84,21 +84,58 @@ public class CustomerDaoTest {
 	@Test
 	void loanApplicationForm1() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.loanApplicationForm("AP198", "BNI12345", "Pankaj", "", "Tripathy", "14/12/1995", "Ranjan", "Singh", "Ranjup", "House Loan", "BNI123421412", "Kanchipuram", "12/2/1987", "22/5/2020", "submit");
+		Boolean isBoolean = implementation.loanApplicationForm("AP198", "BNI12345", "pankaj.p@gmail.com", "Pankaj", "", "Tripathy", "14/12/1995", "Ranjan", "Singh", "Ranjup", "House Loan", "BNI123421412", "Kanchipuram", "12/2/1987", "22/5/2020");
 		assertEquals(isBoolean, true);
 	}
 	
 	@Test
 	void loanApplicationForm2() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.loanApplicationForm("AP198", "BNI12345", "Pankaj", "", "Tripathy", "14/12/1995", "Ranjan", "Singh", "Ranjup", "House Loan", "BNI123421412", "Kanchipuram", "12/2/1987", "22/5/2020", "cancel");
+		Boolean isBoolean = implementation.loanApplicationForm("AP198", "BNI12345", "pankaj.p@gmail.com", "Pankaj", "", "Tripathy", "14/12/1995", "", "", "", "House Loan", "BNI123421412", "Kanchipuram", "12/2/1987", "22/5/2020");
 		assertEquals(isBoolean, true);
 	}
 	
 	@Test
 	void loanApplicationForm3() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.loanApplicationForm("AP1234", "BNI12345", "Pankaj", "", "Tripathy", "14/12/1995", "Ranjan", "Singh", "Ranjup", "House Loan", "BNI123421412", "Kanchipuram", "12/2/1987", "22/5/2020", "asdasd");
+		Boolean isBoolean = implementation.loanApplicationForm("AP1234", "BNI12345", "anand.p@gmail.com", "Anand", "Singh", "", "14/12/1995", "Ranjan", "Singh", "Ranjup", "House Loan", "BNI123421412", "Kanchipuram", "12/2/1987", "22/5/2020");
+		assertEquals(isBoolean, true);
+	}
+	
+	
+	@Test
+	void usernameExists1() {
+		Repository.UserTable();
+		Boolean isBoolean = implementation.usernameExists("asd");
 		assertEquals(isBoolean, false);
 	}
+	
+	@Test
+	void usernameExists2() {
+		Repository.UserTable();
+		Boolean isBoolean = implementation.usernameExists("manoj191");
+		assertEquals(isBoolean, true);
+	}
+	
+	@Test
+	void loanTypes1() {
+		Repository.UserTable();
+		Boolean isBoolean = implementation.loanTypes();
+		assertEquals(isBoolean, true);
+	}
+	
+	@Test
+	void loanTypes2() {
+		Repository.UserTable();
+		Boolean isBoolean = implementation.loanTypes();
+		assertEquals(isBoolean, true);
+	}
+	
+	@Test
+	void loanTypes3() {
+		Repository.UserTable();
+		String string = implementation.loanTypes(1);
+		assertEquals("House Construction Loan", string);
+	}
+	
 }

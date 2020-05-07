@@ -50,7 +50,7 @@ public class LadServicesTest {
 	@Test
 	void ladViewFormsTest1() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.ladViewForms("Vehicle Loan");
+		Boolean isBoolean = implementation.ladViewForms("Personal Loan");
 		assertEquals(isBoolean, true);
 	}
 	

@@ -41,7 +41,7 @@ public class LadDaoTest {
 	@Test
 	void ladViewFormsTest1() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.ladViewForms("Vehicle loan");
+		Boolean isBoolean = implementation.ladViewForms("Personal Loan");
 		assertEquals(isBoolean, true);
 	}
 	

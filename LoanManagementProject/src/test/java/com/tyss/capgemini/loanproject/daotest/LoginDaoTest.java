@@ -14,7 +14,7 @@ public class LoginDaoTest {
 	@Test
 	void custLoginTest1() {
 		Repository.UserTable();
-			Boolean isBoolean = implementation.custLogin("manoj191", "pass6");
+			Boolean isBoolean = implementation.custLogin("manoj191", "Qwerty@123");
 			assertEquals(isBoolean, true);
 	}
 	
@@ -28,7 +28,7 @@ public class LoginDaoTest {
 	@Test
 	void empLogin1() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.empLogin("mayank191", "pass1");
+		Boolean isBoolean = implementation.empLogin("mayank191", "Qwerty@123");
 		assertEquals(isBoolean, true);
 	}
 	
@@ -42,7 +42,7 @@ public class LoginDaoTest {
 	@Test
 	void empLogin3() {
 		Repository.UserTable();
-		Boolean isBoolean = implementation.empLogin("saswat191", "pass11");
+		Boolean isBoolean = implementation.empLogin("saswat191", "Qwerty@123");
 		assertEquals(isBoolean, true);
 	}
 	

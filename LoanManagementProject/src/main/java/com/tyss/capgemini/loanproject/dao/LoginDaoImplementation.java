@@ -72,4 +72,38 @@ public class LoginDaoImplementation implements LoginDaoDeclaration {
 		logger.info("customer added");
 		return true;
 	}
+	
+	@Override
+	public boolean emailExists(String email) {
+		int count = 0;
+		for (int i = 0; i < Repository.mainList.size(); i++) {
+			if (email.equalsIgnoreCase((String) Repository.mainList.get(i).get("email"))) {
+				count++;
+			}
+		}
+
+		if (count > 0) {
+			return false;
+		} else {
+			return true;
+		}
+
+	}
+
+
+	@Override
+	public boolean usernameExists(String username) {
+		int count = 0;
+		for (int i = 0; i < Repository.mainList.size(); i++) {
+			if (username.equalsIgnoreCase((String) Repository.mainList.get(i).get("username"))) {
+				count++;
+			}
+		}
+		if (count > 0) {
+			return false;
+		} else {
+			return true;
+		}
+
+	}
 }
