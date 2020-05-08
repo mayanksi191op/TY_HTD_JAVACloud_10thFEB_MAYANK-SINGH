@@ -40268,3 +40268,2699 @@ OpenDate: 03-08-1920
 RequestDate: 01-4-2020
 LoanStatus: requested
 ********************************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+*******************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+*******************************
+*******************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+*******************************
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+6> House Loan
+7> House Construction Loan
+8> Educational Loan
+9> Land Purchase Loan
+10> Personal Loan
+11> House Loan
+12> House Construction Loan
+13> Educational Loan
+14> Land Purchase Loan
+15> Personal Loan
+16> House Loan
+17> House Construction Loan
+18> Educational Loan
+19> Land Purchase Loan
+20> Personal Loan
+21> House Loan
+22> House Construction Loan
+23> Educational Loan
+24> Land Purchase Loan
+25> Personal Loan
+26> House Loan
+27> House Construction Loan
+28> Educational Loan
+29> Land Purchase Loan
+30> Personal Loan
+31> House Loan
+32> House Construction Loan
+33> Educational Loan
+34> Land Purchase Loan
+35> Personal Loan
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+No applications for this plan
+Status Changed successfully.
+Status Changed successfully.
+All applications present:-
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+********************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP04
+AccountNo: BNI12345
+Email: shreya.p@gmail.com
+ApplicantName: Shreya Singh 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+********************************
+********************************
+ApplicationId: AP02
+AccountNo: BNI22345
+Email: senku.p@gmail.com
+ApplicantName: Senku Manohar 
+DateOfBirth: 14/3/1973
+CoApplicantName: Shiv Kumar Rajput
+LoanType: House Construction Loan
+BranchCode: BNI33343456
+BranchName: Cannaught Bank
+OpenDate: 12-11-2011
+RequestDate: 02-4-2020
+LoanStatus: rejected
+********************************
+********************************
+ApplicationId: AP03
+AccountNo: BNI21145
+Email: tarushi.p@gmail.com
+ApplicantName: Tarushi Verma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Anjali Kumari 
+LoanType: Educational Loan
+BranchCode: BNI13311456
+BranchName: Purani Delhi
+OpenDate: 03-08-1920
+RequestDate: 01-4-2020
+LoanStatus: requested
+********************************
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------EMPLOYEE LOGIN---------
+Enter the Username:-
+Enter the Password:-
+Enter correct username and password
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+enter the Applicant First Name: 
+enter the Middle Name: 
+enter the Last Name
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the amount
+Enter only numbers!!!
+Enter the amount
+Enter only numbers!!!
+Enter the amount
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+enter the Applicant First Name: 
+enter the Middle Name: 
+enter the Last Name
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+java.lang.Double cannot be cast to java.lang.String
+Enter the Loan amount
+Enter only numbers!!!
+Enter the Loan amount
+java.lang.Double cannot be cast to java.lang.String
+Enter the Loan amount
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+enter the Applicant First Name: 
+enter the Middle Name: 
+enter the Last Name
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+Enter only numbers!!!
+Enter the Loan amount
+Enter only numbers!!!
+Enter the Loan amount
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+{ApplicationId=asd21, AccountNo=asdasd123123, Email=manoj.p@gmail.com, ApplicantName=asdasd asdasd asdasd, CoapplicantName=null null null, DateOfBirth=12/12/1996, LoanType=House Construction Loan, BranchCode=asdassdas123, BranchName=asdasd, OpenDate=12/12/1996, RequestDate=12/12/1996, LoanAmount=12333, LoanStatus=requested}
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Your current balance is: 
+Balance available: 90987.12
+Loan to be paid: 
+Loan to pay: 60890.0
+Enter the amount to pay: 
+Amount paid successfully
+Balance available: 78987.12
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Balance available: 78987.12
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+enter the Applicant First Name: 
+enter the Middle Name: 
+enter the Last Name
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+1> House Construction Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+Enter amount less than balance...
+Enter the Loan amount
+Enter only numbers!!!
+Enter the Loan amount
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+{ApplicationId=as12, AccountNo=asdasd123, Email=manoj.p@gmail.com, ApplicantName=qweqwe qweqwe qwewqe, CoapplicantName=null null null, DateOfBirth=12/12/1996, LoanType=Educational Loan, BranchCode=sqwe123, BranchName=qweqwe, OpenDate=12/12/1996, RequestDate=12/12/1996, LoanAmount=12, LoanStatus=requested}
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+enter the Applicant First Name: 
+enter the Middle Name: 
+enter the Last Name
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+Enter only numbers!!!
+Enter the Loan amount
+Enter amount less than balance...
+Enter the Loan amount
+Enter only numbers!!!
+Enter the Loan amount
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: qwe213
+AccountNo: qweqwe123123
+Email: manoj.p@gmail.com
+ApplicantName: qweqwe qweqwe qweqwe
+DateOfBirth: 12/12/1996
+CoApplicantName: null
+LoanType: House Construction Loan
+BranchCode: wqeqwe123
+BranchName: qwewqe
+OpenDate: 12/12/1996
+RequestDate: 12/12/1996
+LoanStatus: requested
+*******************************
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+Wrong choice. Enter again
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+Wrong choice. Enter again
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+-----------REGISTER----------
+Enter the First Name: 
+Enter the Last Name: 
+Enter username: 
+Enter email: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+-----------REGISTER----------
+Enter the First Name: 
+Enter the Last Name: 
+Enter username: 
+Enter email: 
+Enter password: 
+Enter gender: 
+1> Male
+2> Female
+choose :-
+Enter date of birth: 
+Date pattern should match
+Enter date of birth: 
+Enter Phone no: 
+Enter occupation: 
+Enter balance:
+Enter userid:
+customer added
+user successfully added
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+enter valid Password (Should contain 1Uppercase, 1Lowercase, 1Special Char, 1Number, Range-(6-20))
+Enter the Password:-
+--------WELCOME qwewq123---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+No loan applications found.
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Your current balance is: 
+Balance available: 1233.0
+Loan to be paid: 
+Loan to pay: 0
+Enter the amount to pay: 
+java.lang.Integer cannot be cast to java.lang.Double
+Your current balance is: 
+Balance available: 1233.0
+Loan to be paid: 
+Loan to pay: 0
+Enter the amount to pay: 
+java.lang.Integer cannot be cast to java.lang.Double
+Your current balance is: 
+Balance available: 1233.0
+Loan to be paid: 
+Loan to pay: 0
+Enter the amount to pay: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Your current balance is: 
+Balance available: 90987.12
+Loan to be paid: 
+Loan to pay: 60890.0
+Enter the amount to pay: 
+Amount paid successfully
+Balance available: 90975.12
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Your current balance is: 
+Balance available: 90975.12
+Loan to be paid: 
+Loan to pay: 60878.0
+Enter the amount to pay: 
+Your current balance is: 
+Balance available: 90975.12
+Loan to be paid: 
+Loan to pay: 60878.0
+Enter the amount to pay: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Your current balance is: 
+Balance available: 90987.12
+Loan to be paid: 
+Loan to pay: 60890.0
+Enter the amount to pay: 
+Amount paid successfully
+Balance available: 90964.12
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Invalid Option
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Your current balance is: 
+Balance available: 90964.12
+Loan to be paid: 
+Loan to pay: 60867.0
+Enter the amount to pay: 
+Enter amount less than your loan amount.
+Your current balance is: 
+Balance available: 90964.12
+Loan to be paid: 
+Loan to pay: 60867.0
+Enter the amount to pay: 
+please enter correct data!!!
+Enter the amount to pay: 
+Enter amount less than your loan amount.
+Your current balance is: 
+Balance available: 90964.12
+Loan to be paid: 
+Loan to pay: 60867.0
+Enter the amount to pay: 
+Amount paid successfully
+Balance available: 90952.12
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+enter the Applicant First Name: 
+enter letters only!!!
+enter the Applicant First Name: 
+enter the Middle Name: 
+enter letters only!!!
+enter the Middle Name: 
+enter the Last Name
+Enter co-applicant?
+1>Yes        2>No
+1
+enter the Co-Applicant First Name: 
+enter letters only!!!
+enter the Co-Applicant First Name: 
+enter the Co-Applicant's Middle Name: 
+enter the Co-Applicant's Last Name
+enter the Date of Birth: 
+enter correct format only (DD/MM/YYYY)
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+enter the open date
+enter correct format only (DD/MM/YYYY)
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: qwe123
+AccountNo: qwewqe123123
+Email: manoj.p@gmail.com
+ApplicantName: qweqwe qwewqe wqeqwe
+DateOfBirth: 12/12/1996
+CoApplicantName: null
+LoanType: House Construction Loan
+BranchCode: asdasd12332
+BranchName: qweqwe
+OpenDate: 12/12/1995
+RequestDate: 12/12/1990
+LoanStatus: requested
+*******************************
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+Enter co-applicant?
+1>Yes        2>No
+1
+enter the Co-Applicant First Name: 
+enter the Co-Applicant's Middle Name: 
+enter the Co-Applicant's Last Name
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+Enter amount less than balance...
+Enter the Loan amount
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: qw21
+AccountNo: qweqwe123
+Email: manoj.p@gmail.com
+ApplicantName: Manoj - Sharma
+DateOfBirth: 12/12/1996
+CoApplicantName: null
+LoanType: House Construction Loan
+BranchCode: 12qwweqwe
+BranchName: qweqwe
+OpenDate: 12/12/1996
+RequestDate: 12/12/1996
+LoanStatus: requested
+*******************************
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+Enter co-applicant?
+1>Yes        2>No
+1
+enter the Co-Applicant First Name: 
+enter the Co-Applicant's Middle Name: 
+enter the Co-Applicant's Last Name
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Please enter only numbers
+enter the Branch Name
+Enter the Loan amount
+Enter valid data or amount!!!
+Enter the Loan amount
+Enter valid data or amount!!!
+Enter the Loan amount
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: qwe2
+AccountNo: qweqwe123123
+Email: manoj.p@gmail.com
+ApplicantName: Manoj - Sharma
+DateOfBirth: 12/12/1996
+CoApplicantName: qwewqe qweqwe qweqwe
+LoanType: House Construction Loan
+BranchCode: qweqwe123213
+BranchName: qweasd
+OpenDate: 12/12/1996
+RequestDate: 12/12/1996
+LoanStatus: requested
+*******************************
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+Balance available: 90987.12
+Loan to pay: 60890.0
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: AP198
+AccountNo: BNI12345
+Email: pankaj.p@gmail.com
+ApplicantName: Pankaj  Tripathy
+DateOfBirth: 14/12/1995
+CoApplicantName: Ranjan Singh Ranjup
+LoanType: House Loan
+BranchCode: BNI123421412
+BranchName: Kanchipuram
+OpenDate: 12/2/1987
+RequestDate: 22/5/2020
+LoanStatus: requested
+*******************************
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: AP198
+AccountNo: BNI12345
+Email: pankaj.p@gmail.com
+ApplicantName: Pankaj  Tripathy
+DateOfBirth: 14/12/1995
+CoApplicantName:   
+LoanType: House Loan
+BranchCode: BNI123421412
+BranchName: Kanchipuram
+OpenDate: 12/2/1987
+RequestDate: 22/5/2020
+LoanStatus: requested
+*******************************
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: AP1234
+AccountNo: BNI12345
+Email: anand.p@gmail.com
+ApplicantName: Anand Singh 
+DateOfBirth: 14/12/1995
+CoApplicantName: Ranjan Singh Ranjup
+LoanType: House Loan
+BranchCode: BNI123421412
+BranchName: Kanchipuram
+OpenDate: 12/2/1987
+RequestDate: 22/5/2020
+LoanStatus: requested
+*******************************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+6> House Loan
+7> House Construction Loan
+8> Educational Loan
+9> Land Purchase Loan
+10> Personal Loan
+11> House Loan
+12> House Construction Loan
+13> Educational Loan
+14> Land Purchase Loan
+15> Personal Loan
+16> House Loan
+17> House Construction Loan
+18> Educational Loan
+19> Land Purchase Loan
+20> Personal Loan
+21> House Loan
+22> House Construction Loan
+23> Educational Loan
+24> Land Purchase Loan
+25> Personal Loan
+26> House Loan
+27> House Construction Loan
+28> Educational Loan
+29> Land Purchase Loan
+30> Personal Loan
+31> House Loan
+32> House Construction Loan
+33> Educational Loan
+34> Land Purchase Loan
+35> Personal Loan
+36> House Loan
+37> House Construction Loan
+38> Educational Loan
+39> Land Purchase Loan
+40> Personal Loan
+41> House Loan
+42> House Construction Loan
+43> Educational Loan
+44> Land Purchase Loan
+45> Personal Loan
+46> House Loan
+47> House Construction Loan
+48> Educational Loan
+49> Land Purchase Loan
+50> Personal Loan
+51> House Loan
+52> House Construction Loan
+53> Educational Loan
+54> Land Purchase Loan
+55> Personal Loan
+56> House Loan
+57> House Construction Loan
+58> Educational Loan
+59> Land Purchase Loan
+60> Personal Loan
+61> House Loan
+62> House Construction Loan
+63> Educational Loan
+64> Land Purchase Loan
+65> Personal Loan
+66> House Loan
+67> House Construction Loan
+68> Educational Loan
+69> Land Purchase Loan
+70> Personal Loan
+71> House Loan
+72> House Construction Loan
+73> Educational Loan
+74> Land Purchase Loan
+75> Personal Loan
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+6> House Loan
+7> House Construction Loan
+8> Educational Loan
+9> Land Purchase Loan
+10> Personal Loan
+11> House Loan
+12> House Construction Loan
+13> Educational Loan
+14> Land Purchase Loan
+15> Personal Loan
+16> House Loan
+17> House Construction Loan
+18> Educational Loan
+19> Land Purchase Loan
+20> Personal Loan
+21> House Loan
+22> House Construction Loan
+23> Educational Loan
+24> Land Purchase Loan
+25> Personal Loan
+26> House Loan
+27> House Construction Loan
+28> Educational Loan
+29> Land Purchase Loan
+30> Personal Loan
+31> House Loan
+32> House Construction Loan
+33> Educational Loan
+34> Land Purchase Loan
+35> Personal Loan
+36> House Loan
+37> House Construction Loan
+38> Educational Loan
+39> Land Purchase Loan
+40> Personal Loan
+41> House Loan
+42> House Construction Loan
+43> Educational Loan
+44> Land Purchase Loan
+45> Personal Loan
+46> House Loan
+47> House Construction Loan
+48> Educational Loan
+49> Land Purchase Loan
+50> Personal Loan
+51> House Loan
+52> House Construction Loan
+53> Educational Loan
+54> Land Purchase Loan
+55> Personal Loan
+56> House Loan
+57> House Construction Loan
+58> Educational Loan
+59> Land Purchase Loan
+60> Personal Loan
+61> House Loan
+62> House Construction Loan
+63> Educational Loan
+64> Land Purchase Loan
+65> Personal Loan
+66> House Loan
+67> House Construction Loan
+68> Educational Loan
+69> Land Purchase Loan
+70> Personal Loan
+71> House Loan
+72> House Construction Loan
+73> Educational Loan
+74> Land Purchase Loan
+75> Personal Loan
+76> House Loan
+77> House Construction Loan
+78> Educational Loan
+79> Land Purchase Loan
+80> Personal Loan
+Amount paid successfully
+Amount paid successfully
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+*******************************
+ApplicationId: AP01
+AccountNo: BNI12345
+Email: manoj.p@gmail.com
+ApplicantName: Manoj Sharma 
+DateOfBirth: 14/3/1973
+CoApplicantName: Meghna Singh 
+LoanType: Personal Loan
+BranchCode: BNI22343456
+BranchName: Cannaught Circle
+OpenDate: 09/12/1992
+RequestDate: 23/5/2020
+LoanStatus: approved
+*******************************
+Password has been changed successfully.
+**********************
+Type: House Loan
+Time Period: 20 years(Max)
+Interest Rates: 9.75 %
+**********************
+**********************
+Type: House Construction Loan
+Time Period: 40 years(Max)
+Interest Rates: 11.0 %
+**********************
+**********************
+Type: Educational Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.5 %
+**********************
+**********************
+Type: Land Purchase Loan
+Time Period: 20 years(Max)
+Interest Rates: 14.2 %
+**********************
+**********************
+Type: Personal Loan
+Time Period: 5 years(Max)
+Interest Rates: 11.14 %
+**********************
+Balance available: 90987.12
+Loan to pay: 60890.0
+Amount paid successfully
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+Enter co-applicant?
+1>Yes        2>No
+2
+enter the Date of Birth: 
+******** W E L C O M E ********
+********      TO       ********
+********   LPS BANK    ********
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************
+---------CUSTOMER LOGIN---------
+Enter the Username:-
+Enter the Password:-
+--------WELCOME manoj191---------
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+enter the applicationId: 
+enter the Bank account number: 
+Enter co-applicant?
+1>Yes        2>No
+1
+enter the Co-Applicant First Name: 
+enter the Co-Applicant's Middle Name: 
+enter the Co-Applicant's Last Name
+enter the Date of Birth: 
+enter the Loan Type
+Available loans :-
+1> House Loan
+2> House Construction Loan
+3> Educational Loan
+4> Land Purchase Loan
+5> Personal Loan
+enter the Branch Code
+enter the Branch Name
+Enter the Loan amount
+enter the open date
+enter the Request Date
+1>SUBMIT
+2>CANCEL
+Choose one...
+Your loan application form has been submitted successfully.
+*******************************
+ApplicationId: qwe2
+AccountNo: qweqwe123
+Email: manoj.p@gmail.com
+ApplicantName: Manoj _ Sharma
+DateOfBirth: 12/12/1996
+CoApplicantName: qwe qwe qwe
+LoanType: House Construction Loan
+BranchCode: wqeqwe123
+BranchName: wqeqwe
+OpenDate: 12/12/1996
+RequestDate: 12/12/1996
+LoanStatus: requested
+*******************************
+===========================
+   Customer Operations:-
+===========================
+1> Loan Programs:
+2> Apply for loan: 
+3> Pay Loan: 
+4> change password: 
+5> Check Balance: 
+6> View Applications
+7> Logout
+Enter your choice: 
+********************* WELCOME ********************
+1> Login as Customer?
+2> Login as Employee?
+3> New user? Register
+4> Exit
+**************************************************

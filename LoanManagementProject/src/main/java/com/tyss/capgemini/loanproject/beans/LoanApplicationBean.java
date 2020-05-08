@@ -27,11 +27,12 @@ public class LoanApplicationBean implements Serializable {
 	private String branchName;
 	private String openDate;
 	private String requestDate;
+	private String loanAmount;
 	private String formStatus;
 	
 	public LoanApplicationBean(String applicationId, String accountNo, String email, String applicantFirstName, String applicantMiddleName, String applicantLastName, String dateOfBirth,
 			String coapplicantFirstName, String coapplicantMiddleName, String coapplicantLastName,
-			String loanChoice, String branchCode, String branchName, String openDate, String requestDate, String formStatus) {
+			String loanChoice, String branchCode, String branchName, String openDate, String requestDate, String formStatus, String loanAmount) {
 		super();
 		this.email = email;
 		this.applicationId = applicationId;
@@ -49,5 +50,6 @@ public class LoanApplicationBean implements Serializable {
 		this.openDate = openDate;
 		this.requestDate = requestDate;
 		this.formStatus = formStatus;
+		this.loanAmount = loanAmount;
 	}
 }

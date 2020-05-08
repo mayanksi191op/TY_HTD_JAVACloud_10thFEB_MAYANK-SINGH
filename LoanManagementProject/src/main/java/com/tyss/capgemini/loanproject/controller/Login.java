@@ -157,7 +157,7 @@ public class Login {
 					username = scanner.nextLine();
 					try {
 						if (validationClass.usernameValid(username) == false) {
-							throw new InvalidUsernameException("Follow the pattern...");
+							throw new InvalidUsernameException("Follow the pattern (can have only numbers or letters");
 						} else {
 							try {
 								if (FactoryClass.getLoginServices().usernameExists(username) == false) {
@@ -236,7 +236,7 @@ public class Login {
 					dob = scanner.nextLine();
 					try {
 						if (validationClass.dateValid(dob) == false) {
-							throw new InvalidDateFormatException("Date pattern should match");
+							throw new InvalidDateFormatException("Date pattern should match (DD/MM/YYYY)");
 						} else {
 							flag = true;
 						}
@@ -249,8 +249,8 @@ public class Login {
 					logger.info("Enter Phone no: ");
 					phoneString = scanner.nextLine();
 					try {
-						if (validationClass.phoneValid(phoneString)) {
-							throw new InvalidPhoneException("Invalid phone number!!!");
+						if (validationClass.phoneValid(phoneString) == false) {
+							throw new InvalidPhoneException("Invalid phone number(10 digits)!!!");
 						} else {
 							phone = Long.parseLong(phoneString);
 							flag = true;

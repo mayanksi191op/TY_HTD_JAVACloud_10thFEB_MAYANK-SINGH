@@ -104,6 +104,18 @@ public class LoginDaoImplementation implements LoginDaoDeclaration {
 		} else {
 			return true;
 		}
-
 	}
+	
+//	public Double mergeLoans(String email) {
+//		Double loanAmountDouble = null;
+//		Double totalLoan = null;
+//		for (int i = 0; i < Repository.loanFormList.size(); i++) {
+//			if (email.equalsIgnoreCase((String) Repository.loanFormList.get(i).get("Email"))) {
+//				loanAmountDouble = Double.parseDouble((String) Repository.loanFormList.get(i).get("LoanAmount"));
+//				totalLoan = totalLoan + loanAmountDouble;
+//				
+//			}
+//		}
+//		return totalLoan;
+//	}
 }

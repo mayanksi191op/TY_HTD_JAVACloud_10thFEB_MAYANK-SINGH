@@ -30,14 +30,14 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 	public boolean loanApplicationForm(String applicationId, String accountNo, String email, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
-			String branchName, String openDate, String requestDate) {
+			String branchName, String openDate, String requestDate, String loanAmount) {
 
 		HashMap<String, Object> loanHashMap = new LinkedHashMap<String, Object>();
 		loanHashMap.put("ApplicationId", applicationId);
 		loanHashMap.put("AccountNo", accountNo);
 		loanHashMap.put("Email", email);
 		loanHashMap.put("ApplicantName", applicantFirstName + " " + applicantMiddleName + " " + applicantLastName);
-		loanHashMap.put("CoapplicantName",
+		loanHashMap.put("CoApplicantName",
 				coapplicantFirstName + " " + coapplicantMiddleName + " " + coapplicantLastName);
 		loanHashMap.put("DateOfBirth", dateOfBirth);
 		loanHashMap.put("LoanType", loanChoice);
@@ -45,10 +45,25 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 		loanHashMap.put("BranchName", branchName);
 		loanHashMap.put("OpenDate", openDate);
 		loanHashMap.put("RequestDate", requestDate);
+		loanHashMap.put("LoanAmount", loanAmount);
 		loanHashMap.put("LoanStatus", "requested");
 		Repository.loanFormList.add(loanHashMap);
 		logger.info("Your loan application form has been submitted successfully.");
-		logger.info(loanHashMap);
+		//logger.info(loanHashMap);
+		logger.info("*******************************");
+		logger.info("ApplicationId: " +loanHashMap.get("ApplicationId"));
+		logger.info("AccountNo: " + loanHashMap.get("AccountNo"));
+		logger.info("Email: " + loanHashMap.get("Email"));
+		logger.info("ApplicantName: " + loanHashMap.get("ApplicantName"));
+		logger.info("DateOfBirth: " + loanHashMap.get("DateOfBirth"));
+		logger.info("CoApplicantName: " + loanHashMap.get("CoApplicantName"));
+		logger.info("LoanType: " + loanHashMap.get("LoanType"));
+		logger.info("BranchCode: " + loanHashMap.get("BranchCode"));
+		logger.info("BranchName: " + loanHashMap.get("BranchName"));
+		logger.info("OpenDate: " + loanHashMap.get("OpenDate"));
+		logger.info("RequestDate: " + loanHashMap.get("RequestDate"));
+		logger.info("LoanStatus: " + loanHashMap.get("LoanStatus"));
+		logger.info("*******************************");
 		return true;
 	}
 	
@@ -119,7 +134,8 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 		}
 		return "invalid choice";
 	}
-							
+			
+	@Override
 	public boolean viewApplications(String custUsername) {
 		String email = null;
 		for (int i = 0; i < Repository.customerList.size(); i++) {
@@ -203,5 +219,37 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 			}
 		}
 		return username;
+	}
+	
+	@Override
+	public String fetchFirstName(String username) {
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (username.equalsIgnoreCase((String) Repository.customerList.get(i).get("username"))) {
+				return (String) Repository.customerList.get(i).get("firstname");
+			}
+		}
+		return null;
+	}
+	
+	@Override
+	public String fetchLastName(String username) {
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (username.equalsIgnoreCase((String) Repository.customerList.get(i).get("username"))) {
+				return (String) Repository.customerList.get(i).get("lastname");
+			}
+		}
+		return null;
+	}
+	
+	@Override
+	public Double returnBal(String custUsername) {
+		Double loanDouble;
+		for (int i = 0; i < Repository.customerList.size(); i++) {
+			if (custUsername.equals(Repository.customerList.get(i).get("username"))) {
+				loanDouble = (Double) Repository.customerList.get(i).get("AccountBal");
+				return loanDouble;
+			}
+		}
+		return null; 
 	}
 }

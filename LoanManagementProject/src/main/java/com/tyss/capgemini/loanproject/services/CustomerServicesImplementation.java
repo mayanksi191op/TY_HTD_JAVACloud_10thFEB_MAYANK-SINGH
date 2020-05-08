@@ -43,7 +43,7 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	public boolean loanApplicationForm(String applicationId, String accountNo, String email, String applicantFirstName,
 			String applicantMiddleName, String applicantLastName, String dateOfBirth, String coapplicantFirstName,
 			String coapplicantMiddleName, String coapplicantLastName, String loanChoice, String branchCode,
-			String branchName, String openDate, String requestDate) {
+			String branchName, String openDate, String requestDate, String loanAmount) {
 		if (validationClass.dateValid(dateOfBirth)) {
 			String[] dateOfBirthArr = dateOfBirth.split("/");
 			int dobmonth = Integer.parseInt(dateOfBirthArr[1]);
@@ -66,7 +66,7 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 						FactoryClass.getCustomerDao().loanApplicationForm(applicationId, accountNo, email, applicantFirstName,
 								applicantMiddleName, applicantLastName, dateOfBirth, coapplicantFirstName,
 								coapplicantMiddleName, coapplicantLastName, loanChoice, branchCode, branchName,
-								openDate, requestDate);
+								openDate, requestDate, loanAmount);
 					return true;
 				} else
 					throw new InvalidDateFormatException("Enter correct date format (DD/MM/YYYY).");
@@ -141,6 +141,21 @@ public class CustomerServicesImplementation implements CustomerServicesDeclarati
 	@Override
 	public String fetchMail(String username) {
 		return FactoryClass.getCustomerDao().fetchMail(username);
+	}
+
+	@Override
+	public String fetchFirstName(String username) {
+		return FactoryClass.getCustomerDao().fetchFirstName(username);
+	}
+
+	@Override
+	public String fetchLastName(String username) {
+		return FactoryClass.getCustomerDao().fetchLastName(username);
+	}
+
+	@Override
+	public Double returnBal(String username) {
+		return FactoryClass.getCustomerDao().returnBal(username);
 	}
 	
 }
