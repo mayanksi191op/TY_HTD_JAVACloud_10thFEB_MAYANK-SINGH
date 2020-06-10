@@ -26,7 +26,7 @@ public class CustomerController {
 			logger.info("1> Loan Programs:");
 			logger.info("2> Apply for loan: ");
 			logger.info("3> change password: ");
-			logger.info("4> Check Balance: ");
+			logger.info("4> View Details: ");
 			logger.info("5> View Applications");
 			logger.info("6> Logout");
 			logger.info("Enter your choice: ");
@@ -252,10 +252,12 @@ public class CustomerController {
 				}
 				}
 				count = false;
+				
 				break;
 
 			case "4":
-				FactoryClass.getCustomerServices().checkBalance(custUsername);
+//				FactoryClass.getCustomerServices().checkBalance(custUsername);
+				FactoryClass.getCustomerDao().viewDetails(custUsername);
 				break;
 
 			case "5":

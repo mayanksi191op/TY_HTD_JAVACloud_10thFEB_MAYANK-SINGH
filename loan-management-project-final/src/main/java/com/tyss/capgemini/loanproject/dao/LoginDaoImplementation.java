@@ -98,7 +98,7 @@ public class LoginDaoImplementation implements LoginDaoDeclaration {
 	@Override
 	public boolean register(String occupation, String dob, String gender, String username, String email,
 			String password, String firstname, String lastname, long phone, double accountBal) {
-		HashMap<String, Object> regHashMap = new LinkedHashMap<String, Object>();
+		HashMap<String, Object> regHashMap = new LinkedHashMap<>();
 		regHashMap.put("password", password);
 		regHashMap.put("username", username);
 		regHashMap.put("email", email);

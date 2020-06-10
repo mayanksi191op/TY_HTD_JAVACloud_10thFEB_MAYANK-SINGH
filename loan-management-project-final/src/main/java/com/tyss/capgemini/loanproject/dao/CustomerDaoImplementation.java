@@ -364,6 +364,25 @@ public class CustomerDaoImplementation implements CustomerDaoDeclaration {
 		}
 		return null;
 	}
+	
+	@Override
+	public boolean viewDetails(String username) {
+		for (int i = 0; i < Repository.CUSTOMER_LIST.size(); i++) {
+			if (username.equalsIgnoreCase((String) Repository.CUSTOMER_LIST.get(i).get("username"))) {
+				logger.info("*******************************");
+				logger.info("Username: " + Repository.CUSTOMER_LIST.get(i).get("username"));
+				logger.info("Email: " + Repository.CUSTOMER_LIST.get(i).get("email"));
+				logger.info("First name: " + Repository.CUSTOMER_LIST.get(i).get("firstname"));
+				logger.info("Last name: " + Repository.CUSTOMER_LIST.get(i).get("lastname"));
+				logger.info("Phone: " + Repository.CUSTOMER_LIST.get(i).get("phone"));
+				logger.info("Loan Amount: " + Repository.CUSTOMER_LIST.get(i).get("loanAmount"));
+				logger.info("Role: " + Repository.CUSTOMER_LIST.get(i).get("role"));
+				logger.info("*******************************");
+				return true;
+			}
+		}
+		return false;
+	}
 
 	/**
 	 * Checks whether the username value passed as argument is

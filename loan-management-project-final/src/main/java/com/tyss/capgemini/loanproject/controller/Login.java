@@ -91,7 +91,7 @@ public class Login {
 						logger.info("Enter the Password:-");
 						empPass = scanner.nextLine();
 						try {
-							if (validationClass.passValid(empPass) == false) {
+							if (!validationClass.passValid(empPass)) {
 								throw new InvalidPasswordException("enter valid Password (Should contain 1Uppercase, 1Lowercase, 1Special Char, 1Number, Range-(6-20))");
 							} else {
 								count = true;

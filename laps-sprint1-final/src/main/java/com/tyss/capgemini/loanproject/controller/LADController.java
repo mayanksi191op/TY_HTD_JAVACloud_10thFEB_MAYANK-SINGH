@@ -1,0 +1,110 @@
+package com.tyss.capgemini.loanproject.controller;
+
+
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
+import com.tyss.capgemini.loanproject.exceptions.DataAlreayExistException;
+import com.tyss.capgemini.loanproject.exceptions.InvalidDataException;
+import com.tyss.capgemini.loanproject.factory.FactoryClass;
+import com.tyss.capgemini.loanproject.validation.ValidationClass;
+
+public class LADController {
+	public static void ladController() {
+		Logger logger = LogManager.getLogger(LADController.class);
+		ValidationClass validationClass = new ValidationClass();
+		boolean exit = false;
+		boolean flag = false;
+		while (!exit) {
+			logger.info("====================================");
+			logger.info("||    Loan Approval Department    ||");
+			logger.info("====================================");
+			logger.info("1> View all Home loan programs: ");
+			logger.info("2> View loan applications:");
+			logger.info("3> Application review: ");
+			logger.info("4> Logout");
+			logger.info("Enter your choice: ");
+			String ch = Login.scanner.nextLine();
+			switch (ch) {
+			case "1":
+				FactoryClass.getLadServices().viewLoanPrograms();
+				break;
+
+			case "2":
+				String chooseString = null;
+				logger.info("Enter the loan plan of applications:- ");
+				FactoryClass.getLadServices().loanTypes();
+				while(!flag) {
+					logger.info("Choose type:-");
+					chooseString = Login.scanner.nextLine();
+				try {
+					if (!validationClass.numMismatch1(chooseString)) {
+						throw new InvalidDataException("Invalid choice, please choose again!!!");
+					} else {
+						flag = true;
+					}
+				} catch (Exception e) {
+					logger.info(e.getMessage());
+				}}
+				String planString = FactoryClass.getLadServices().loanTypes(chooseString);
+				FactoryClass.getLadServices().ladViewForms(planString);
+				flag = false;
+				
+				break;
+
+			case "3":
+				String status = null;
+				String apid = null;
+				logger.info("Requested forms:-");
+				if (!FactoryClass.getLadServices().requestedForms()) {
+					logger.info("No requested forms present for review");
+					break;
+				}
+				while(!flag) {
+					logger.info("enter the ApplicationId for review: ");
+					apid = Login.scanner.nextLine();
+					try {
+						if (!FactoryClass.getLadServices().applicationExist(apid)) {
+							throw new DataAlreayExistException("Application Id not found!!!");
+						} else {
+							flag = true;
+						}
+					} catch (Exception e) {
+						logger.info(e.getMessage());
+					}
+				}
+				flag = false;
+				boolean exit0 = false;
+				while(!exit0) {
+				logger.info("enter the status: ");
+				logger.info("1> Approved");
+				logger.info("2> Rejected");
+				logger.info("choose:-");
+				String choose = Login.scanner.nextLine();
+				switch (choose) {
+				case "1":
+					status = "Approved";
+					exit0 = true;
+					break;
+				case "2":
+					status = "Rejected";
+					exit0 = true;
+					break;
+				default:
+					logger.info("invalid choice. Please choose again!!!");
+					break;
+				}
+				}
+				FactoryClass.getLadServices().ladReviewForms(apid, status);
+				break;
+			case "4":
+				exit = true;
+				break;
+			default:
+				logger.info("Invalid option, please choose again!!!");
+				break;
+			}
+		}
+	}
+}

@@ -14,6 +14,11 @@ import com.tyss.capgemini.loanproject.validation.ValidationClass;
 public class LoginServicesImplementation implements LoginServicesDeclaration {
 	ValidationClass validationClass = new ValidationClass();
 
+	/**
+	 * @param String customerUsername,
+	 * @param String customerPassword
+	 * @return true is customer log in successfully, false otherwise
+	 */
 	@Override
 	public boolean custLogin(String custUsername, String custPass) {
 		int count = 0;
@@ -31,6 +36,11 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 		return false;
 	}
 
+	/**
+	 * @param String employeeUsername,
+	 * @param String employeePassword
+	 * @return true is customer log in successfully, false otherwise
+	 */
 	@Override
 	public boolean empLogin(String empUsername, String empPass) {
 		int count = 0;
@@ -48,25 +58,29 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 		return false;
 	}
 
+	/**
+	 *@param String occupation,
+	 *@param String dob,
+	 *@param String gender,
+	 *@param String userName,
+	 *@param String userId,
+	 *@param String email,
+	 *@param String password,
+	 *@param String firstName,
+	 *@param String lastName,
+	 *@param long phone,
+	 *@param double accountBalance
+	 */
 	@Override
 	public boolean register(String occupation, String dob, String gender, String username, String email,
 			String password, String firstname, String lastname, long phone, double accountBal) {
 		if (validationClass.usernameValid(username)) {
 			if (validationClass.passValid(password)) {
 				if (validationClass.mailValid(email)) {
-					if (validationClass.dateValid(dob)) {
-						String[] dateOfBirthArr = dob.split("/");
-						int dobmonth = Integer.parseInt(dateOfBirthArr[1]);
-						int dobyear = Integer.parseInt(dateOfBirthArr[2]);
-						if ((dobmonth > 3) && (dobyear >= 2020)) {
-							throw new DateLimitException("Not inside date limit.");
-						}
 						if ((phone > 6000000000L) || (phone < 1000000000L)) {
 							FactoryClass.getLoginDao().register(occupation, dob, gender, username,  email,
 									password, firstname, lastname, phone, accountBal);
 							return true;
-						} else
-							throw new InvalidPhoneException("Enter 10 digit phone number");
 					} else
 						throw new InvalidDateFormatException("Enter correct date format (DD/MM/YYYY).");
 				} else
@@ -77,11 +91,19 @@ public class LoginServicesImplementation implements LoginServicesDeclaration {
 			throw new InvalidUsernameException("Enter correct format");
 	}
 	
+	/**
+	 * @param String email
+	 * @return true if the email already exists, false otherwise
+	 */
 	@Override
 	public boolean emailExists(String email) {
 		return FactoryClass.getLoginDao().emailExists(email);
 	}
 
+	/**
+	 * @param String userName
+	 * @return true if the email already exists, false otherwise
+	 */
 	@Override
 	public boolean usernameExists(String username) {
 		return FactoryClass.getLoginDao().usernameExists(username);

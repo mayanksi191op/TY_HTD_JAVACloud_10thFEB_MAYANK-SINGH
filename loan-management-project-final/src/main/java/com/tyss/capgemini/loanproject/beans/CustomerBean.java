@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 import lombok.Data;
 
-@Data
 @SuppressWarnings("serial")
+@Data
 public class CustomerBean implements Serializable{
 	private String username;
 	private String email;
