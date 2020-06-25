@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyss.capgemini.loanproject.dao.CustomerDaoImplementation;
-import com.tyss.capgemini.loanproject.repository.Repository;
+import com.tyss.javacloud.loanproject.dao.CustomerDaoImplementation;
+import com.tyss.javacloud.loanproject.repository.Repository;
 
 public class CustomerDaoTest {
 	
@@ -131,12 +131,6 @@ public class CustomerDaoTest {
 		assertEquals(isBoolean, true);
 	}
 	
-	@Test
-	void loanTypes3() {
-		Repository.userTable();
-		String string = implementation.loanTypes(1);
-		assertEquals("House Construction Loan", string);
-	}
 	
 	@Test
 	void viewApplicationsTest1() {

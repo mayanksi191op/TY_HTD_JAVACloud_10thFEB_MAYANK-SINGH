@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyss.capgemini.loanproject.exceptions.InvalidLoanTypeException;
-import com.tyss.capgemini.loanproject.repository.Repository;
-import com.tyss.capgemini.loanproject.services.AdminServicesImplementation;
+import com.tyss.javacloud.loanproject.exceptions.InvalidLoanTypeException;
+import com.tyss.javacloud.loanproject.repository.Repository;
+import com.tyss.javacloud.loanproject.services.AdminServicesImplementation;
 
 public class AdminServicesTest {
 

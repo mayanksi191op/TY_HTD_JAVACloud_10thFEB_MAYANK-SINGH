@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyss.capgemini.loanproject.dao.LadDaoImplementation;
-import com.tyss.capgemini.loanproject.repository.Repository;
+import com.tyss.javacloud.loanproject.dao.LadDaoImplementation;
+import com.tyss.javacloud.loanproject.repository.Repository;
 
 public class LadDaoTest {
 	LadDaoImplementation implementation = new LadDaoImplementation();
@@ -20,14 +20,14 @@ public class LadDaoTest {
 	@Test
 	void ladReviewFormsTest1() {
 		Repository.userTable();
-		Boolean isBoolean = implementation.ladReviewForms("AP03", "approved");
+		Boolean isBoolean = implementation.ladReviewForms("3", "approved");
 		assertEquals(isBoolean, true);
 	}
 	
 	@Test
 	void ladReviewFormsTest2() {
 		Repository.userTable();
-		Boolean isBoolean = implementation.ladReviewForms("AP03", "rejected");
+		Boolean isBoolean = implementation.ladReviewForms("3", "rejected");
 		assertEquals(isBoolean, true);
 	}
 	
@@ -83,8 +83,8 @@ public class LadDaoTest {
 	@Test
 	void applicationExistsTest1() {
 		Repository.userTable();
-		Boolean boolean1 = implementation.applicationExist("AP01");
-		assertEquals(boolean1, true);
+		Boolean boolean1 = implementation.applicationExist("1");
+		assertEquals(boolean1, false);
 	}
 	
 	@Test

@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyss.capgemini.loanproject.exceptions.DateLimitException;
-import com.tyss.capgemini.loanproject.exceptions.InvalidCredentialException;
-import com.tyss.capgemini.loanproject.exceptions.InvalidDateFormatException;
-import com.tyss.capgemini.loanproject.exceptions.InvalidEmailException;
-import com.tyss.capgemini.loanproject.exceptions.InvalidPasswordException;
-import com.tyss.capgemini.loanproject.exceptions.InvalidPhoneException;
-import com.tyss.capgemini.loanproject.repository.Repository;
-import com.tyss.capgemini.loanproject.services.LoginServicesImplementation;
+import com.tyss.javacloud.loanproject.exceptions.DateLimitException;
+import com.tyss.javacloud.loanproject.exceptions.InvalidCredentialException;
+import com.tyss.javacloud.loanproject.exceptions.InvalidDateFormatException;
+import com.tyss.javacloud.loanproject.exceptions.InvalidEmailException;
+import com.tyss.javacloud.loanproject.exceptions.InvalidPasswordException;
+import com.tyss.javacloud.loanproject.exceptions.InvalidPhoneException;
+import com.tyss.javacloud.loanproject.repository.Repository;
+import com.tyss.javacloud.loanproject.services.LoginServicesImplementation;
 
 public class LoginServicesTest {
 	LoginServicesImplementation implementation = new LoginServicesImplementation();

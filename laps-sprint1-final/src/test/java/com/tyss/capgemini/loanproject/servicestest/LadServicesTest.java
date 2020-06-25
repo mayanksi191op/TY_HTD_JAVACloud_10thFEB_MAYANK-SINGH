@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyss.capgemini.loanproject.exceptions.FormReviewChoiceException;
-import com.tyss.capgemini.loanproject.repository.Repository;
-import com.tyss.capgemini.loanproject.services.LadServicesImplementation;
+import com.tyss.javacloud.loanproject.exceptions.FormReviewChoiceException;
+import com.tyss.javacloud.loanproject.repository.Repository;
+import com.tyss.javacloud.loanproject.services.LadServicesImplementation;
 
 public class LadServicesTest {
 

@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyss.capgemini.loanproject.dao.AdminDaoImplementation;
-import com.tyss.capgemini.loanproject.repository.Repository;
+import com.tyss.javacloud.loanproject.dao.AdminDaoImplementation;
+import com.tyss.javacloud.loanproject.repository.Repository;
 
 public class AdminDaoTest {
 	AdminDaoImplementation implementation = new AdminDaoImplementation();
